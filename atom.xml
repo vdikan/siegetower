@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://vdikan.github.io/siegetower"/> <link type="application/atom+xml" rel="self" href="https://vdikan.github.io/siegetower/atom.xml"/> <updated>Fri, 21 Feb 2020 12:39:30 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://vdikan.github.io/siegetower/posts/Fortls-comfy-indexing-of-Fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://vdikan.github.io/siegetower</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Fri, 21 Feb 2020 21:44:15 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy
 young men&#039;s feelings in 2020: 1st being the ambiguity of which
@@ -58,7 +58,7 @@ here I briefly show the looks of my own setup in &lt;code&gt;Emacs&lt;/code&gt;
 
 &lt;p&gt;&lt;img src=&quot;static/20200219_fortls.gif&quot; alt=&quot;alt text&quot; /&gt; &lt;br/&gt;
 &lt;em&gt;&lt;code&gt;Fortls + emacs lsp-mode&lt;/code&gt;: hover, reference finder and jump-to-def.&lt;/em&gt;&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://vdikan.github.io/siegetower/posts/Lets-go.html"/> <title>Let&#039;s go</title> <published>2020-02-09</published> <updated>2020-02-09</updated> <author> <name>Vladimir Dikan</name> <uri>https://vdikan.github.io/siegetower</uri> </author> <content type="html">&lt;p&gt;Usually here goes some kind of welcoming post... But nay!&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Lets-go.html"/> <title>Let&#039;s go</title> <published>2020-02-09</published> <updated>2020-02-09</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Usually here goes some kind of welcoming post... But nay!&lt;/p&gt;
 
 &lt;p&gt;Instead I&#039;ll just leave here a picture of my Sunday morning newspaper.&lt;/p&gt;
 
