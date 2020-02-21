@@ -1,0 +1,66 @@
+;;;;;
+title: Fortls: comfy indexing of Fortran
+tags: en
+date: 2020-02-19
+format: md
+;;;;;
+
+If you happen to find yourself in HPC research or engineering, you
+will most probably deal with Fortran codebases at some point.
+With two major problems that hurt lazy
+young men's feelings in 2020: 1st being the ambiguity of which
+instructions from the standard form the desired
+_subset of a useful Fortran number-crunching DSL_,
+and the 2nd is (was) lack of introspection for a (modern) IDE.
+
+While the solution of the first problem is found merely in personal
+experience and Sacred Wisdom of the Elders
+(never saw a book on Fortran that did not look like a flat dry
+reference index),
+solution for the second is open to the public:
+[Chris Hansen's](https://github.com/hansec)
+[**Fortran Language Server**](https://github.com/hansec/fortran-language-server).
+
+<!--more-->
+
+Of course, indexing tools for C and Fortran had existed for years
+before the Language Server Protocol was developed
+(and then [grew up in popularity and implementations' number](https://langserver.org)).
+But I have to admit that I never could make any of the `*tags` work
+anywhere near properly for projects as complex as `Siesta`. Not even
+complaining of their static nature and the need of some automation of
+index-building mechanisms: I wasn't even there.
+
+On the other hand, `Fortls` is able to navigate through roughly 95% of
+definitions in the code of `Siesta`, missing only overloaded procs
+and, of course, code hidden in metaprogramming templates. For every
+symbol well seen, it allows to jump to the place where it's defined,
+list and rename all the occurrences throughout the project. Even more:
+it parses the
+`Doxygen`/[FORD](https://github.com/Fortran-FOSS-Programmers/ford/wiki)
+docstring-like comments and shows them in
+the hint-box! Plus support for subroutines' signature hinting and
+autocomplete.
+
+All this might not sound very sexy today, especially if the language in
+question provided some introspection tools of its own, but mind that
+it's Fortran we are speaking about! Here, after decades of heavy
+science, monstrosities of hundreds of modules do exist with nothing
+more handy than `grep` to navigate'em prior to `LSP`.
+
+The installation and configuration of `Fortls` is straightforward: it
+is a python package providing a command line tool that should be seen
+to an `LSP`-supporting editor. I actually spent more time tweaking the
+lsp-mode UI in emacs than making it work with `fortls`. According to
+my minimalistic taste I do not use signature popups, only the hinting
+UI-doc window (and it includes signatures anyway, together with
+types of variables under cursor). Autocomplete seems to work with
+`company-mode` out of the box.
+
+On the project page Chris shows some screencasts of how working with
+Fortran Language Server looks in the `Atom` editor;
+here I briefly show the looks of my own setup in `Emacs`
+(mind that automatic update of a symbol's description):
+
+![alt text](/static/20200219_fortls.gif) <br/>
+*`Fortls + emacs lsp-mode`: hover, reference finder and jump-to-def.*
