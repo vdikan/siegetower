@@ -1,5 +1,27 @@
 <!doctype html>
-<html lang="en"> <head> <title>Ivory Siege Tower</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="//fonts.googleapis.com/css?family=PT Mono:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" /> <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" /> <link href= "https://www.ivorysiegetower.com/css/style.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://www.ivorysiegetower.com/rss.xml" type="application/rss+xml" />  </head> <body> <div class="navigation"> <a href="https://www.ivorysiegetower.com">Ivory Siege Tower</a> |  </div> <div id="content"> <h1 class="title">Recent Content</h1> <div class="article-meta"> <a class="article-title" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html">Fortls: comfy indexing of Fortran</a> <div class="date"> Written on 2020-02-19</div> <div class="article"><p>If you happen to find yourself in HPC research or engineering, you
+<html lang="en"> <head> <title>Ivory Siege Tower</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="//fonts.googleapis.com/css?family=PT Mono:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" /> <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" /> <link href= "https://www.ivorysiegetower.com/css/style.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://www.ivorysiegetower.com/rss.xml" type="application/rss+xml" />  </head> <body> <div class="navigation"> <a href="https://www.ivorysiegetower.com">Ivory Siege Tower</a> |  </div> <div id="content"> <h1 class="title">Recent Content</h1> <div class="article-meta"> <a class="article-title" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html">Infernal Management with Spack</a> <div class="date"> Written on 2020-02-29</div> <div class="article"><!-- **** your post here (remove this line) **** -->
+
+<!-- format: could be 'html' (for raw html) or 'md' (for markdown).  -->
+
+<p>The man-made Hell of dependencies management in HPC software has an
+efficient way out: <a href="https://spack.io" >Spack</a>, initially
+<a href="https://computing.llnl.gov/projects/spack-hpc-package-manager" >established at Lawrence Livermore</a>
+and actively community-supported manager of program packages and
+libraries for supercomputing. It's like e.g. Portage for Gentoo,
+but system-agnostic, and does not pollute user's environment since
+packages are linked through <code>RPATH</code> at compile-time instead of through
+dynamic (re)setting of environment variables at runtime (as is
+pefrormed by hierarchical module systems like <code>lmod</code>).
+This allows for the impressive
+<a href="https://spack.readthedocs.io/en/latest/features.html" >feature list</a>
+explained in a well-written documentation,
+making Spack a very useful cluster management tool.</p>
+
+<p>But not only. A careful reader will be happy to see in it a killer app
+for actual <em>code development</em> in the chaos vortex of academic &amp;
+research software.</p>
+
+</div> </div><div class="article-meta"> <a class="article-title" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html">Fortls: comfy indexing of Fortran</a> <div class="date"> Written on 2020-02-19</div> <div class="article"><p>If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy
 young men's feelings in 2020: 1st being the ambiguity of which

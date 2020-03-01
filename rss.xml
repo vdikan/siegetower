@@ -1,5 +1,28 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Fri, 21 Feb 2020 22:39:35 +0100</pubDate> <item> <title>Fortls: comfy indexing of Fortran</title> <link>https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html</link> <pubDate>2020-02-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <p>If you happen to find yourself in HPC research or engineering, you
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 01 Mar 2020 01:21:50 +0100</pubDate> <item> <title>Infernal Management with Spack</title> <link>https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html</link> <pubDate>2020-02-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <!-- **** your post here (remove this line) **** -->
+
+<!-- format: could be 'html' (for raw html) or 'md' (for markdown).  -->
+
+<p>The man-made Hell of dependencies management in HPC software has an
+efficient way out: <a href="https://spack.io" >Spack</a>, initially
+<a href="https://computing.llnl.gov/projects/spack-hpc-package-manager" >established at Lawrence Livermore</a>
+and actively community-supported manager of program packages and
+libraries for supercomputing. It's like e.g. Portage for Gentoo,
+but system-agnostic, and does not pollute user's environment since
+packages are linked through <code>RPATH</code> at compile-time instead of through
+dynamic (re)setting of environment variables at runtime (as is
+pefrormed by hierarchical module systems like <code>lmod</code>).
+This allows for the impressive
+<a href="https://spack.readthedocs.io/en/latest/features.html" >feature list</a>
+explained in a well-written documentation,
+making Spack a very useful cluster management tool.</p>
+
+<p>But not only. A careful reader will be happy to see in it a killer app
+for actual <em>code development</em> in the chaos vortex of academic &amp;
+research software.</p>
+
+<!--more-->
+ ]]></description> </item><item> <title>Fortls: comfy indexing of Fortran</title> <link>https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html</link> <pubDate>2020-02-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <p>If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy
 young men's feelings in 2020: 1st being the ambiguity of which
