@@ -1,0 +1,32 @@
+;;;;;
+title: Infernal Management with Spack
+tags: en
+date: 2020-02-29
+format: md
+;;;;;
+
+<!-- **** your post here (remove this line) **** -->
+<!-- format: could be 'html' (for raw html) or 'md' (for markdown).  -->
+
+The man-made Hell of dependencies management in HPC software has an
+efficient way out: [Spack](https://spack.io), initially
+[established at Lawrence Livermore](https://computing.llnl.gov/projects/spack-hpc-package-manager)
+and actively community-supported manager of program packages and
+libraries for supercomputing. It's like e.g. Portage for Gentoo,
+but system-agnostic, and does not pollute user's environment since
+packages are linked through `RPATH` at compile-time instead of through
+dynamic (re)setting of environment variables at runtime (as is
+pefrormed by hierarchical module systems like `lmod`).
+This allows for the impressive
+[feature list](https://spack.readthedocs.io/en/latest/features.html)
+explained in a well-written documentation,
+making Spack a very useful cluster management tool.
+
+But not only. A careful reader will be happy to see in it a killer app
+for actual *code development* in the chaos vortex of academic &
+research software.
+
+<!--more-->
+
+```elisp
+```
