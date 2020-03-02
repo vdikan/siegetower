@@ -5,9 +5,6 @@ date: 2020-02-29
 format: md
 ;;;;;
 
-<!-- **** your post here (remove this line) **** -->
-<!-- format: could be 'html' (for raw html) or 'md' (for markdown).  -->
-
 The man-made Hell of dependencies management in HPC software has an
 efficient way out: [**Spack**](https://spack.io), initially
 [established at Lawrence Livermore](https://computing.llnl.gov/projects/spack-hpc-package-manager)
@@ -27,6 +24,3 @@ for actual *code development* in the chaos vortex of academic &
 research software.
 
 <!--more-->
-
-```elisp
-```
