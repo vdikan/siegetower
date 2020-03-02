@@ -1,5 +1,41 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 02 Mar 2020 02:06:27 +0100</pubDate> <item> <title>Когнитивная Готика</title> <link>https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html</link> <pubDate>2020-03-02</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html</guid> <category><![CDATA[ ru ]]></category> <description><![CDATA[ <p>В процессе написания.</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 02 Mar 2020 14:57:15 +0100</pubDate> <item> <title>Когнитивная Готика</title> <link>https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html</link> <pubDate>2020-03-02</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html</guid> <category><![CDATA[ ru ]]></category> <description><![CDATA[ <p>Пока строил Башню набрел через HN на
+<a href="https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/" >пост</a>
+о Предвестниках Гипертекстового Ренессанса. Там интересная
+писательская позиция и слегка наивный взгляд на тех. аспекты (кложа
+это &quot;next generation language&quot; оказывается). Но самое забавное, на мой
+взгляд, - то что в пророчестве о Возрождении основной акцент сделан на
+таланте разработчиков экспериментальных форм [доставки контента],
+крутых технологиях и притянутом за уши культурном феномене.
+Но как по мне, появление новых платформ неизбежно просто с течением
+эпохи Когнитивной Готики.</p>
 
-<p>Следующий параграф и <a href="https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/" >пост</a>.</p>
+<!--more-->
+
+<p>Еще до бума соцсетей &quot;Компьютерра&quot; со своих приятно шуршащих глянцевых
+страниц предрекала появление профессии &quot;когнитивных советников&quot;,
+этаких профи-датамайнеров, посредством мощного ИИ и алгоритмов
+отдающих клиенту действительно интересные ему медиа.</p>
+
+<p>Ну, допустим ИИ у нас есть, а также: адовая лента в ФБ, лихая
+предложка в ютубе, куча новостного спама во входящих с линком
+&quot;unsubscribe&quot; кегль 8. Дохлый хомяк в блоггере. Твиттор.</p>
+
+<p>Включение осознанного потребления <em>логично</em> приводит к: ведению своего
+пространства смыслов (в чем-то похожем на персональную вики), дропу
+вордпресса в пользу самосборных статических бложиков, платным
+спискам рассылки (вот это новость). Мета-твиттор.</p>
+
+<p>Прелесть момента в том что, видимо, достаточно народу устало от
+старого инфопузыря и смотрят в сторону новых платформ. Много смотрят
+на тикток. Но и новым эверноутам (осознанному инфо-потреблению)
+достает внимания, что делает их коммерчески привлекательными.
+Но это даже еще не ранний Ренессанс.
+Хотя Темная эра точно ушла в прошлое - с выходом Sunless Sea.</p>
+
+<p>В комментах на HN, разумеется,  веселье в духе:</p>
+
+<blockquote>
+<p>When I read 'Text Renaissance' I assumed that the article is going to be about org-mode or nvalt ;)</p>
+</blockquote>
  ]]></description> </item> </channel> </rss>

@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 02 Mar 2020 02:06:27 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html"/> <title>Infernal Management with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;!-- **** your post here (remove this line) **** --&gt;
-
-&lt;!-- format: could be &#039;html&#039; (for raw html) or &#039;md&#039; (for markdown).  --&gt;
-
-&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 02 Mar 2020 14:57:15 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html"/> <title>Infernal Management with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
 efficient way out: &lt;a href=&quot;https://spack.io&quot; &gt;&lt;strong&gt;Spack&lt;/strong&gt;&lt;/a&gt;, initially
 &lt;a href=&quot;https://computing.llnl.gov/projects/spack-hpc-package-manager&quot; &gt;established at Lawrence Livermore&lt;/a&gt;
 and actively community-supported manager of program packages and
@@ -22,9 +18,6 @@ for actual &lt;em&gt;code development&lt;/em&gt; in the chaos vortex of academic
 research software.&lt;/p&gt;
 
 &lt;!--more--&gt;
-
-&lt;p&gt;&lt;code&gt;elisp
-&lt;/code&gt;&lt;/p&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy

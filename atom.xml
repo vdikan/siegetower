@@ -1,12 +1,44 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 02 Mar 2020 02:06:27 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html"/> <title>Когнитивная Готика</title> <published>2020-03-02</published> <updated>2020-03-02</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;В процессе написания.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 02 Mar 2020 14:57:15 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html"/> <title>Когнитивная Готика</title> <published>2020-03-02</published> <updated>2020-03-02</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Пока строил Башню набрел через HN на
+&lt;a href=&quot;https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/&quot; &gt;пост&lt;/a&gt;
+о Предвестниках Гипертекстового Ренессанса. Там интересная
+писательская позиция и слегка наивный взгляд на тех. аспекты (кложа
+это &amp;quot;next generation language&amp;quot; оказывается). Но самое забавное, на мой
+взгляд, - то что в пророчестве о Возрождении основной акцент сделан на
+таланте разработчиков экспериментальных форм [доставки контента],
+крутых технологиях и притянутом за уши культурном феномене.
+Но как по мне, появление новых платформ неизбежно просто с течением
+эпохи Когнитивной Готики.&lt;/p&gt;
 
-&lt;p&gt;Следующий параграф и &lt;a href=&quot;https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/&quot; &gt;пост&lt;/a&gt;.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html"/> <title>Infernal Management with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;!-- **** your post here (remove this line) **** --&gt;
+&lt;!--more--&gt;
 
-&lt;!-- format: could be &#039;html&#039; (for raw html) or &#039;md&#039; (for markdown).  --&gt;
+&lt;p&gt;Еще до бума соцсетей &amp;quot;Компьютерра&amp;quot; со своих приятно шуршащих глянцевых
+страниц предрекала появление профессии &amp;quot;когнитивных советников&amp;quot;,
+этаких профи-датамайнеров, посредством мощного ИИ и алгоритмов
+отдающих клиенту действительно интересные ему медиа.&lt;/p&gt;
 
-&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
+&lt;p&gt;Ну, допустим ИИ у нас есть, а также: адовая лента в ФБ, лихая
+предложка в ютубе, куча новостного спама во входящих с линком
+&amp;quot;unsubscribe&amp;quot; кегль 8. Дохлый хомяк в блоггере. Твиттор.&lt;/p&gt;
+
+&lt;p&gt;Включение осознанного потребления &lt;em&gt;логично&lt;/em&gt; приводит к: ведению своего
+пространства смыслов (в чем-то похожем на персональную вики), дропу
+вордпресса в пользу самосборных статических бложиков, платным
+спискам рассылки (вот это новость). Мета-твиттор.&lt;/p&gt;
+
+&lt;p&gt;Прелесть момента в том что, видимо, достаточно народу устало от
+старого инфопузыря и смотрят в сторону новых платформ. Много смотрят
+на тикток. Но и новым эверноутам (осознанному инфо-потреблению)
+достает внимания, что делает их коммерчески привлекательными.
+Но это даже еще не ранний Ренессанс.
+Хотя Темная эра точно ушла в прошлое - с выходом Sunless Sea.&lt;/p&gt;
+
+&lt;p&gt;В комментах на HN, разумеется,  веселье в духе:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;When I read &#039;Text Renaissance&#039; I assumed that the article is going to be about org-mode or nvalt ;)&lt;/p&gt;
+&lt;/blockquote&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html"/> <title>Infernal Management with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
 efficient way out: &lt;a href=&quot;https://spack.io&quot; &gt;&lt;strong&gt;Spack&lt;/strong&gt;&lt;/a&gt;, initially
 &lt;a href=&quot;https://computing.llnl.gov/projects/spack-hpc-package-manager&quot; &gt;established at Lawrence Livermore&lt;/a&gt;
 and actively community-supported manager of program packages and
@@ -25,9 +57,6 @@ for actual &lt;em&gt;code development&lt;/em&gt; in the chaos vortex of academic
 research software.&lt;/p&gt;
 
 &lt;!--more--&gt;
-
-&lt;p&gt;&lt;code&gt;elisp
-&lt;/code&gt;&lt;/p&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy
