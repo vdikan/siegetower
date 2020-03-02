@@ -1,6 +1,6 @@
 ;;;;;
 title: Infernal Management with Spack
-tags: en
+tags: en, toolbox
 date: 2020-02-29
 format: md
 ;;;;;
@@ -9,7 +9,7 @@ format: md
 <!-- format: could be 'html' (for raw html) or 'md' (for markdown).  -->
 
 The man-made Hell of dependencies management in HPC software has an
-efficient way out: [Spack](https://spack.io), initially
+efficient way out: [**Spack**](https://spack.io), initially
 [established at Lawrence Livermore](https://computing.llnl.gov/projects/spack-hpc-package-manager)
 and actively community-supported manager of program packages and
 libraries for supercomputing. It's like e.g. Portage for Gentoo,
