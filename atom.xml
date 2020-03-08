@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 08 Mar 2020 19:28:53 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html"/> <title>Когнитивная Готика</title> <published>2020-03-02</published> <updated>2020-03-02</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Пока строил Башню набрел через HN на
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 09 Mar 2020 00:44:48 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html"/> <title>Когнитивная Готика</title> <published>2020-03-02</published> <updated>2020-03-02</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Пока строил Башню набрел через HN на
 &lt;a href=&quot;https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/&quot; &gt;пост&lt;/a&gt;
 о Предвестниках Гипертекстового Ренессанса. Там интересная
 писательская позиция и слегка наивный взгляд на тех. аспекты (кложа
@@ -38,7 +38,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;When I read &#039;Text Renaissance&#039; I assumed that the article is going to be about org-mode or nvalt ;)&lt;/p&gt;
 &lt;/blockquote&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html"/> <title>Infernal Management with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Developing-with-Spack.html"/> <title>Developing with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
 efficient way out: &lt;a href=&quot;https://spack.io&quot; &gt;&lt;strong&gt;Spack&lt;/strong&gt;&lt;/a&gt;, initially
 &lt;a href=&quot;https://computing.llnl.gov/projects/spack-hpc-package-manager&quot; &gt;established at Lawrence Livermore&lt;/a&gt;
 and actively community-supported manager of program packages and
