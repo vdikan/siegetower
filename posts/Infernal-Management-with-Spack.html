@@ -26,6 +26,91 @@ for actual <em>code development</em> in the chaos vortex of academic &amp;
 research software.</p>
 
 <!--more-->
+
+<h2>Custom Repositories</h2>
+
+<p>First of all, managing dependencies, even secret ones, for a project
+in development is straightforward with Spack since it allows to have
+extra <a href="https://spack.readthedocs.io/en/latest/repositories.html" >package repositories</a>
+that <em>shadow</em> the default <code>builtin</code> package repo. This custom
+repository structure is same as default's: one <code>package.py</code> file per
+package with installation instructions, plus optional .patch-files alongside.</p>
+
+<p>For composing package files the developers introduce what looks like
+handy on-top-of-python-DSL. Creation of a Spack script for conventionally
+well-written software package with e.g. CMake or Autotools is easy,
+but even archaic regex-processing of makefiles is also
+<a href="https://spack.readthedocs.io/en/latest/packaging_guide.html#file-manipulation-functions" >doable</a>
+within Spack definitions. Installation phases like <code>configure</code>,
+<code>build</code>, <code>install</code> are explicitly marked (more on their roles later).</p>
+
+<p>Given that, what project maintainers might want to have are:</p>
+
+<ol>
+<li>a fork of Spack's official <a href="git@github.com:spack/spack.git" >git repo</a>
+   with changes meant to be pushed upstream for the benefit of
+   the research society;</li>
+<li>small private repositories that replicate the structure of packages
+   with experimental features not yet to be publicly available.</li>
+</ol>
+
+<h2>The <code>dev-build</code> command</h2>
+
+<p>One way to improve the documentation of Spack would be to introduce
+its <code>dev-build</code> command to the reader as soon as possible. Because
+turns out that it is THE ultimate command for package writing.</p>
+
+<p><code>spack dev-build ...</code> should be called from the downloaded software's
+codebase root. First, it allows for incremental build attempts up to a
+certain installation phase with <code>--until=</code> flag. This allows to test
+your new package file gradually, phase after phase, with less garbage
+and in a better way than <code>spack install --keep-stage</code>.</p>
+
+<p>Second, all the dependencies for the package would be valid Spack
+dependencies.</p>
+
+<p>Finally, it allows installation of local codebases under fictional
+version names, that might not be even listed under <code>version</code>
+directives in the package!</p>
+
+<p>The <a href="https://spack.readthedocs.io/en/latest/workflows.html#developing-software-with-spack" >developer workflow</a>
+in the docs is in my opinion misleading.
+It is focused on the use of <code>CMake</code> setup that can bypass the
+lack of software build environment
+(remember one of the key features of Spack,
+allowing conflicting builds under one roof?).
+This, however, makes little sense if one is using an isolated
+compilation command, for example, in the text editor of choice.</p>
+
+<p>Spack integrates module activation support and can load spec
+dependencies' modules as well with <code>-r</code>/<code>--dependencies</code> flag.
+For my emacs + projectile the <code>.dir-locals</code> file for recompilarion of
+e.g. Siesta binary looks like this:</p><div class="highlight"><pre><span></span><span class="p">((</span><span class="no">nil</span>
+  <span class="p">(</span><span class="nv">projectile-project-compilation-dir</span> <span class="o">.</span> <span class="s">&quot;Obj/&quot;</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">projectile-project-compilation-cmd</span>
+   <span class="o">.</span>
+   <span class="s">&quot;spack load gcc &amp;&amp;</span>
+<span class="s">spack load mpi &amp;&amp;</span>
+<span class="s">spack load -r siesta@fake &amp;&amp;</span>
+<span class="s">make &quot;</span><span class="p">)))</span>
+</pre></div>
+
+
+<p>Only compiler and mpi-metapackage need to be load explicitly, the rest
+of the deps are activated via single <code>spack load -r siesta@fake</code>
+directive, where &quot;fake&quot; would be a fictional version name for
+<code>dev-build</code> command. And this becomes a standard template I use for
+all software that is maintained with help of Spack.</p>
+
+<h2>Spack for Siesta project</h2>
+
+<p>At the moment of writing I have a fork with fixed Atom
+pseudopotential-files generator and Siesta (LibGridXC + PSML support
+enabeled) in the <code>siesta-dft</code> branch of
+<a href="https://github.com/vdikan/spack/tree/siesta-dft" >my fork of Spack</a>.
+In case it proves useful on our clusters, these updates will be
+polished and pull-requested rather soon. Otherwise I will continue
+editing them on my own and make a pull request when ready.</p>
  </div>
 <div class="relative-nav">
 <a href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html">Previous</a><br>

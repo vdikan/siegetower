@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 02 Mar 2020 14:57:15 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html"/> <title>Infernal Management with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 08 Mar 2020 19:28:53 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Infernal-Management-with-Spack.html"/> <title>Infernal Management with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
 efficient way out: &lt;a href=&quot;https://spack.io&quot; &gt;&lt;strong&gt;Spack&lt;/strong&gt;&lt;/a&gt;, initially
 &lt;a href=&quot;https://computing.llnl.gov/projects/spack-hpc-package-manager&quot; &gt;established at Lawrence Livermore&lt;/a&gt;
 and actively community-supported manager of program packages and
@@ -18,6 +18,91 @@ for actual &lt;em&gt;code development&lt;/em&gt; in the chaos vortex of academic
 research software.&lt;/p&gt;
 
 &lt;!--more--&gt;
+
+&lt;h2&gt;Custom Repositories&lt;/h2&gt;
+
+&lt;p&gt;First of all, managing dependencies, even secret ones, for a project
+in development is straightforward with Spack since it allows to have
+extra &lt;a href=&quot;https://spack.readthedocs.io/en/latest/repositories.html&quot; &gt;package repositories&lt;/a&gt;
+that &lt;em&gt;shadow&lt;/em&gt; the default &lt;code&gt;builtin&lt;/code&gt; package repo. This custom
+repository structure is same as default&#039;s: one &lt;code&gt;package.py&lt;/code&gt; file per
+package with installation instructions, plus optional .patch-files alongside.&lt;/p&gt;
+
+&lt;p&gt;For composing package files the developers introduce what looks like
+handy on-top-of-python-DSL. Creation of a Spack script for conventionally
+well-written software package with e.g. CMake or Autotools is easy,
+but even archaic regex-processing of makefiles is also
+&lt;a href=&quot;https://spack.readthedocs.io/en/latest/packaging_guide.html#file-manipulation-functions&quot; &gt;doable&lt;/a&gt;
+within Spack definitions. Installation phases like &lt;code&gt;configure&lt;/code&gt;,
+&lt;code&gt;build&lt;/code&gt;, &lt;code&gt;install&lt;/code&gt; are explicitly marked (more on their roles later).&lt;/p&gt;
+
+&lt;p&gt;Given that, what project maintainers might want to have are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;a fork of Spack&#039;s official &lt;a href=&quot;git@github.com:spack/spack.git&quot; &gt;git repo&lt;/a&gt;
+   with changes meant to be pushed upstream for the benefit of
+   the research society;&lt;/li&gt;
+&lt;li&gt;small private repositories that replicate the structure of packages
+   with experimental features not yet to be publicly available.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;The &lt;code&gt;dev-build&lt;/code&gt; command&lt;/h2&gt;
+
+&lt;p&gt;One way to improve the documentation of Spack would be to introduce
+its &lt;code&gt;dev-build&lt;/code&gt; command to the reader as soon as possible. Because
+turns out that it is THE ultimate command for package writing.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;spack dev-build ...&lt;/code&gt; should be called from the downloaded software&#039;s
+codebase root. First, it allows for incremental build attempts up to a
+certain installation phase with &lt;code&gt;--until=&lt;/code&gt; flag. This allows to test
+your new package file gradually, phase after phase, with less garbage
+and in a better way than &lt;code&gt;spack install --keep-stage&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Second, all the dependencies for the package would be valid Spack
+dependencies.&lt;/p&gt;
+
+&lt;p&gt;Finally, it allows installation of local codebases under fictional
+version names, that might not be even listed under &lt;code&gt;version&lt;/code&gt;
+directives in the package!&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://spack.readthedocs.io/en/latest/workflows.html#developing-software-with-spack&quot; &gt;developer workflow&lt;/a&gt;
+in the docs is in my opinion misleading.
+It is focused on the use of &lt;code&gt;CMake&lt;/code&gt; setup that can bypass the
+lack of software build environment
+(remember one of the key features of Spack,
+allowing conflicting builds under one roof?).
+This, however, makes little sense if one is using an isolated
+compilation command, for example, in the text editor of choice.&lt;/p&gt;
+
+&lt;p&gt;Spack integrates module activation support and can load spec
+dependencies&#039; modules as well with &lt;code&gt;-r&lt;/code&gt;/&lt;code&gt;--dependencies&lt;/code&gt; flag.
+For my emacs + projectile the &lt;code&gt;.dir-locals&lt;/code&gt; file for recompilarion of
+e.g. Siesta binary looks like this:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;projectile-project-compilation-dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Obj/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;projectile-project-compilation-cmd&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+   &lt;span class=&quot;s&quot;&gt;&amp;quot;spack load gcc &amp;amp;&amp;amp;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;spack load mpi &amp;amp;&amp;amp;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;spack load -r siesta@fake &amp;amp;&amp;amp;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;make &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Only compiler and mpi-metapackage need to be load explicitly, the rest
+of the deps are activated via single &lt;code&gt;spack load -r siesta@fake&lt;/code&gt;
+directive, where &amp;quot;fake&amp;quot; would be a fictional version name for
+&lt;code&gt;dev-build&lt;/code&gt; command. And this becomes a standard template I use for
+all software that is maintained with help of Spack.&lt;/p&gt;
+
+&lt;h2&gt;Spack for Siesta project&lt;/h2&gt;
+
+&lt;p&gt;At the moment of writing I have a fork with fixed Atom
+pseudopotential-files generator and Siesta (LibGridXC + PSML support
+enabeled) in the &lt;code&gt;siesta-dft&lt;/code&gt; branch of
+&lt;a href=&quot;https://github.com/vdikan/spack/tree/siesta-dft&quot; &gt;my fork of Spack&lt;/a&gt;.
+In case it proves useful on our clusters, these updates will be
+polished and pull-requested rather soon. Otherwise I will continue
+editing them on my own and make a pull request when ready.&lt;/p&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy
