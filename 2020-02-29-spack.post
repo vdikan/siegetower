@@ -24,3 +24,88 @@ for actual *code development* in the chaos vortex of academic &
 research software.
 
 <!--more-->
+
+## Custom Repositories
+
+First of all, managing dependencies, even secret ones, for a project
+in development is straightforward with Spack since it allows to have
+extra [package repositories](https://spack.readthedocs.io/en/latest/repositories.html)
+that *shadow* the default `builtin` package repo. This custom
+repository structure is same as default's: one `package.py` file per
+package with installation instructions, plus optional .patch-files alongside.
+
+For composing package files the developers introduce what looks like
+handy on-top-of-python-DSL. Creation of a Spack script for conventionally
+well-written software package with e.g. CMake or Autotools is easy,
+but even archaic regex-processing of makefiles is also
+[doable](https://spack.readthedocs.io/en/latest/packaging_guide.html#file-manipulation-functions)
+within Spack definitions. Installation phases like `configure`,
+`build`, `install` are explicitly marked (more on their roles later).
+
+Given that, what project maintainers might want to have are:
+
+1. a fork of Spack's official [git repo](git@github.com:spack/spack.git)
+   with changes meant to be pushed upstream for the benefit of
+   the research society;
+2. small private repositories that replicate the structure of packages
+   with experimental features not yet to be publicly available.
+
+## The `dev-build` command
+
+One way to improve the documentation of Spack would be to introduce
+its `dev-build` command to the reader as soon as possible. Because
+turns out that it is THE ultimate command for package writing.
+
+`spack dev-build ...` should be called from the downloaded software's
+codebase root. First, it allows for incremental build attempts up to a
+certain installation phase with `--until=` flag. This allows to test
+your new package file gradually, phase after phase, with less garbage
+and in a better way than `spack install --keep-stage`.
+
+Second, all the dependencies for the package would be valid Spack
+dependencies.
+
+Finally, it allows installation of local codebases under fictional
+version names, that might not be even listed under `version`
+directives in the package!
+
+The [developer workflow](https://spack.readthedocs.io/en/latest/workflows.html#developing-software-with-spack)
+in the docs is in my opinion misleading.
+It is focused on the use of `CMake` setup that can bypass the
+lack of software build environment
+(remember one of the key features of Spack,
+allowing conflicting builds under one roof?).
+This, however, makes little sense if one is using an isolated
+compilation command, for example, in the text editor of choice.
+
+Spack integrates module activation support and can load spec
+dependencies' modules as well with `-r`/`--dependencies` flag.
+For my emacs + projectile the `.dir-locals` file for recompilarion of
+e.g. Siesta binary looks like this:
+
+```elisp
+((nil
+  (projectile-project-compilation-dir . "Obj/")
+  (projectile-project-compilation-cmd
+   .
+   "spack load gcc &&
+spack load mpi &&
+spack load -r siesta@fake &&
+make ")))
+```
+
+Only compiler and mpi-metapackage need to be load explicitly, the rest
+of the deps are activated via single `spack load -r siesta@fake`
+directive, where "fake" would be a fictional version name for
+`dev-build` command. And this becomes a standard template I use for
+all software that is maintained with help of Spack.
+
+## Spack for Siesta project
+
+At the moment of writing I have a fork with fixed Atom
+pseudopotential-files generator and Siesta (LibGridXC + PSML support
+enabeled) in the `siesta-dft` branch of
+[my fork of Spack](https://github.com/vdikan/spack/tree/siesta-dft).
+In case it proves useful on our clusters, these updates will be
+polished and pull-requested rather soon. Otherwise I will continue
+editing them on my own and make a pull request when ready.
