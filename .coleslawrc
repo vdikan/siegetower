@@ -18,6 +18,7 @@
            (sitemap)
            (static-pages)
            (pygments)
+           (3bmd-youtube)
            ;; deployment plugins
            ;; deployment to github pages
            (gh-pages :url "git@github.com:vdikan/siegetower.git"
