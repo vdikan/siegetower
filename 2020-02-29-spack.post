@@ -1,6 +1,6 @@
 ;;;;;
 title: Developing with Spack
-tags: en, toolbox
+tags: en, toolbox, siesta
 date: 2020-02-29
 format: md
 ;;;;;
@@ -83,7 +83,7 @@ dependencies' modules as well with `-r`/`--dependencies` flag.
 For my emacs + projectile the `.dir-locals` file for recompilarion of
 e.g. Siesta binary looks like this:
 
-```elisp
+```elisp|linenos=1
 ((nil
   (projectile-project-compilation-dir . "Obj/")
   (projectile-project-compilation-cmd
