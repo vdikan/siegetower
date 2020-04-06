@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 21 Mar 2020 17:26:41 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Developing-with-Spack.html"/> <title>Developing with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 06 Apr 2020 04:04:30 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Developing-with-Spack.html"/> <title>Developing with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
 efficient way out: &lt;a href=&quot;https://spack.io&quot; &gt;&lt;strong&gt;Spack&lt;/strong&gt;&lt;/a&gt;, initially
 &lt;a href=&quot;https://computing.llnl.gov/projects/spack-hpc-package-manager&quot; &gt;established at Lawrence Livermore&lt;/a&gt;
 and actively community-supported manager of program packages and
@@ -77,7 +77,14 @@ compilation command, for example, in the text editor of choice.&lt;/p&gt;
 &lt;p&gt;Spack integrates module activation support and can load spec
 dependencies&#039; modules as well with &lt;code&gt;-r&lt;/code&gt;/&lt;code&gt;--dependencies&lt;/code&gt; flag.
 For my emacs + projectile the &lt;code&gt;.dir-locals&lt;/code&gt; file for recompilarion of
-e.g. Siesta binary looks like this:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
+e.g. Siesta binary looks like this:&lt;/p&gt;&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;projectile-project-compilation-dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Obj/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;projectile-project-compilation-cmd&lt;/span&gt;
    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
@@ -86,7 +93,7 @@ e.g. Siesta binary looks like this:&lt;/p&gt;&lt;div class=&quot;highlight&quot;
 &lt;span class=&quot;s&quot;&gt;spack load -r siesta@fake &amp;amp;&amp;amp;&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;make &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 &lt;p&gt;Only compiler and mpi-metapackage need to be load explicitly, the rest
 of the deps are activated via single &lt;code&gt;spack load -r siesta@fake&lt;/code&gt;

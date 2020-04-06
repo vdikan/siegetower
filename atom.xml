@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 21 Mar 2020 17:26:41 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html"/> <title>Видеописьма Живого Сверхчеловека</title> <published>2020-03-21</published> <updated>2020-03-21</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;&lt;em&gt;Киностудия &amp;quot;Ленфильм&amp;quot; представляет:&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 06 Apr 2020 04:04:30 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html"/> <title>Видеописьма Живого Сверхчеловека</title> <published>2020-03-21</published> <updated>2020-03-21</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;&lt;em&gt;Киностудия &amp;quot;Ленфильм&amp;quot; представляет:&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;В 21-м столетии человечество проиграло войну невидимому противнику.
 Немногие выжившие несчастные в страхе и отчаянии бегут из покинутых
@@ -133,7 +133,14 @@ compilation command, for example, in the text editor of choice.&lt;/p&gt;
 &lt;p&gt;Spack integrates module activation support and can load spec
 dependencies&#039; modules as well with &lt;code&gt;-r&lt;/code&gt;/&lt;code&gt;--dependencies&lt;/code&gt; flag.
 For my emacs + projectile the &lt;code&gt;.dir-locals&lt;/code&gt; file for recompilarion of
-e.g. Siesta binary looks like this:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
+e.g. Siesta binary looks like this:&lt;/p&gt;&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;projectile-project-compilation-dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Obj/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;projectile-project-compilation-cmd&lt;/span&gt;
    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
@@ -142,7 +149,7 @@ e.g. Siesta binary looks like this:&lt;/p&gt;&lt;div class=&quot;highlight&quot;
 &lt;span class=&quot;s&quot;&gt;spack load -r siesta@fake &amp;amp;&amp;amp;&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;make &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 &lt;p&gt;Only compiler and mpi-metapackage need to be load explicitly, the rest
 of the deps are activated via single &lt;code&gt;spack load -r siesta@fake&lt;/code&gt;

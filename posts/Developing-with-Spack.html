@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en"> <head> <title>Ivory Siege Tower</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="//fonts.googleapis.com/css?family=PT Mono:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" /> <link href= "https://www.ivorysiegetower.com/css/style.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://www.ivorysiegetower.com/rss.xml" type="application/rss+xml" />  </head> <body> <div class="navigation"> <a href="https://www.ivorysiegetower.com">Ivory Siege Tower</a> |  </div> <div id="content"> <div class="article-meta">
+<html lang="en"> <head> <title>Ivory Siege Tower</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="//fonts.googleapis.com/css?family=PT Mono:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" /> <link href= "https://www.ivorysiegetower.com/css/style.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://www.ivorysiegetower.com/rss.xml" type="application/rss+xml" />  </head> <body> <div class="navigation"> <div class="nav_logo"></div> <div class="nav_title"> <a href="https://www.ivorysiegetower.com">Ivory Siege Tower</a> </div> <div class="nav_refs"></div> <div class="nav_sides"> <div class="side_en" title="Good Side" onclick="window.location='https://www.ivorysiegetower.com/tag/en.html';"> <span>En</span> </div> <div class="side_ru" title="Dark Side" onclick="window.location='https://www.ivorysiegetower.com/tag/ru.html';"> <span>Ru</span> </div> </div> <div class="nav_sitenav">  </div> </div> <div id="content"> <div class="article-meta">
 <h1 class="title">Developing with Spack</h1>
 <div class="tags">
-Tagged as <a href="https://www.ivorysiegetower.com/tag/en.html">en</a>, <a href="https://www.ivorysiegetower.com/tag/toolbox.html">toolbox</a> </div>
+Tagged as <a href="https://www.ivorysiegetower.com/tag/en.html">en</a>, <a href="https://www.ivorysiegetower.com/tag/toolbox.html">toolbox</a>, <a href="https://www.ivorysiegetower.com/tag/siesta.html">siesta</a> </div>
 <div class="date">
 Written on 2020-02-29 </div>
 </div>
@@ -85,7 +85,14 @@ compilation command, for example, in the text editor of choice.</p>
 <p>Spack integrates module activation support and can load spec
 dependencies' modules as well with <code>-r</code>/<code>--dependencies</code> flag.
 For my emacs + projectile the <code>.dir-locals</code> file for recompilarion of
-e.g. Siesta binary looks like this:</p><div class="highlight"><pre><span></span><span class="p">((</span><span class="no">nil</span>
+e.g. Siesta binary looks like this:</p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">((</span><span class="no">nil</span>
   <span class="p">(</span><span class="nv">projectile-project-compilation-dir</span> <span class="o">.</span> <span class="s">&quot;Obj/&quot;</span><span class="p">)</span>
   <span class="p">(</span><span class="nv">projectile-project-compilation-cmd</span>
    <span class="o">.</span>
@@ -94,7 +101,7 @@ e.g. Siesta binary looks like this:</p><div class="highlight"><pre><span></span>
 <span class="s">spack load -r siesta@fake &amp;&amp;</span>
 <span class="s">make &quot;</span><span class="p">)))</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Only compiler and mpi-metapackage need to be load explicitly, the rest
 of the deps are activated via single <code>spack load -r siesta@fake</code>
@@ -116,4 +123,4 @@ editing them on my own and make a pull request when ready.</p>
 <a href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html">Previous</a><br>
 <a href="https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html">Next</a><br>
 </div>
- </div>  <div class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"> <img alt="Creative Commons License" style="border-width:0" src="https://www.ivorysiegetower.com/css/cc-by-sa.png" /> </a> by Vladimir Dikan </br> Powered by <a href="https://github.com/coleslaw-org/coleslaw">Coλeslaw</a>. </div> </body> </html>
+ </div>  <div class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"> <img alt="Creative Commons License" style="border-width:0" src="https://www.ivorysiegetower.com/css/cc-by-sa.png" /> </a> by Vladimir Dikan. </br> Powered by <a href="https://github.com/coleslaw-org/coleslaw">Coλeslaw</a>. Design elements' artwork created with <a href="https://ephtracy.github.io">MagicaVoxel</a>. </div> </body> </html>
