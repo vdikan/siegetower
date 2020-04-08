@@ -1,5 +1,41 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 06 Apr 2020 22:47:12 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html"/> <title>Видеописьма Живого Сверхчеловека</title> <published>2020-03-21</published> <updated>2020-03-21</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;&lt;em&gt;Киностудия &amp;quot;Ленфильм&amp;quot; представляет:&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Thu, 09 Apr 2020 01:52:00 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Журнал-строительства-1-Чертеж.html"/> <title>Журнал строительства #1: Чертеж</title> <published>2020-04-08</published> <updated>2020-04-08</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Если ты возвел замки из воздуха, твоя работа не была напрасной:
+воздушным замкам место в облаках.
+Осталось только подвести под них фундамент.&lt;/p&gt;
+
+&lt;p&gt;-- &lt;em&gt;Генри Дэвид Торо&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/20200408_parchment_sketch.jpg&quot; alt=&quot;План апгрейда Башни на старинном пергаменте&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В разгар карантина осады не ведутся, есть возможность навести порядок.
+Cкинуть мусор с верхних этажей, подкрасить крышу, перебрать детали
+двигателя и набросать схему модернизации боевого дома на колесах.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Планов громадье: первым делом будут трекеры книг и статей. Уже есть
+идеи как это сделать технически, только до конца не ясно, как в случае
+со статьями автоматом перелинковывать цитирования. Вместе с блогом это
+будут три основных раздела, дополняемые страницами проектов и
+полезностей. И CV, разумеется CV. Правда расчет на то, что
+впечатлительным благородным донам, не чуждым иронии и прекрасного,
+далекий силуэт осадной башни уже должен напоминать витающий
+куррикулум. Для менее впечатлительных есть ссылка на Линкедин где мое
+фото в костюме.&lt;/p&gt;
+
+&lt;p&gt;Блог уже органично поделился на &amp;quot;Светлую&amp;quot; и &amp;quot;Темную&amp;quot; стороны по
+языковой принадлежности постов, изменений тут не предвидится. Думаю,
+понятно, на какой стороне больше рабочих заметок, а где - странного :)&lt;/p&gt;
+
+&lt;p&gt;Удобно оказалось кстати, что движок с минимумом настроек генерит RSS
+для каждого тега. Люди фидлент уже не читают, но их (ленты, не людей)
+можно скармливать ботам. Один бот уже висит на RaspberryPi и репостит
+странное в Телеграм.&lt;/p&gt;
+
+&lt;p&gt;В пределе будет свое, уютное, осадное пространство смыслов.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html"/> <title>Видеописьма Живого Сверхчеловека</title> <published>2020-03-21</published> <updated>2020-03-21</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;&lt;em&gt;Киностудия &amp;quot;Ленфильм&amp;quot; представляет:&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;В 21-м столетии человечество проиграло войну невидимому противнику.
 Немногие выжившие несчастные в страхе и отчаянии бегут из покинутых
@@ -229,6 +265,6 @@ here I briefly show the looks of my own setup in &lt;code&gt;Emacs&lt;/code&gt;
 
 &lt;p&gt;Instead I&#039;ll just leave here a picture of my Sunday morning newspaper.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/20200209_morning_post.jpg&quot; alt=&quot;alt text&quot; /&gt; &lt;br/&gt;
+&lt;p&gt;&lt;img src=&quot;/static/20200209_morning_post.jpg&quot; alt=&quot;Newspaper and coffee&quot; /&gt; &lt;br/&gt;
 &lt;em&gt;Morning post. Canvas, oil, emacs.&lt;/em&gt;&lt;/p&gt;
 </content> </entry> </feed>

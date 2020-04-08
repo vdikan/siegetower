@@ -1,5 +1,41 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 06 Apr 2020 22:47:12 +0200</pubDate> <item> <title>Видеописьма Живого Сверхчеловека</title> <link>https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html</link> <pubDate>2020-03-21</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html</guid> <category><![CDATA[ ru ]]></category> <description><![CDATA[ <p><em>Киностудия &quot;Ленфильм&quot; представляет:</em></p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Thu, 09 Apr 2020 01:52:00 +0200</pubDate> <item> <title>Журнал строительства #1: Чертеж</title> <link>https://www.ivorysiegetower.com/posts/Журнал-строительства-1-Чертеж.html</link> <pubDate>2020-04-08</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Журнал-строительства-1-Чертеж.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ siegetower ]]></category> <description><![CDATA[ <blockquote>
+<p>Если ты возвел замки из воздуха, твоя работа не была напрасной:
+воздушным замкам место в облаках.
+Осталось только подвести под них фундамент.</p>
+
+<p>-- <em>Генри Дэвид Торо</em></p>
+</blockquote>
+
+<p><img src="/static/20200408_parchment_sketch.jpg" alt="План апгрейда Башни на старинном пергаменте" /></p>
+
+<p>В разгар карантина осады не ведутся, есть возможность навести порядок.
+Cкинуть мусор с верхних этажей, подкрасить крышу, перебрать детали
+двигателя и набросать схему модернизации боевого дома на колесах.</p>
+
+<!--more-->
+
+<p>Планов громадье: первым делом будут трекеры книг и статей. Уже есть
+идеи как это сделать технически, только до конца не ясно, как в случае
+со статьями автоматом перелинковывать цитирования. Вместе с блогом это
+будут три основных раздела, дополняемые страницами проектов и
+полезностей. И CV, разумеется CV. Правда расчет на то, что
+впечатлительным благородным донам, не чуждым иронии и прекрасного,
+далекий силуэт осадной башни уже должен напоминать витающий
+куррикулум. Для менее впечатлительных есть ссылка на Линкедин где мое
+фото в костюме.</p>
+
+<p>Блог уже органично поделился на &quot;Светлую&quot; и &quot;Темную&quot; стороны по
+языковой принадлежности постов, изменений тут не предвидится. Думаю,
+понятно, на какой стороне больше рабочих заметок, а где - странного :)</p>
+
+<p>Удобно оказалось кстати, что движок с минимумом настроек генерит RSS
+для каждого тега. Люди фидлент уже не читают, но их (ленты, не людей)
+можно скармливать ботам. Один бот уже висит на RaspberryPi и репостит
+странное в Телеграм.</p>
+
+<p>В пределе будет свое, уютное, осадное пространство смыслов.</p>
+ ]]></description> </item><item> <title>Видеописьма Живого Сверхчеловека</title> <link>https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html</link> <pubDate>2020-03-21</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Видеописьма-Живого-Сверхчеловека.html</guid> <category><![CDATA[ ru ]]></category> <description><![CDATA[ <p><em>Киностудия &quot;Ленфильм&quot; представляет:</em></p>
 
 <p>В 21-м столетии человечество проиграло войну невидимому противнику.
 Немногие выжившие несчастные в страхе и отчаянии бегут из покинутых
@@ -229,6 +265,6 @@ here I briefly show the looks of my own setup in <code>Emacs</code>
 
 <p>Instead I'll just leave here a picture of my Sunday morning newspaper.</p>
 
-<p><img src="/static/20200209_morning_post.jpg" alt="alt text" /> <br/>
+<p><img src="/static/20200209_morning_post.jpg" alt="Newspaper and coffee" /> <br/>
 <em>Morning post. Canvas, oil, emacs.</em></p>
  ]]></description> </item> </channel> </rss>
