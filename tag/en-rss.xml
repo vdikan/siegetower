@@ -1,5 +1,78 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Wed, 29 Apr 2020 14:43:33 +0200</pubDate> <item> <title>Developing with Spack</title> <link>https://www.ivorysiegetower.com/posts/Developing-with-Spack.html</link> <pubDate>2020-02-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Developing-with-Spack.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ siesta ]]></category> <description><![CDATA[ <p>The man-made Hell of dependencies management in HPC software has an
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 04 May 2020 02:05:57 +0200</pubDate> <item> <title>An Interactive Haven</title> <link>https://www.ivorysiegetower.com/posts/An-Interactive-Haven.html</link> <pubDate>2020-04-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/An-Interactive-Haven.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ 
+<p> Recently I took part in a <a href="https://www.cecam.org/workshop-details/986" >discussion</a>
+organized by CECAM<a href="#interactive-haven-1" >[1]</a>
+on the topic of Digital Learning, a subject which <em>all of a sudden</em> became
+critical to all the educational institutions. Of course there was a
+section on adaptation of existing courseware to remote learning
+formats. With opinions on difficulties to follow, grade and adapt to
+e-learning. And a traditional certain skepticism expressed on
+technologies that fail to create revolutions in education.</p>
+
+<p>I agree on that, it's hard to imagine a revolt in internal thinking
+process by mere upgrade in the educational media. But certain
+breakthroughs <s><em>can</em> be achieved with modern technologies.</s>
+False. They <em>are</em> already present, with help of tech that is decades
+old.</p>
+
+<p>J.L.Borges pictured us books as labyrinths of symbols.
+He dreamed of libraries as an infinite combinatorial symbolic spaces,
+where all texts of natural languages are present - even those yet to
+be written. One can develop artistic writing skills by
+  navigating and extending such a labyrinth -
+  still incomplete yet already enormously large.
+  Guides help to speed up learning, teaching
+helps to faster build a decent taste, but the labyrinth of fiction is
+self-contained, and lacks dreadful &quot;motivation problem&quot; if the goal
+also is placed within the walls, in a distant but observable section.
+  A laboratory rat<a href="#interactive-haven-2" >[2]</a> that senses cheese
+  learns to find it faster every next time.</p>
+
+<p>
+  Programming allows us to build extensible interactive environments for
+  symbolic formalisms. <code>Maxima</code> and <code>Wolfram Mathematica</code>
+  are both great examples, it's hard to find any better for illustration purposes.
+  But there are more. The infamous
+  <a href="https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs">SICP</a>
+  book has a <a href="https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html">younger sister</a>
+  also authored by G.J. Sussman.
+  It is backed up with Scheme language environment<a href="#interactive-haven-3" >[3]</a>
+  that implements core Classical Mechanics formalism and allows readers to
+  simulate described examples - or their own. A popular online course
+  <a href="https://www.nand2tetris.org/">NAND2Tetris</a>
+  ships a Verilog-like simplified HDL and its testing grounds in order to let
+  students describe electronic components and simulate bigger systems using these custom gates.</p>
+
+<p>
+  These examples do not embody something breaking new neither in
+  educational principles not in the underlying implementations
+  (those have been
+  <a href="https://github.com/norvig/paip-lisp/blob/master/docs/chapter8.md">developed</a>
+  a while ago as computer algebra systems).
+  However, they demonstrate live reconstruction of labyrinths from Borges's dreams.
+  One should just realize that building such an interactive haven,
+  as much as exploring its dark waters, is tough.
+  But Hell, how rewarding can it be!
+</p>
+
+<hr/>
+
+<p id="interactive-haven-1">
+[1] As the title suggests, they organize many events around Atomic &amp; Molecular Simulations
+</p>
+
+<p id="interactive-haven-2">
+  [2] In no way an offensive comparison. Rats are adorable and smart.
+  I used to own a pet rat a while ago. The biggest disenchantment is their short lifespan.
+</p>
+
+<p id="interactive-haven-3">
+  [3] Outside MIT the most suitable port
+  <a href="https://news.ycombinator.com/item?id=9007467">seems</a> to be
+  <a href="https://www.cs.rochester.edu/~gildea/guile-scmutils/">the one</a>
+  I'm tinkering with now, based on Guile Scheme.
+</p>
+ ]]></description> </item><item> <title>Developing with Spack</title> <link>https://www.ivorysiegetower.com/posts/Developing-with-Spack.html</link> <pubDate>2020-02-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Developing-with-Spack.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ siesta ]]></category> <description><![CDATA[ <p>The man-made Hell of dependencies management in HPC software has an
 efficient way out: <a href="https://spack.io" ><strong>Spack</strong></a>, initially
 <a href="https://computing.llnl.gov/projects/spack-hpc-package-manager" >established at Lawrence Livermore</a>
 and actively community-supported manager of program packages and
