@@ -1,5 +1,17 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 04 May 2020 17:24:10 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/An-Interactive-Haven.html"/> <title>An Interactive Haven</title> <published>2020-04-29</published> <updated>2020-04-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 30 May 2020 15:05:13 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Часть-команды-часть-корабля.html"/> <title>Часть команды, часть корабля</title> <published>2020-05-30</published> <updated>2020-05-30</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+&lt;p&gt;
+  У группы вышла &lt;a href=&quot;https://doi.org/10.1063/5.0005077&quot;&gt;статья&lt;/a&gt; про обновления в &lt;strong&gt;SIESTA&lt;/strong&gt; и вокруг нее. Там сказано, в том числе, про поддержку различных DFT-формализмов, внешних солверов, NC-псевдопотенциалов в переносимом PSML-формате.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Мой вклад в скучной &quot;софтверной&quot; части касается AiiDA и &lt;strong&gt;computational workflows&lt;/strong&gt;, что по-русски переводится как &lt;strong&gt;data processing pipelines&lt;/strong&gt;, где &quot;processing&quot; делают наши вычислительные &quot;черные ящики&quot;. Это даже не наука, в общем, а скорее &quot;организация науного процесса&quot;. Работа эта на определенном эапе была передана коллеге (он тоже в длинном паравозе авторов), я же вплотную занялся вкорячиванием новой методики в &quot;Сиесту&quot;, параллельно пиля свою легкую и шуструю воркфлоу-системку.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Скоро появятся первые результаты... например, меня уволят :)
+&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/An-Interactive-Haven.html"/> <title>An Interactive Haven</title> <published>2020-04-29</published> <updated>2020-04-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt; Recently I took part in a &lt;a href=&quot;https://www.cecam.org/workshop-details/986&quot; &gt;discussion&lt;/a&gt;
 organized by CECAM&lt;a href=&quot;#interactive-haven-1&quot; &gt;[1]&lt;/a&gt;
 on the topic of Digital Learning, a subject which &lt;em&gt;all of a sudden&lt;/em&gt; became
