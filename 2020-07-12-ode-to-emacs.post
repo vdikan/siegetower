@@ -1,0 +1,111 @@
+;;;;;
+title: An Ode to Emacs
+tags: en, emacs
+date: 2020-07-12
+format: html
+;;;;;
+
+<p>
+  A rare <em>positive</em> result of the lockdown - increased friendship
+  towards my editor of choice. After explaining configuration basics to
+  a friend another day I think I can finally formulate what clings me to
+  this <s>ancient</s> everlasting piece of software.
+</p>
+
+<!--more-->
+
+<h2>Code</h2>
+
+<p> Well, yeah, first reason: code developing tool. Major modes for almost
+  everything that deserves a title of programming / scripting / markup
+  language out there. But not only. </p>
+
+<p>Take Language Server Protocol for introspection where you did not
+  expect any. Projectile and magit to manage the state of the project.
+  Building tools, some of them are built-in into vanilla emacs. </p>
+
+<p>Then, amidst the lockdown madness, find out that all of this works on
+remote machines too through TRAMP. Yes, the same accurately assembled
+editing environment. Awesome, isn't it?</p>
+
+<h2>Compose</h2>
+
+<p>Skipping the obvious (autocompletions, spellchecking, etc): Org-mode.
+Now a built-in part of vanilla Emacs, it's the greatest
+get-things-not-forgotten tool. It powers my private log, work and
+accounting notes and literally any documentation set that I do
+compose.</p>
+
+<p>It does not power this static blog for reasons I cannot well explain.
+Somehow I thought that tweaking a different static site generator
+would be faster than making Org export look fine and not at all
+crappy. I still think so by the way.</p>
+
+<p>One distinct remarkable feature of org-mode is a support for fashy
+<em>literate programming</em> in the most literate way. Not only does
+org-babel have a big number of supported languages for source blocks
+- one can also join them in pipes.<a href="#ode-emacs-1">[1]</a>
+Even those that need compilation!
+I one can feed an output of a C-block as an output to a Fortran-block
+within a scope of one document.
+This is possible because the medium here is the
+contents of the document itself, not the state of underlying
+interpreter "kernel".<a href="#ode-emacs-2">[2]</a>
+</p>
+
+<h2>Communicate</h2>
+
+<p>Mu4e for emails, telega.el for Telegram. Those cover the majority of
+the daily communications I do at the moment.</p>
+
+<p>Most of other media accounts can be accessed through bitlbee + erc.
+The list is impressive, including Skype, Fb, Discord and Steam.
+Ideal to keep all this social rubbish in one place for chatting over
+weekends.</p>
+
+<h2>Dark secrets revealed</h2>
+
+<p>If you are looking for the &quot;dark secret of emacs&quot;, I can name a couple.</p>
+
+<p>
+  The first one lies in the prodigious extensiveness of the editor by
+  design, which, over time, led to a series of really good plugins that
+  have a great level of synergy among themselves. I list some examples
+  above. Together they aid me with three daily activities: Coding, Composing
+  and Communicating - within one universal editor.
+</p>
+
+<p>
+  Why does it matter?
+  The answer is, of course, all of these tasks deal with manipulation of
+  <em>textual</em> data. And a second glance on it reveals that emacs
+  to date is maybe the best textual UI tool. Some push this idea to extreme,
+  somewhat materializing the famous joke about an "OS without a proper
+  editor".
+</p>
+
+<p>
+  I am not THAT zealous, but myself I find useful unifying
+  the text-processing tasks. Being able to store an IM conversation
+  branch as a diary entry, email the bibtex citations to colleagues
+  and blog about all this without leaving an editor's window may sound
+  like an overkill, but after a while it feels quite essential. It's
+  all text after all!
+</p>
+
+<p>
+  Emacs has it's flaws and legacy anchors. It is not perfect, let's say
+  it is just very good. Or "the worst editor out there, except for the
+  rest ones", if you prefer.
+</p>
+
+<hr/>
+
+<p id="ode-emacs-1">
+[1] John Kitchin showed another method, with tangling and linking
+through a makefile.
+</p>
+
+<p id="ode-emacs-2">
+[2] Though <code>session</code> can often be specified where it makes sense.
+</p>
