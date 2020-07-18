@@ -1,5 +1,174 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sat, 30 May 2020 16:11:48 +0200</pubDate> <item> <title>Часть команды, часть корабля</title> <link>https://www.ivorysiegetower.com/posts/Часть-команды-часть-корабля.html</link> <pubDate>2020-05-30</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Часть-команды-часть-корабля.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ siesta ]]></category> <description><![CDATA[ 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sat, 18 Jul 2020 16:45:48 +0200</pubDate> <item> <title>An Ode to Emacs</title> <link>https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</link> <pubDate>2020-07-12</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
+<p>
+  A rare <em>positive</em> result of the lockdown - increased friendship
+  towards my editor of choice. After explaining configuration basics to
+  a friend another day I think I can finally formulate what clings me to
+  this <s>ancient</s> everlasting piece of software.
+</p>
+
+<!--more-->
+
+<h2>Code</h2>
+
+<p>
+  Well, yeah, first reason: code developing tool. Major modes for almost
+  everything that deserves a title of programming / scripting / markup
+  language out there. But not only.
+</p>
+
+<p>
+  Take <a href="https://emacs-lsp.github.io/lsp-mode/">Language Server Protocol</a>
+  for introspection where you did not expect any.
+  <a href="https://github.com/bbatsov/projectile">Projectile</a>
+  and <a href="https://magit.vc/">magit</a>
+  to manage the state of the project.
+  Even in vanilla emacs there are handy tools for development, including
+  <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">local variables</a>
+  and
+  <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Version-Control.html">version control</a>
+  (useful for versioning systems other than git).
+</p>
+
+<p>
+  Then, amidst the lockdown madness, find out that all of this works on
+  remote machines too through
+  <a href="https://www.emacswiki.org/emacs/TrampMode">TRAMP</a>.
+  Yes, the same precious editing environment that took you so much effort to assemble.
+  Awesome, isn't it?
+</p>
+
+<h2>Compose</h2>
+
+<p>
+  Skipping the obvious (autocompletions, spellchecking, etc):
+  <a href="https://orgmode.org/">Org-mode</a>.
+  Now a built-in part of vanilla Emacs, it's the greatest
+  get-things-not-forgotten tool. It powers my private log, work and
+  accounting notes and literally any documentation set that I compose.
+</p>
+
+<p>
+  It does not power this static blog for reasons I cannot well explain.
+  Somehow I thought that tweaking a different static site generator
+  would be faster than making Org export look fine and not at all
+  crappy. I still do think so by the way.<a href="#ode-emacs-1">[1]</a>
+</p>
+
+<p>
+  One distinct remarkable feature of org-mode is a support for fashy
+  <em>literate programming</em> in the most literate way. Not only does
+  <a href="https://orgmode.org/worg/org-contrib/babel/">org-babel</a>
+  have a big number of supported languages for source blocks
+  - one can also join them in pipes.<a href="#ode-emacs-2">[2]</a>
+  Even those that need compilation!
+  I one can feed an output of a C-block as an output to a Fortran-block
+  within a scope of one document.
+  This is possible because the medium here is the
+  contents of the document itself, not the state of underlying
+  interpreter "kernel".<a href="#ode-emacs-3">[3]</a>
+</p>
+
+<p>
+  And of course for a researcher it is hard to find better citation system
+  than John Kitchin's <a href="https://github.com/jkitchin/org-ref">org-ref</a>.
+  It allows one to build her own collection of papers that is visible in
+  org-mode buffers for note-taking and draft-editing. Charming!
+</p>
+
+<h2>Communicate</h2>
+
+<p>
+  <a href="https://www.djcbsoftware.nl/code/mu/mu4e/">Mu4e</a> for emails,
+  <a href="https://github.com/zevlg/telega.el">telega.el</a> for Telegram.
+  Those cover the majority of the daily communications I do at the moment.
+</p>
+
+<p>
+  Most of other media accounts can be accessed through
+  <a href="https://www.bitlbee.org/main.php/news.r.html">bitlbee</a>
+  + <code>erc</code> (Emacs built-in IRC client).
+  The list is impressive, including Skype, Fb, Discord and Steam.
+  Ideal to keep all this social rubbish in one place for chatting over
+  weekends.
+</p>
+
+<p>
+  For those old-fashioned like me who still manage their lists of RSS subscriptions,
+  good news: no need to stop, since there is
+  <a href="https://github.com/skeeto/elfeed">elfeed</a>
+  and <code>elfeed-org</code>.<a href="#ode-emacs-4">[4]</a>
+  By the way, its author Chris Wellons writes an interesting
+  <a href="https://nullprogram.com/">blog</a>
+  about emacs' internals and other curious stuff.
+  A good candidate for your refreshed feedlist.
+</p>
+
+<h2>Dark secrets revealed</h2>
+
+<p>If you are looking for the &quot;dark secret of emacs&quot;, I can name a couple.</p>
+
+<p>
+  The first one lies in the prodigious extensiveness of the editor by
+  design, which, over time, led to a series of really good plugins that
+  have a great level of synergy among themselves. I list some examples
+  above. Together they aid me with three daily activities: Coding, Composing
+  and Communicating - within one universal editor.
+</p>
+
+<p>
+  Why does it matter?
+  The answer is, of course, all of these tasks deal with manipulation of
+  <em>textual</em> data. And a second glance on it reveals that emacs
+  to date is maybe the best textual UI tool. Some push this idea to
+  <a href="https://github.com/ch11ng/exwm">extreme limits</a>,
+  somewhat materializing the famous joke about an "OS without a proper
+  editor".
+</p>
+
+<p>
+  I am not THAT zealous, but myself I find useful unifying
+  the text-processing tasks. Being able to store an IM conversation
+  branch as a diary entry, email the bibtex citations to colleagues
+  and blog about all this without leaving an editor's window may sound
+  like an overkill, but after a while it feels quite essential. It's
+  all text after all!
+</p>
+
+<p>
+  Emacs has it's flaws and legacy anchors.
+  (My biggest personal regret is that it still uses a somewhat clumsy emacs lisp
+  language with some Common Lisp -like features instead of normal support for
+  CL-standard).
+  Yes, emacs is not perfect, let's say it is just very good.
+  Or "the worst editor out there, except for the rest ones", if you prefer.
+</p>
+
+<hr/>
+
+<p id="ode-emacs-1">
+  [1] Well, in fact I intentionally searched for (and found!)
+  a Common Lisp static blogging platform package,
+  because <a href="http://stumpwm.github.io/">StumpWM</a>.
+  But that is another story for another time, maybe...
+</p>
+
+<p id="ode-emacs-2">
+  [2] John Kitchin
+  <a href="https://kitchingroup.cheme.cmu.edu/blog/2014/02/04/Literate-programming-example-with-Fortran-and-org-mode/">showed</a>
+  another method, with tangling and linking through a makefile.
+</p>
+
+<p id="ode-emacs-3">
+  [3] Though <code>session</code> can often be specified where it makes sense.
+</p>
+
+<p id="ode-emacs-4">
+  [4] Myself I keep a setup of <code>emacs+elfeed</code> on my GameHat handheld,
+  <a href="https://www.ivorysiegetower.com/posts/Lets-go.html">"showcased"</a>
+  in the welcome post XD. That guy also deserves a story.
+</p>
+ ]]></description> </item><item> <title>Часть команды, часть корабля</title> <link>https://www.ivorysiegetower.com/posts/Часть-команды-часть-корабля.html</link> <pubDate>2020-05-30</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Часть-команды-часть-корабля.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ siesta ]]></category> <description><![CDATA[ 
 <p>
   У группы вышла <a href="https://doi.org/10.1063/5.0005077">статья</a> про обновления в <strong>SIESTA</strong> и вокруг нее. Там сказано, в том числе, про поддержку различных DFT-формализмов, внешних солверов, NC-псевдопотенциалов в переносимом PSML-формате.
 </p>
