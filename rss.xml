@@ -1,5 +1,262 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sat, 18 Jul 2020 16:45:48 +0200</pubDate> <item> <title>An Ode to Emacs</title> <link>https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</link> <pubDate>2020-07-12</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Thu, 20 Aug 2020 00:30:59 +0200</pubDate> <item> <title>My RPi Cyberpunk Info-Deck Console</title> <link>https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</link> <pubDate>2020-08-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ raspberry ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
+<p>
+  <img src="/static/rpi-info-deck/title-look.png"
+       alt="Info-Deck in the Underground of Neo-Sabadell"
+       style="border-radius: 8px; max-width: 640px;" />
+</p>
+
+<p>
+  A while ago I used to own an HP PocketPC device. Yep, that
+  pre-smartphone era handheld personal planner. It did not make me
+  very productive though, on the contrary, but there was definitely
+  something to it. An enthralling tactile sensation of hunting pixels
+  on the screen with a stylus pen - that kind of resistive screen one
+  has to hit hard - added to the fascination of surfing through
+  <b>teh personal knowledgebase</b> consisting
+  of FreeDict dictionaries, <code>.chm</code>-formatted textbooks and
+  Wikipedia snapshots. Back then all this treasure could fit on a 32Gb
+  SD-card.
+</p>
+
+<p style="font-style: italic;">
+  I guess dat muscle memory, as much as anything, is the reason I
+  obtained this monster.
+</p>
+
+<!--more-->
+
+<h1>The Chasis</h1>
+
+<p>
+  <img src="/static/rpi-info-deck/sec-metroid.png"
+       style="border-radius: 8px; max-height: 400px; width:auto;" />
+</p>
+
+<p>
+  This one (it goes by the hostname <code>mimir</code> for the reasons
+  explained later) is not a DIY device. I wanted a capable working
+  handheld more than I wanted to build one myself. The only physical
+  addition I made was a 3D-printed lid that covers the battery section
+  on the bottom. <br/>
+  (<mark>NOTE:</mark> need a similar one on the top)
+</p>
+
+<p>
+  Many commercial indie handhelds are built on top of Raspberry Pi ARM
+  boards or similar and sold for $100-$400.
+  But a board like that can do more than be just a host for a number of
+  retro console emulators. The <b>creative tweaking</b> is
+  already part of the game with growing DIY culture in <em>both</em> hardware
+  and software. That ends up with
+  <a href="https://www.clockworkpi.com/gameshell">GameShell</a>,
+  embracing open standards and <b>fantasy consoles</b>, being out of
+  stock, while Playdate - which creators took a path of restrictions
+  and misbehavior towards the indie dev community -
+  <a href="https://theoutline.com/post/7538/playdate-the-most-exciting-device-in-indie-gaming-is-also-the-most-depressing">did not launch that well</a> at all.
+</p>
+
+<p>
+  <img src="/static/rpi-info-deck/ags-port.png"
+       style="border-radius: 8px; max-width: 640px;" />
+  <br/>
+  <em>RetroPie's <a href="https://www.adventuregamestudio.co.uk/">AGS</a> port in action</em>
+</p>
+
+<p>
+  Myself I went along
+  with <a href="https://www.waveshare.com/game-hat.htm">GameHAT</a>
+  low-budget variant. Not only the
+  whole kit (the HAT plus RPi-3 plus 18650 li-ion battery) costs less than a
+  hundred bucks, it also has demonstrates obvious <em>tweakability</em>.
+  Its joypad, buttons, speakers etc. are those ones you'll get in any
+  "Arduino first steps" educational kit, so much for the repairs.
+  The screen is connected via 1-to-1 HDMI adapter: plug a monitor
+  instead, get a keyboard - and here you have an emergency desktop.
+  After a funny configuration quest, of course.
+</p>
+
+<h1>The Port</h1>
+
+<p>
+  <img src="/static/rpi-info-deck/sec-xenogears.png"
+       style="border-radius: 8px; max-height: 400px; width:auto;" />
+</p>
+
+<p>
+  GameHAT comes with pre-built RetroPie image with support for
+  joystick/buttons (realized through a kernel module I failed to
+  compile from, apparently, a very indie piece of code).
+  RetroPie bundles a collection of RetroARCH's emulation libs together
+  with some PC goodies called <code>ports</code> under a handy
+  <code>EmulationStation</code> UI
+  overlay. Among those ports, together with Duke3d and Adventure Game
+  Studio, hides "Pixel desktop" that is basically LXDE for RPi. Its
+  installation allows to switch to Desktop from EmulationStation (and
+  back on logout).
+</p>
+
+<p>
+  One bit of frustration was found in the way that setup supports
+  fantasy consoles, in particular
+  <a href="https://github.com/nesbox/TIC-80/wiki">TIC-80</a>.
+  Somehow EmulationStation
+  fails to launch with support for OpenGL turned on explicitly
+  with <code>raspi-config</code>, that's needed for TIC-80 to work.
+  And though RetroArch does have a <code>libretro</code> library for TIC, the
+  performance is approximately two times slower than normal!
+  A workaround is to launch desktop separately and build TIC from
+  source.
+</p>
+
+<p>
+  Luckily the joystick is recognized by SDL and mapping software
+  (remember, it talks straight to the linux kernel).
+  In the desktop I use <code>QJoyPad</code> to map joystick to mouse, as well as
+  give buttons the default clicking | scrolling | entering | cancelling roles:
+</p>
+
+<p>
+  <img src="/static/rpi-info-deck/qjoypad.png"
+       style="border-radius: 8px; max-width: 400px;" />
+</p>
+
+<p>
+  Another input program that autostarts is the <code>Onboard</code> virtual
+  keyboard. Fits well, and has a feature of "sticking" to fullscreen
+  windows.
+</p>
+
+<p>
+  <img src="/static/rpi-info-deck/onboard.png"
+       style="border-radius: 8px; max-width: 640px;" />
+  <br/> <em>Onboard comes in handy when there is no remote keyboard at hand</em>
+</p>
+
+<p>
+  And after those little tweaks it's time for <i>real enhancement</i>,
+  where my <i>Semantic Space</i> tears through the fabric of reality
+  with help of <code>Emacs OS</code>!
+</p>
+
+<h1>The Info-Deck</h1>
+
+<p>
+  <img src="/static/rpi-info-deck/elfeed-search.png"
+       style="border-radius: 8px; max-width: 640px;" />
+  <br/><em>Elfeed-search contents screen</em>
+</p>
+
+<p>
+  Work, emails, numerous chats and social networks do not leave
+  neither time nor stamina for relaxing glancing through them
+  news <code>feeds</code>. Elfeed emacs feedreader package on Mimir
+  brings me back my rss subscriptions in places where there are no
+  other distractions from lazy news consumption: in the canteen, while
+  travelling or before getting asleep etc. Yeah, pun intended.
+</p>
+
+<div style="display: flex;">
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/elfeed-header.png"
+         style="border-radius: 8px; width: 100%;" />
+  </div>
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/elfeed-content.png"
+         style="border-radius: 8px; width: 100%;" />
+  </div>
+</div>
+<div style="text-align: center;">
+  <em style="font-size: 90%;">Elfeed's entry view</em>
+</div>
+
+<p>
+  Important articles are tagged for analysis later on. I sync Elfeed's
+  database with my private cloud through <code>Syncthing</code>,
+  along with a set of <code>Org-mode</code> files that form my
+  personal knowledgebase.
+</p>
+
+<p>
+  Speaking of latter, I was quite happy to find
+  <a href="https://github.com/Kungsgeten/org-brain">org-brain</a> -
+  a project that helps me turning my orgmode linear journals into a
+  wiki-style mind maps, and brings no editing overhead. On the
+  contrary, writing structural notes is actually <em>faster</em> in
+  org-brain than in linear form. Perfect! Org-brain already consumed
+  my Elfeed's subscriptions list and
+  <a href="https://github.com/jkitchin/org-ref">org-ref</a>
+  notes, and I just hope it won't get slow after the indexed
+  knowledgebase grows tenfold.
+</p>
+
+<div style="display: flex;">
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/org-brain-header.png"
+         style="border-radius: 8px; width: 100%;" />
+  </div>
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/org-brain-content.png"
+         style="border-radius: 8px; width: 100%;" />
+  </div>
+</div>
+<div style="text-align: center;">
+  <em style="font-size: 90%;">Concept map view in Org-brain</em>
+</div>
+
+<p>
+  With Mimir the heavy assets are not synced, only the wiki itself.
+  And wandering through it sometimes <em>does</em> reveal me the
+  overlooked connections... Btw, I had to build emacs v.26 for
+  org-brain to work.
+</p>
+
+<p>
+  I estimate 2/3 of my time with Mimir I spend on thinking over feeds
+  and thoughts. That justifies the hostname of this little thingie,
+  <em>reciting me unrevealed knowledge and counsel</em>.
+</p>
+
+<h1>The End</h1>
+
+<p>Yes of course, games, we have some:</p>
+
+<div style="display: flex;">
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/scrot-metroid.png"
+         style="border-radius: 4px; width: 95%;" />
+  </div>
+
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/scrot-comix-zone.png"
+         style="border-radius: 4px; width: 95%;" />
+  </div>
+</div>
+
+<div style="display: flex;">
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/scrot-castlevania.png"
+         style="border-radius: 4px; width: 95%;" />
+  </div>
+
+  <div style="flex: 50.00%; padding: 5px;">
+    <img src="/static/rpi-info-deck/scrot-xenogears.png"
+         style="border-radius: 4px; width: 95%;" />
+  </div>
+</div>
+
+<p>
+  Though, honestly, quite often the old-school goodies often turn out
+  to be enormously repetitive and boring. Yet some of them I manage to
+  finish eventually...
+</p>
+
+<p>
+  <img src="/static/rpi-info-deck/score-metroid.png"
+       style="border-radius: 8px; max-height: 400px; width:auto;" />
+  <br/> <em>Nope, not a hundred, not even close</em>
+</p>
+ ]]></description> </item><item> <title>An Ode to Emacs</title> <link>https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</link> <pubDate>2020-07-12</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
 <p>
   A rare <em>positive</em> result of the lockdown - increased friendship
   towards my editor of choice. After explaining configuration basics to
@@ -534,10 +791,4 @@ here I briefly show the looks of my own setup in <code>Emacs</code>
 
 <p><img src="/static/20200219_fortls.gif" alt="alt text" /> <br/>
 <em><code>Fortls + emacs lsp-mode</code>: hover, reference finder and jump-to-def.</em></p>
- ]]></description> </item><item> <title>Let&#039;s go</title> <link>https://www.ivorysiegetower.com/posts/Lets-go.html</link> <pubDate>2020-02-09</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Lets-go.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <p>Usually here goes some kind of welcoming post... But nay!</p>
-
-<p>Instead I'll just leave here a picture of my Sunday morning newspaper.</p>
-
-<p><img src="/static/20200209_morning_post.jpg" alt="Newspaper and coffee" /> <br/>
-<em>Morning post. Canvas, oil, emacs.</em></p>
  ]]></description> </item> </channel> </rss>
