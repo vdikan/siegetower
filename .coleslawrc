@@ -19,6 +19,9 @@
            (static-pages)
            (pygments)
            (3bmd-youtube)
+           ;; Metadata
+           (opengraph :og-base-url "https://www.ivorysiegetower.com"
+                      :og-default-image "css/tower_logo.png")
            ;; deployment plugins
            ;; deployment to github pages
            (gh-pages :url "git@github.com:vdikan/siegetower.git"
