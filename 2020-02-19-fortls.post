@@ -62,5 +62,8 @@ Fortran Language Server looks in the `Atom` editor;
 here I briefly show the looks of my own setup in `Emacs`
 (mind that automatic update of a symbol's description):
 
-![alt text](/static/20200219_fortls.gif) <br/>
-*`Fortls + emacs lsp-mode`: hover, reference finder and jump-to-def.*
+<p>
+  <img src="/static/20200219_fortls.gif" alt="Fortls demo gif"
+       style="max-width: 860px;" /> <br/>
+  <em><code>Fortls + emacs lsp-mode</code>: hover, reference finder and jump-to-def.</em>
+</p>

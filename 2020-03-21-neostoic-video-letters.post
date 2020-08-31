@@ -20,4 +20,6 @@ format: md
 
 Скоро во всех кинотеатрах. Ну, после карантина, конечно.
 
-!yt[SLd6-5kISHI|width=600,height=320,allowfullscreen]
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/SLd6-5kISHI" frameborder="0" allowfullscreen></iframe>
+</div>

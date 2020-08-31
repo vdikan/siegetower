@@ -8,8 +8,7 @@ ogimage: static/rpi-info-deck/title-look.png
 
 <p>
   <img src="/static/rpi-info-deck/title-look.png"
-       alt="Info-Deck in the Underground of Neo-Sabadell"
-       style="border-radius: 8px; max-width: 640px;" />
+       alt="Info-Deck in the Underground of Neo-Sabadell" />
 </p>
 
 <p>
@@ -35,8 +34,7 @@ ogimage: static/rpi-info-deck/title-look.png
 <h1>The Chasis</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/sec-metroid.png"
-       style="border-radius: 8px; max-height: 400px; width:auto;" />
+  <img src="/static/rpi-info-deck/sec-metroid.png" />
 </p>
 
 <p>
@@ -63,8 +61,7 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/ags-port.png"
-       style="border-radius: 8px; max-width: 640px;" />
+  <img src="/static/rpi-info-deck/ags-port.png" />
   <br/>
   <em>RetroPie's <a href="https://www.adventuregamestudio.co.uk/">AGS</a> port in action</em>
 </p>
@@ -85,8 +82,7 @@ ogimage: static/rpi-info-deck/title-look.png
 <h1>The Port</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/sec-xenogears.png"
-       style="border-radius: 8px; max-height: 400px; width:auto;" />
+  <img src="/static/rpi-info-deck/sec-xenogears.png" />
 </p>
 
 <p>
@@ -123,8 +119,7 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/qjoypad.png"
-       style="border-radius: 8px; max-width: 400px;" />
+  <img src="/static/rpi-info-deck/qjoypad.png" />
 </p>
 
 <p>
@@ -134,8 +129,7 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/onboard.png"
-       style="border-radius: 8px; max-width: 640px;" />
+  <img src="/static/rpi-info-deck/onboard.png" />
   <br/> <em>Onboard comes in handy when there is no remote keyboard at hand</em>
 </p>
 
@@ -148,8 +142,7 @@ ogimage: static/rpi-info-deck/title-look.png
 <h1>The Info-Deck</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/elfeed-search.png"
-       style="border-radius: 8px; max-width: 640px;" />
+  <img src="/static/rpi-info-deck/elfeed-search.png" />
   <br/><em>Elfeed-search contents screen</em>
 </p>
 
@@ -260,7 +253,6 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/score-metroid.png"
-       style="border-radius: 8px; max-height: 400px; width:auto;" />
+  <img src="/static/rpi-info-deck/score-metroid.png" />
   <br/> <em>Nope, not a hundred, not even close</em>
 </p>

@@ -18,7 +18,6 @@
            (sitemap)
            (static-pages)
            (pygments)
-           (3bmd-youtube)
            ;; Metadata
            (opengraph :og-base-url "https://www.ivorysiegetower.com"
                       :og-default-image "css/tower_logo.png")
