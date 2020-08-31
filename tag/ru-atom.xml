@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 31 Aug 2020 01:31:59 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Часть-команды-часть-корабля.html"/> <title>Часть команды, часть корабля</title> <published>2020-05-30</published> <updated>2020-05-30</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Tue, 01 Sep 2020 01:19:07 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Часть-команды-часть-корабля.html"/> <title>Часть команды, часть корабля</title> <published>2020-05-30</published> <updated>2020-05-30</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt;
   У группы вышла &lt;a href=&quot;https://doi.org/10.1063/5.0005077&quot;&gt;статья&lt;/a&gt; про обновления в &lt;strong&gt;SIESTA&lt;/strong&gt; и вокруг нее. Там сказано, в том числе, про поддержку различных DFT-формализмов, внешних солверов, NC-псевдопотенциалов в переносимом PSML-формате.
 &lt;/p&gt;
@@ -82,7 +82,9 @@ Cкинуть мусор с верхних этажей, подкрасить к
 
 &lt;p&gt;Скоро во всех кинотеатрах. Ну, после карантина, конечно.&lt;/p&gt;
 
-&lt;p&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/SLd6-5kISHI&quot; frameborder=&quot;0&quot; width=&quot;600&quot; height=&quot;320&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/SLd6-5kISHI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html"/> <title>Когнитивная Готика</title> <published>2020-03-02</published> <updated>2020-03-02</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Пока строил Башню набрел через HN на
 &lt;a href=&quot;https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/&quot; &gt;пост&lt;/a&gt;
 о Предвестниках Гипертекстового Ренессанса. Там интересная

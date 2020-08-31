@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 31 Aug 2020 01:31:59 +0200</pubDate> <item> <title>My RPi Cyberpunk Info-Deck Console</title> <link>https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</link> <pubDate>2020-08-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ raspberry ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Tue, 01 Sep 2020 01:19:07 +0200</pubDate> <item> <title>My RPi Cyberpunk Info-Deck Console</title> <link>https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</link> <pubDate>2020-08-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ raspberry ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
 <p>
   <img src="/static/rpi-info-deck/title-look.png"
-       alt="Info-Deck in the Underground of Neo-Sabadell"
-       style="border-radius: 8px; max-width: 640px;" />
+       alt="Info-Deck in the Underground of Neo-Sabadell" />
 </p>
 
 <p>
@@ -29,8 +28,7 @@
 <h1>The Chasis</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/sec-metroid.png"
-       style="border-radius: 8px; max-height: 400px; width:auto;" />
+  <img src="/static/rpi-info-deck/sec-metroid.png" />
 </p>
 
 <p>
@@ -57,8 +55,7 @@
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/ags-port.png"
-       style="border-radius: 8px; max-width: 640px;" />
+  <img src="/static/rpi-info-deck/ags-port.png" />
   <br/>
   <em>RetroPie's <a href="https://www.adventuregamestudio.co.uk/">AGS</a> port in action</em>
 </p>
@@ -79,8 +76,7 @@
 <h1>The Port</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/sec-xenogears.png"
-       style="border-radius: 8px; max-height: 400px; width:auto;" />
+  <img src="/static/rpi-info-deck/sec-xenogears.png" />
 </p>
 
 <p>
@@ -117,8 +113,7 @@
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/qjoypad.png"
-       style="border-radius: 8px; max-width: 400px;" />
+  <img src="/static/rpi-info-deck/qjoypad.png" />
 </p>
 
 <p>
@@ -128,8 +123,7 @@
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/onboard.png"
-       style="border-radius: 8px; max-width: 640px;" />
+  <img src="/static/rpi-info-deck/onboard.png" />
   <br/> <em>Onboard comes in handy when there is no remote keyboard at hand</em>
 </p>
 
@@ -142,8 +136,7 @@
 <h1>The Info-Deck</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/elfeed-search.png"
-       style="border-radius: 8px; max-width: 640px;" />
+  <img src="/static/rpi-info-deck/elfeed-search.png" />
   <br/><em>Elfeed-search contents screen</em>
 </p>
 
@@ -254,8 +247,7 @@
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/score-metroid.png"
-       style="border-radius: 8px; max-height: 400px; width:auto;" />
+  <img src="/static/rpi-info-deck/score-metroid.png" />
   <br/> <em>Nope, not a hundred, not even close</em>
 </p>
  ]]></description> </item><item> <title>An Ode to Emacs</title> <link>https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</link> <pubDate>2020-07-12</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
@@ -442,6 +434,8 @@ process by mere upgrade in the educational media. But certain
 breakthroughs <s><em>can</em> be achieved with modern technologies.</s>
 False. They <em>are</em> already present, with help of tech that is decades
 old.</p>
+
+<!--more-->
 
 <p>J.L.Borges pictured us books as labyrinths of symbols.
 He dreamed of libraries as an infinite combinatorial symbolic spaces,
@@ -668,8 +662,11 @@ Fortran Language Server looks in the <code>Atom</code> editor;
 here I briefly show the looks of my own setup in <code>Emacs</code>
 (mind that automatic update of a symbol's description):</p>
 
-<p><img src="/static/20200219_fortls.gif" alt="alt text" /> <br/>
-<em><code>Fortls + emacs lsp-mode</code>: hover, reference finder and jump-to-def.</em></p>
+<p>
+  <img src="/static/20200219_fortls.gif" alt="Fortls demo gif"
+       style="max-width: 860px;" /> <br/>
+  <em><code>Fortls + emacs lsp-mode</code>: hover, reference finder and jump-to-def.</em>
+</p>
  ]]></description> </item><item> <title>Let&#039;s go</title> <link>https://www.ivorysiegetower.com/posts/Lets-go.html</link> <pubDate>2020-02-09</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Lets-go.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <p>Usually here goes some kind of welcoming post... But nay!</p>
 
 <p>Instead I'll just leave here a picture of my Sunday morning newspaper.</p>
