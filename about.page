@@ -1,0 +1,23 @@
+;;;;;
+title: Keeper of the Tower -- {About_Me}
+format: html
+URL: about.html
+;;;;;
+
+<p>
+  I am a Ph.D student in <b>Computational Physics</b> at <a href="https://icmab.es">ICMAB</a>,
+  currently struggling to implement <em>ab-initio</em> Thermal Transport computation
+  within one fast and furious <a href="http://www.max-centre.eu/codes-max/siesta">DFT code</a>.
+  At this moment I live in Sabadell (close to Barcelona).
+</p>
+
+<p>
+  I also spend time diving into selected topics in <b>CS</b> and <b>Maths</b>,
+  riding my bicycle while repairing my electric scooter,
+  tinkering with 3D-prints and hobby electronics.
+  And slowly building this <code>Siege Tower</code>, my comix-styled safe-space.
+</p>
+
+<p>
+  Mistakes, opinions, hopes and regrets are solely my own.
+</p>

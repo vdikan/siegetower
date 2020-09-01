@@ -2,18 +2,20 @@
 (:author "Vladimir Dikan"
  :deploy-dir "deploy/"
  :domain "https://www.ivorysiegetower.com"
+ :title "Ivory Siege Tower"
+ :theme "tower"
+
  :routing ((:post           "posts/~a")
            (:tag-index      "tag/~a")
            (:month-index    "date/~a")
            (:numeric-index  "~d")
            (:feed           "~a.xml")
            (:tag-feed       "tag/~a.xml"))
- :title "Ivory Siege Tower"
- :theme "tower"
 
- ;; Optional information
+ :staging-dir "/tmp/coleslaw/"
  :excerpt-sep "<!--more-->"
  :feeds ("en" "ru")
+
  :plugins ((mathjax)
            (sitemap)
            (static-pages)
@@ -27,5 +29,13 @@
                      :branch "gh-pages"
                      :remote "origin"
                      :cname t))
- :sitenav ();; (:url "http://github.com/vdikan" :name "Code")
- :staging-dir "/tmp/coleslaw/")
+
+ :sitenav ((:url "https://www.ivorysiegetower.com" :name "Blog")
+           (:url "/about.html" :name "About"))
+
+ :siterefs ((:title "vdikan @ GitHub"
+             :url "https://github.com/vdikan"
+             :icon "css/icon_github.png")
+            (:title "Vladimir Dikan @ LinkedIn"
+             :url "https://www.linkedin.com/in/vladimir-dikan/"
+             :icon "css/icon_linkedin.png")))
