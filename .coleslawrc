@@ -3,6 +3,7 @@
  :deploy-dir "deploy/"
  :domain "https://www.ivorysiegetower.com"
  :title "Ivory Siege Tower"
+ :base-index-title "Parade Ground -- {Blog}"
  :theme "tower"
 
  :routing ((:post           "posts/~a")
