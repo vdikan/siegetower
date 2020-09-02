@@ -1,5 +1,55 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Tue, 01 Sep 2020 18:17:56 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Wed, 02 Sep 2020 14:36:47 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Summertime-Madness.html"/> <title>Summertime Madness</title> <published>2020-09-01</published> <updated>2020-09-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+&lt;p&gt;
+  &lt;img src=&quot;/static/summertime-madness/summer-bog-2020.png&quot;
+       alt=&quot;Грустный вид Осадной Башни, застрявшей в болоте.&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  При всем известном положении дел в этом адовом году, находиться недалеко от Барселоны в карантин было очень комфортно. Ну разве что кроме первых дней тотальной информационной паники. Никто не шумел и не путался под ногами, электричество и связь работали без перебоев, радовал атмосферный фронт. Можно было полностью посвятить себя вкорячиванию расчетных схем Эвальда в рабочий код и пет-прожектам. Ну и Башня стала строиться тогда же (хотя домен я &quot;презентовал&quot; себе еще на Новый Год).
+&lt;/p&gt;
+
+&lt;p&gt;
+  В общем, кому война - а аутистам вот и норм. Но пришло лето, отменили тревожное положение - и почалося...
+&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;
+  Каталонцы (и не только) стали радостно отмечать приход &quot;новой нормальности&quot; и отмену карантина. Владельцы летних террас, четко выполняя нормы соц. дистанцирования, иной раз превращали всю площадь или улицу в одну сплошную террасу. Как у меня под окнами, например. И они тут же были битком (кого-то еще удивляет, что вторая волна у нас де-факто бушует с середины августа?). Чуть ранее проснулись все ближайшие стройки (не видел ни разу ни одного строителя в маске). Вскоре ожил и мой любимый ночной клуб за углом (прямо напротив 100-летней действующей витражной мастерской. Когда переезжал был уверен, что злачных мест тут не воткнут, но нет. Nice city planning, Sabadell!).
+&lt;/p&gt;
+
+&lt;p&gt;
+  Институт при этом, разумеется, предписывает нам работать удаленно из дома, посреди этого балагана. И если у экспериментаторов еще разумные квоты на office days, то про расчетчиков тупо забыли в этом внутреннем регламенте. Очень мило, ага.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Для полноты картины веселый квест на продление карты резидента. Направление на сдачу отпечатков в участке всегда было трудно достать, а уж после карантина у нас тут тотальный коллапс, и нечистые на руку хацкеры дерут втридорога за фарминг этих направлений на местном сайте госуслуг. (Шляпа, а не сайт! А теперь он еще по утрам и лежит намертво, атакованный ботами). Моя карта истекала сразу после окончания &lt;em&gt;estado de alarma&lt;/em&gt;, т.е. даже на эмбарго в 6 месяцев для истекших в карантин ВНЖ лучше было не рассчитывать.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Резюмируя экспозицию: я внезапно понимаю, что застрял на раскаленной барной стойке и без документов. Начинается &lt;b&gt;экшен&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Беру короткий отпуск. Заряжаю скрипт на ловлю &lt;em&gt;cita previa&lt;/em&gt; в участок (буду я еще каким-то уродам платить!). Параллельно ищу куда переехать. Ровно через три недели скрипт схватил мне направление. За все это время найден единственный вариант новой квартиры уровня &quot;ну окей, сойдет&quot;. Радостно иду сдаю пальчики, хвастаюсь в сообществе IT-экспатов. Там идею развивают до состояния production-ready. Заключаю контракт на квартиру, но в день выдачи ключей понимаю - это подстава. Меня захотели приземлить прямо под отбитыми соседями, у которых целыми днями реггетон и трава. Целыми днями, за исключением дней показа, разумеется. А еще они держат в страхе и ужасе всех соседей, вызовы копов в прошлом не помогли.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Отменяю договор. Агентство зажимает &lt;b&gt;весь&lt;/b&gt; превоначальный взнос, включая &lt;b&gt;весь&lt;/b&gt; залог. Удивительно? Нет. Возмутительно? Like Hell! Громко возмущаюсь, и один из товарищей-экспатов скидывает контакт адвоката. Скоро запилим с ней иск. Готовую карту резидента забрал вчера. А дней через десять пойду на встречу с новыми друзьями из айтишного чата.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Такое себе выдалось лето. Сейчас уже лучше. Легальный статус подтвержден, жара ушла, а ночник закрыт. Ведь счетчик заболевших снова пробивает дно.
+&lt;/p&gt;
+
+&lt;hr/&gt;
+
+&lt;p style=&quot;font-size: 0.9em;&quot;&gt;
+  P.S. Винрарная иллюстрация к посту сделана на заказ :P &lt;br/&gt;
+  Кому интересно - могу законтачить на иллюстраторку.
+&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt;
   &lt;img src=&quot;/static/rpi-info-deck/title-look.png&quot;
        alt=&quot;Info-Deck in the Underground of Neo-Sabadell&quot; /&gt;
@@ -251,12 +301,21 @@
   &lt;br/&gt; &lt;em&gt;Nope, not a hundred, not even close&lt;/em&gt;
 &lt;/p&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html"/> <title>An Ode to Emacs</title> <published>2020-07-12</published> <updated>2020-07-12</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
-&lt;p&gt;
-  A rare &lt;em&gt;positive&lt;/em&gt; result of the lockdown - increased friendship
-  towards my editor of choice. After explaining configuration basics to
-  a friend another day I think I can finally formulate what clings me to
-  this &lt;s&gt;ancient&lt;/s&gt; everlasting piece of software.
-&lt;/p&gt;
+&lt;div style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
+  &lt;div style=&quot;max-width: 220px; padding-right: 20px;&quot;&gt;
+    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png&quot;
+         style=&quot;margin: auto;&quot; alt=&quot;Emacs logo from the Wiki&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;max-width: 660px;&quot;&gt;
+    &lt;p&gt;
+      A rare &lt;em&gt;positive&lt;/em&gt; result of the lockdown - increased friendship
+      towards my editor of choice. After explaining configuration basics to
+      a friend another day I think I can finally formulate what clings me to
+      this &lt;s&gt;ancient&lt;/s&gt; everlasting piece of software.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;!--more--&gt;
 
@@ -730,66 +789,4 @@ enabeled) in the &lt;code&gt;siesta-dft&lt;/code&gt; branch of
 In case it proves useful on our clusters, these updates will be
 polished and pull-requested rather soon. Otherwise I will continue
 editing them on my own and make a pull request when ready.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
-will most probably deal with Fortran codebases at some point.
-With two major problems that hurt lazy
-young men&#039;s feelings in 2020: 1st being the ambiguity of which
-instructions from the standard form the desired
-&lt;em&gt;subset of a useful Fortran number-crunching DSL&lt;/em&gt;,
-and the 2nd is (was) lack of introspection for a (modern) IDE.&lt;/p&gt;
-
-&lt;p&gt;While the solution of the first problem is found merely in personal
-experience and Sacred Wisdom of the Elders
-(never saw a book on Fortran that did not look like a flat dry
-reference index),
-solution for the second is open to the public:
-&lt;a href=&quot;https://github.com/hansec&quot; &gt;Chris Hansen&#039;s&lt;/a&gt;
-&lt;a href=&quot;https://github.com/hansec/fortran-language-server&quot; &gt;&lt;strong&gt;Fortran Language Server&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Of course, indexing tools for C and Fortran had existed for years
-before the Language Server Protocol was developed
-(and then &lt;a href=&quot;https://langserver.org&quot; &gt;grew up in popularity and implementations&#039; number&lt;/a&gt;).
-But I have to admit that I never could make any of the &lt;code&gt;*tags&lt;/code&gt; work
-anywhere near properly for projects as complex as &lt;code&gt;Siesta&lt;/code&gt;. Not even
-complaining of their static nature and the need of some automation of
-index-building mechanisms: I wasn&#039;t even there.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, &lt;code&gt;Fortls&lt;/code&gt; is able to navigate through roughly 95% of
-definitions in the code of &lt;code&gt;Siesta&lt;/code&gt;, missing only overloaded procs
-and, of course, code hidden in metaprogramming templates. For every
-symbol well seen, it allows to jump to the place where it&#039;s defined,
-list and rename all the occurrences throughout the project. Even more:
-it parses the
-&lt;code&gt;Doxygen&lt;/code&gt;/&lt;a href=&quot;https://github.com/Fortran-FOSS-Programmers/ford/wiki&quot; &gt;FORD&lt;/a&gt;
-docstring-like comments and shows them in
-the hint-box! Plus support for subroutines&#039; signature hinting and
-autocomplete.&lt;/p&gt;
-
-&lt;p&gt;All this might not sound very sexy today, especially if the language in
-question provided some introspection tools of its own, but mind that
-it&#039;s Fortran we are speaking about! Here, after decades of heavy
-science, monstrosities of hundreds of modules do exist with nothing
-more handy than &lt;code&gt;grep&lt;/code&gt; to navigate&#039;em prior to &lt;code&gt;LSP&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The installation and configuration of &lt;code&gt;Fortls&lt;/code&gt; is straightforward: it
-is a python package providing a command line tool that should be seen
-to an &lt;code&gt;LSP&lt;/code&gt;-supporting editor. I actually spent more time tweaking the
-lsp-mode UI in emacs than making it work with &lt;code&gt;fortls&lt;/code&gt;. According to
-my minimalistic taste I do not use signature popups, only the hinting
-UI-doc window (and it includes signatures anyway, together with
-types of variables under cursor). Autocomplete seems to work with
-&lt;code&gt;company-mode&lt;/code&gt; out of the box.&lt;/p&gt;
-
-&lt;p&gt;On the project page Chris shows some screencasts of how working with
-Fortran Language Server looks in the &lt;code&gt;Atom&lt;/code&gt; editor;
-here I briefly show the looks of my own setup in &lt;code&gt;Emacs&lt;/code&gt;
-(mind that automatic update of a symbol&#039;s description):&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/20200219_fortls.gif&quot; alt=&quot;Fortls demo gif&quot;
-       style=&quot;max-width: 860px;&quot; /&gt; &lt;br/&gt;
-  &lt;em&gt;&lt;code&gt;Fortls + emacs lsp-mode&lt;/code&gt;: hover, reference finder and jump-to-def.&lt;/em&gt;
-&lt;/p&gt;
 </content> </entry> </feed>
