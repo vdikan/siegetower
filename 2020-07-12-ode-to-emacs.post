@@ -5,12 +5,21 @@ date: 2020-07-12
 format: html
 ;;;;;
 
-<p>
-  A rare <em>positive</em> result of the lockdown - increased friendship
-  towards my editor of choice. After explaining configuration basics to
-  a friend another day I think I can finally formulate what clings me to
-  this <s>ancient</s> everlasting piece of software.
-</p>
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="max-width: 220px; padding-right: 20px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png"
+         style="margin: auto;" alt="Emacs logo from the Wiki" />
+  </div>
+
+  <div style="max-width: 660px;">
+    <p>
+      A rare <em>positive</em> result of the lockdown - increased friendship
+      towards my editor of choice. After explaining configuration basics to
+      a friend another day I think I can finally formulate what clings me to
+      this <s>ancient</s> everlasting piece of software.
+    </p>
+  </div>
+</div>
 
 <!--more-->
 

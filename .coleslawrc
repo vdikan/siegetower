@@ -34,9 +34,15 @@
  :sitenav ((:url "https://www.ivorysiegetower.com" :name "Blog")
            (:url "/about.html" :name "About"))
 
- :siterefs ((:title "vdikan @ GitHub"
+ :siterefs ((:title "ivorysiegetower @ Twitter"
+             :url "https://twitter.com/ivorysiegetower"
+             :icon "css/icon_twitter.png")
+            (:title "vdikan @ GitHub"
              :url "https://github.com/vdikan"
              :icon "css/icon_github.png")
             (:title "Vladimir Dikan @ LinkedIn"
              :url "https://www.linkedin.com/in/vladimir-dikan/"
-             :icon "css/icon_linkedin.png")))
+             :icon "css/icon_linkedin.png")
+            (:title "Atomic Feed of the Good Side"
+             :url "https://www.ivorysiegetower.com/tag/en-atom.xml"
+             :icon "css/icon_rss.png")))
