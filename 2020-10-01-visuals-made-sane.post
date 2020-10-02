@@ -1,0 +1,352 @@
+;;;;;
+title: Visuals Made Sane
+tags: en, toolbox, visual, lisp
+date: 2020-10-01
+format: md
+ogimage: /static/visuals-made-sane/st-floating-gardens.jpg
+;;;;;
+
+Almost every time I had to produce a *visual representation* for
+- literally - anything, it used to be disturbing.
+A balance between control, speed, accuracy and easiness seemed unreachable
+even for a routine plotting of data at hand. Well, not anymore!
+
+A brief research lead me to a conclusion that the sanest way to
+draw something fast, efficient and nicely-looking these days is to use
+that very piece of software you are probably already running.
+
+Yes, I mean the mighty **web browser**. Some observations follow.
+
+![Floating Gardens](/static/visuals-made-sane/st-floating-gardens.jpg) <br/>
+
+<!--more-->
+## Presentations: [Reveal.js](https://revealjs.com)
+
+Though I like the idea of the `beamer` `LaTeX` package of programmable
+presentation files, I hate the package itself for the tremendous amount of
+effort it requires to output a PDF that won't cause your audiences'
+eyes bleed. Yes, out-of-the-box `beamer` is plain ugly.
+Just fixing its looks would take days for an unprofessional layout designer.
+
+Forget it. Use **PowerPoint** or **LibreOffice Impress**, or any other WYSIWYG
+editor. Everything goes for this ungrateful task,
+especially if you're short on time.
+But in case you don't have to rush and know a bit of markup, have a glance at
+[reveal.js](https://revealjs.com).
+
+Under the hood it's the same idea of using hypertext instead of a visual editor
+for presentation outline. Yeah, like `beamer`, only that:
+
+ * it looks way better from the start;
+ * markup language is same as for the web;
+ * it has all the key features of visual editors.
+
+The last is true when `reveal.js` is served through `npm`, bringing even
+familiar speaker's screen with previews, notes and timer. Though this goes
+as unnecessary "extra". To build a presentation with `reveal.js` one really
+needs [only](https://revealjs.com/installation/#basic-setup)
+a browser and text editor, meaning zero installation overhead.
+
+With support for `LaTeX` formula notation built-in through `MatJax`,
+and simple but elegant block layouts available with use of modern css,
+I'd say that `reveal.js` is "more beamer than beamer".
+
+## Plots & Charts: [Vega-Lite](https://vega.github.io/vega-lite/)
+
+Plotting was a cursed subject to me where no "golden point" tools seemed
+to be found.
+I wont' bother naming cons of `gnuplot`, `matplotlib`, `plplot` etc,
+each of them has a bunch.
+And the main problem is that with any of the popular plotters
+charting just simply takes a lot of time.
+Nothing handy seemed to appear outside of rather enclosed environments
+like Mathematica or Racket's [plot](https://docs.racket-lang.org/plot/) library
+(one of the cool features of `Racket`,
+a language that is an ivory tower of its own).
+With standalone plotters
+*it takes too much red tape to make a chart fine enough to be shared.*
+Even with all the data at hand. It hurts.
+
+All I want is an accurate, powerful, portable solution with concise
+and understandable semantic to *draw them plots* from raw data and
+from what is piped from my programs as well.
+Is it too much to ask in 2020? Well, in fact a good graphics grammar design
+*is* a non-trivial topic, with
+[books](https://www.goodreads.com/book/show/2549408.The_Grammar_of_Graphics)
+and
+[papers](https://idl.cs.washington.edu/papers/vega-lite) published.
+
+The paper from the latter link describes the design of one such grammar system
+- [Vega-Lite](https://vega.github.io/vega-lite/).
+I discovered it accidentally, but fell in love at once.
+
+According to the paper:
+
+> Vega-Lite combines a traditional grammar of graphics,
+> providing visual encoding rules and a composition algebra
+> for layered and multi-view displays, with a novel grammar of interaction.
+
+It allows to specify compositions of charts on a canvas,
+interactive selections and data transforms. Vega-Lite (coupled with low-level
+underlying Vega engine) can display quite sophisticated styles of charts
+(3-dimensional plots are on the go), requiring rather short specification from
+a user. I'd say, go read the design paper for details,
+then address the reference guide.
+
+But first look at an example. Here it is:
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5.16.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.16.8"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+<div id="vis"></div>
+<script>
+// Assign the specification to a local variable vlSpec.
+var vlSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Vega-lite chart assembled with CL web libs.",
+  "title": "Vega-lite example",
+  "data": {
+    "values": [
+      {
+        "step": 5,
+        "flux": [
+          0.09153984953435515,
+          0.024628329219937537,
+          0.25424937682847376
+        ],
+        "component": ["X", "Y", "Z"]
+      },
+      {
+        "step": 4,
+        "flux": [
+          0.06789449311470507,
+          0.02272393291011522,
+          0.19036725133450748
+        ],
+        "component": ["X", "Y", "Z"]
+      },
+      {
+        "step": 3,
+        "flux": [
+          0.046126591721860055,
+          0.016882629311779522,
+          0.1282773775209184
+        ],
+        "component": ["X", "Y", "Z"]
+      },
+      {
+        "step": 2,
+        "flux": [
+          0.023685530610426934,
+          0.08976102834966887,
+          0.06519893303184349
+        ],
+        "component": ["X", "Y", "Z"]
+      }
+    ],
+  },
+  "mark": {"type": "line", "point": {"filled": false, "fill": "white"}},
+  "encoding": {
+    "x": {
+      "field": "step",
+      "type": "quantitative",
+      "title": "step number",
+      "axis": {"tickCount": 4}
+    },
+    "y": {
+      "field": "flux",
+      "type": "quantitative",
+      "title": "component value",
+      "axis": {"tickCount": 4}
+    },
+    "color": {
+      "field": "component",
+      "type": "nominal",
+      "scale": {
+        "domain": ["X", "Y", "Z"],
+        "range": ["#dc143c", "#ff8c00", "#228b22"]
+      }
+    }
+  },
+  "config": {"axis": {"grid": true}},
+  "transform": [{"flatten": ["component", "flux"]}],
+  "width": 400, "height": 300
+};
+
+// Embed the visualization in the container with id `vis`
+vegaEmbed('#vis', vlSpec);
+</script>
+
+And it's not just an export form, but the example itself.
+It's rendered using Js through Vega-Lite's modules, on this very page.
+Here's the complete code:
+
+```html|linenos=1
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vega-Lite Clack app
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.15.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.15.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.11.1"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+    <script type="text/javascript">
+  if ('undefined' === typeof visVegaSpec) {
+    var visVegaSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Vega-lite chart assembled with CL web libs.",
+  "title": "Vega-lite example",
+  "data": {
+    "values": [
+      {
+        "step": 5,
+        "flux": [
+            0.09153984953435515,
+            0.024628329219937537,
+            0.25424937682847376
+            ],
+        "component": ["X", "Y", "Z"]
+      },
+      {
+        "step": 4,
+        "flux": [
+            0.06789449311470507,
+            0.02272393291011522,
+            0.19036725133450748
+            ],
+        "component": ["X", "Y", "Z"]
+      },
+      {
+        "step": 3,
+        "flux": [
+            0.046126591721860055,
+            0.016882629311779522,
+            0.1282773775209184
+            ],
+        "component": ["X", "Y", "Z"]
+      },
+      {
+        "step": 2,
+        "flux": [
+            0.023685530610426934,
+            0.08976102834966887,
+            0.06519893303184349
+            ],
+        "component": ["X", "Y", "Z"]
+      }
+    ],
+  },
+  "mark": {
+    "type": "line",
+    "point": {"filled": false, "fill": "white"}
+    },
+  "encoding": {
+    "x": {
+      "field": "step",
+      "type": "quantitative",
+      "title": "step number",
+      "axis": {"tickCount": 4}
+    },
+    "y": {
+      "field": "flux",
+      "type": "quantitative",
+      "title": "component value",
+      "axis": {"tickCount": 4}
+    },
+    "color": {
+      "field": "component",
+      "type": "nominal",
+      "scale": {
+        "domain": ["X", "Y", "Z"],
+        "range": ["#dc143c", "#ff8c00", "#228b22"]
+      }
+    }
+  },
+  "config": {"axis": {"grid": true}},
+  "transform": [{"flatten": ["component", "flux"]}],
+  "width": 400, "height": 300
+  };
+};
+vegaEmbed('#vis', visVegaSpec);
+    </script>
+  </body>
+</html>
+```
+
+Note first that the whole plot spec is just a JSON.
+Here it includes the data points
+too, but in principle the data can be served from a separate `csv`-file. That
+would leave here only the plot view spec (from line 59)
+that is short, readable and in general makes sense.
+
+Mind that round button in the right top corner for the chart export options.
+One of it says "Open in Vega Editor". It spawns an interactive editor in
+the browser for that very plot you are looking at.where the whole plot view
+can be edited live. Great to tackle with different plotting styles!
+
+So, creating a plot as easy as editing a simple html-template with Vega-Lite
+spec. One can go further, serving a trivial single-page web app with the plot
+spec and data assembled and serialized as JSON (a task for which plenty of libs
+are available everywhere).
+
+That app can be improved again a little bit, inspired by
+[vega-lite with websockets](https://bl.ocks.org/domoritz/8e1e4da185e1a32c7e54934732a8d3d5)
+example. That brings fully dynamic auto-updating charts!
+That's how I use Vega coupled with my computational workflows,
+having the plot updated after each step processed with our
+Quantum-Mechanical heavy artillery. One may think about live dashboards
+powered with only a Raspberry Pi running a browser. I can't stop thinking
+about them now. I do all the time...
+
+<p>
+  <img src="/static/visuals-made-sane/vega-ws-demo.png"
+       alt="Siesta-QE workflow results plotted with Vega-Lite"
+       style="max-width: 860px;" /> <br/>
+  <em>In this test run the Heat Flux components from the two
+  DFT programs get straight onto the plot
+  right as each Molecular Dynamics step is processed.</em>
+</p>
+
+## 3D scenes: `WebGL`
+
+For everyone trying to enter low-level 3D rendering
+[nullprogram's advice](https://nullprogram.com/blog/2013/06/10/)
+is to start directly with WebGL, since it utilizes the most modern standards
+and has very low overhead. Again, only a modern web browser is needed - no
+need to drag a GUI window library. Portability is also high. Android devices
+do render WebGL, hell even single-board computers
+[do render](https://www.youtube.com/watch?v=kCadKG3oa_U&ab_channel=ODROIDHardkernel)!
+
+The author of the best [WebGL tutorial](https://webgl2fundamentals.org)
+I've seen so far also wrote an utility library [TWGL](https://twgljs.org)
+that helps to set up the scene components and start drawing faster
+(without hiding any low-level parts of the WebGL API).
+
+This brings you GL, and fast, but what about interactiveness? Remember that
+this framework runs entirely in browser. The program that can use javascript to
+control the DOM of pages it shows. So with access to the javascript console one
+could rebuild in parts or in whole an appearance of a page,
+e.g. what is rendered on its `<canvas>` element.
+
+This idea is shown in this [demo](https://github.com/byulparan/websocket-demo)
+(I mirror the video below), where the author sends instructions
+from the Common Lisp REPL directly into his browser as Js instructions.
+Lisp forms are translated into javascript code using
+[Parenscript](https://common-lisp.net/project/parenscript/)
+library and sent as messages through websocket to a client page.
+Though it's a universal trick to inject any code on a page from any other
+programming environment (not necessarily Lisp), applied to WebGL canvas
+it creates an effect of manipulating a 3D scene without reloading anything!
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/aKYzfew1pnE" frameborder="0" allowfullscreen></iframe>
+</div>
+
+And that last part can give a spin to a various tasty hobby projects...
+But those ideas I'll keep for myself for now.
+Okay, [just a hint](https://www.youtube.com/watch?v=kCadKG3oa_U&ab_channel=ODROIDHardkernel)
+one more last time.
