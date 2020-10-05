@@ -1,5 +1,448 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 05 Sep 2020 15:21:18 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 05 Oct 2020 21:06:57 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html"/> <title>Visuals Made Sane</title> <published>2020-10-01</published> <updated>2020-10-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Almost every time I had to produce a &lt;em&gt;visual representation&lt;/em&gt; for
+- literally - anything, it used to be disturbing.
+A balance between control, speed, accuracy and easiness seemed unreachable
+even for a routine plotting of data at hand. Well, not anymore!&lt;/p&gt;
+
+&lt;p&gt;A brief research lead me to a conclusion that the sanest way to
+draw something fast, efficient and nicely-looking these days is to use
+that very piece of software you are probably already running.&lt;/p&gt;
+
+&lt;p&gt;Yes, I mean the mighty &lt;strong&gt;web browser&lt;/strong&gt;. Some observations follow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/visuals-made-sane/st-floating-gardens.jpg&quot; alt=&quot;Floating Gardens&quot; /&gt; &lt;br/&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;Presentations: &lt;a href=&quot;https://revealjs.com&quot; &gt;Reveal.js&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Though I like the idea of the &lt;code&gt;beamer&lt;/code&gt; &lt;code&gt;LaTeX&lt;/code&gt; package of programmable
+presentation files, I hate the package itself for the tremendous amount of
+effort it requires to output a PDF that won&#039;t cause your audiences&#039;
+eyes bleed. Yes, out-of-the-box &lt;code&gt;beamer&lt;/code&gt; is plain ugly.
+Just fixing its looks would take days for an unprofessional layout designer.&lt;/p&gt;
+
+&lt;p&gt;Forget it. Use &lt;strong&gt;PowerPoint&lt;/strong&gt; or &lt;strong&gt;LibreOffice Impress&lt;/strong&gt;, or any other WYSIWYG
+editor. Everything goes for this ungrateful task,
+especially if you&#039;re short on time.
+But in case you don&#039;t have to rush and know a bit of markup, have a glance at
+&lt;a href=&quot;https://revealjs.com&quot; &gt;reveal.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Under the hood it&#039;s the same idea of using hypertext instead of a visual editor
+for presentation outline. Yeah, like &lt;code&gt;beamer&lt;/code&gt;, only that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;it looks way better from the start;&lt;/li&gt;
+&lt;li&gt;markup language is same as for the web;&lt;/li&gt;
+&lt;li&gt;it has all the key features of visual editors.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The last is true when &lt;code&gt;reveal.js&lt;/code&gt; is served through &lt;code&gt;npm&lt;/code&gt;, bringing even
+familiar speaker&#039;s screen with previews, notes and timer. Though this goes
+as unnecessary &amp;quot;extra&amp;quot;. To build a presentation with &lt;code&gt;reveal.js&lt;/code&gt; one really
+needs &lt;a href=&quot;https://revealjs.com/installation/#basic-setup&quot; &gt;only&lt;/a&gt;
+a browser and text editor, meaning zero installation overhead.&lt;/p&gt;
+
+&lt;p&gt;With support for &lt;code&gt;LaTeX&lt;/code&gt; formula notation built-in through &lt;code&gt;MatJax&lt;/code&gt;,
+and simple but elegant block layouts available with use of modern css,
+I&#039;d say that &lt;code&gt;reveal.js&lt;/code&gt; is &amp;quot;more beamer than beamer&amp;quot;.&lt;/p&gt;
+
+&lt;h2&gt;Plots &amp;amp; Charts: &lt;a href=&quot;https://vega.github.io/vega-lite/&quot; &gt;Vega-Lite&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Plotting was a cursed subject to me where no &amp;quot;golden point&amp;quot; tools seemed
+to be found.
+I wont&#039; bother naming cons of &lt;code&gt;gnuplot&lt;/code&gt;, &lt;code&gt;matplotlib&lt;/code&gt;, &lt;code&gt;plplot&lt;/code&gt; etc,
+each of them has a bunch.
+And the main problem is that with any of the popular plotters
+charting just simply takes a lot of time.
+Nothing handy seemed to appear outside of rather enclosed environments
+like Mathematica or Racket&#039;s &lt;a href=&quot;https://docs.racket-lang.org/plot/&quot; &gt;plot&lt;/a&gt; library
+(one of the cool features of &lt;code&gt;Racket&lt;/code&gt;,
+a language that is an ivory tower of its own).
+With standalone plotters
+&lt;em&gt;it takes too much red tape to make a chart fine enough to be shared.&lt;/em&gt;
+Even with all the data at hand. It hurts.&lt;/p&gt;
+
+&lt;p&gt;All I want is an accurate, powerful, portable solution with concise
+and understandable semantic to &lt;em&gt;draw them plots&lt;/em&gt; from raw data and
+from what is piped from my programs as well.
+Is it too much to ask in 2020? Well, in fact a good graphics grammar design
+&lt;em&gt;is&lt;/em&gt; a non-trivial topic, with
+&lt;a href=&quot;https://www.goodreads.com/book/show/2549408.The_Grammar_of_Graphics&quot; &gt;books&lt;/a&gt;
+and
+&lt;a href=&quot;https://idl.cs.washington.edu/papers/vega-lite&quot; &gt;papers&lt;/a&gt; published.&lt;/p&gt;
+
+&lt;p&gt;The paper from the latter link describes the design of one such grammar system
+- &lt;a href=&quot;https://vega.github.io/vega-lite/&quot; &gt;Vega-Lite&lt;/a&gt;.
+I discovered it accidentally, but fell in love at once.&lt;/p&gt;
+
+&lt;p&gt;According to the paper:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Vega-Lite combines a traditional grammar of graphics,
+providing visual encoding rules and a composition algebra
+for layered and multi-view displays, with a novel grammar of interaction.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It allows to specify compositions of charts on a canvas,
+interactive selections and data transforms. Vega-Lite (coupled with low-level
+underlying Vega engine) can display quite sophisticated styles of charts
+(3-dimensional plots are on the go), requiring rather short specification from
+a user. I&#039;d say, go read the design paper for details,
+then address the reference guide.&lt;/p&gt;
+
+&lt;p&gt;But first look at an example. Here it is:&lt;/p&gt;
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vega@5.16.1&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vega-lite@4.16.8&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vega-embed@6.12.2&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;vis&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+// Assign the specification to a local variable vlSpec.
+var vlSpec = {
+  &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.json&quot;,
+  &quot;description&quot;: &quot;Vega-lite chart assembled with CL web libs.&quot;,
+  &quot;title&quot;: &quot;Vega-lite example&quot;,
+  &quot;data&quot;: {
+    &quot;values&quot;: [
+      {
+        &quot;step&quot;: 5,
+        &quot;flux&quot;: [
+          0.09153984953435515,
+          0.024628329219937537,
+          0.25424937682847376
+        ],
+        &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+      },
+      {
+        &quot;step&quot;: 4,
+        &quot;flux&quot;: [
+          0.06789449311470507,
+          0.02272393291011522,
+          0.19036725133450748
+        ],
+        &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+      },
+      {
+        &quot;step&quot;: 3,
+        &quot;flux&quot;: [
+          0.046126591721860055,
+          0.016882629311779522,
+          0.1282773775209184
+        ],
+        &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+      },
+      {
+        &quot;step&quot;: 2,
+        &quot;flux&quot;: [
+          0.023685530610426934,
+          0.08976102834966887,
+          0.06519893303184349
+        ],
+        &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+      }
+    ],
+  },
+  &quot;mark&quot;: {&quot;type&quot;: &quot;line&quot;, &quot;point&quot;: {&quot;filled&quot;: false, &quot;fill&quot;: &quot;white&quot;}},
+  &quot;encoding&quot;: {
+    &quot;x&quot;: {
+      &quot;field&quot;: &quot;step&quot;,
+      &quot;type&quot;: &quot;quantitative&quot;,
+      &quot;title&quot;: &quot;step number&quot;,
+      &quot;axis&quot;: {&quot;tickCount&quot;: 4}
+    },
+    &quot;y&quot;: {
+      &quot;field&quot;: &quot;flux&quot;,
+      &quot;type&quot;: &quot;quantitative&quot;,
+      &quot;title&quot;: &quot;component value&quot;,
+      &quot;axis&quot;: {&quot;tickCount&quot;: 4}
+    },
+    &quot;color&quot;: {
+      &quot;field&quot;: &quot;component&quot;,
+      &quot;type&quot;: &quot;nominal&quot;,
+      &quot;scale&quot;: {
+        &quot;domain&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;],
+        &quot;range&quot;: [&quot;#dc143c&quot;, &quot;#ff8c00&quot;, &quot;#228b22&quot;]
+      }
+    }
+  },
+  &quot;config&quot;: {&quot;axis&quot;: {&quot;grid&quot;: true}},
+  &quot;transform&quot;: [{&quot;flatten&quot;: [&quot;component&quot;, &quot;flux&quot;]}],
+  &quot;width&quot;: 400, &quot;height&quot;: 300
+};
+
+// Embed the visualization in the container with id `vis`
+vegaEmbed(&#039;#vis&#039;, vlSpec);
+&lt;/script&gt;
+
+&lt;p&gt;And it&#039;s not just an export form, but the example itself.
+It&#039;s rendered using Js through Vega-Lite&#039;s modules, on this very page.
+Here&#039;s the complete code:&lt;/p&gt;&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;Vega-Lite Clack app
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://cdn.jsdelivr.net/npm/vega@5.15.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://cdn.jsdelivr.net/npm/vega-lite@4.15.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://cdn.jsdelivr.net/npm/vega-embed@6.11.1&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vis&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;visVegaSpec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;visVegaSpec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;$schema&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://vega.github.io/schema/vega-lite/v4.json&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Vega-lite chart assembled with CL web libs.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Vega-lite example&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;data&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;values&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.09153984953435515&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.024628329219937537&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.25424937682847376&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.06789449311470507&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.02272393291011522&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.19036725133450748&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.046126591721860055&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.016882629311779522&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.1282773775209184&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.023685530610426934&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.08976102834966887&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;mf&quot;&gt;0.06519893303184349&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;mark&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;line&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;point&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;filled&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fill&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;white&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;encoding&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;x&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;field&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;quantitative&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;step number&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;axis&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;tickCount&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;field&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;quantitative&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;component value&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;axis&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;tickCount&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;color&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;field&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;nominal&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;scale&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;domain&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;range&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;#dc143c&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#ff8c00&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#228b22&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;config&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;axis&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;grid&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}},&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;flatten&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}],&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;vegaEmbed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#vis&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;visVegaSpec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Note first that the whole plot spec is just a JSON.
+Here it includes the data points
+too, but in principle the data can be served from a separate &lt;code&gt;csv&lt;/code&gt;-file. That
+would leave here only the plot view spec (from line 59)
+that is short, readable and in general makes sense.&lt;/p&gt;
+
+&lt;p&gt;Mind that round button in the right top corner for the chart export options.
+One of it says &amp;quot;Open in Vega Editor&amp;quot;. It spawns an interactive editor in
+the browser for that very plot you are looking at.where the whole plot view
+can be edited live. Great to tackle with different plotting styles!&lt;/p&gt;
+
+&lt;p&gt;So, creating a plot as easy as editing a simple html-template with Vega-Lite
+spec. One can go further, serving a trivial single-page web app with the plot
+spec and data assembled and serialized as JSON (a task for which plenty of libs
+are available everywhere).&lt;/p&gt;
+
+&lt;p&gt;That app can be improved again a little bit, inspired by
+&lt;a href=&quot;https://bl.ocks.org/domoritz/8e1e4da185e1a32c7e54934732a8d3d5&quot; &gt;vega-lite with websockets&lt;/a&gt;
+example. That brings fully dynamic auto-updating charts!
+That&#039;s how I use Vega coupled with my computational workflows,
+having the plot updated after each step processed with our
+Quantum-Mechanical heavy artillery. One may think about live dashboards
+powered with only a Raspberry Pi running a browser. I can&#039;t stop thinking
+about them now. I do all the time...&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;img src=&quot;/static/visuals-made-sane/vega-ws-demo.png&quot;
+       alt=&quot;Siesta-QE workflow results plotted with Vega-Lite&quot;
+       style=&quot;max-width: 860px;&quot; /&gt; &lt;br/&gt;
+  &lt;em&gt;In this test run the Heat Flux components from the two
+  DFT programs get straight onto the plot
+  right as each Molecular Dynamics step is processed.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;3D scenes: &lt;code&gt;WebGL&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;For everyone trying to enter low-level 3D rendering
+&lt;a href=&quot;https://nullprogram.com/blog/2013/06/10/&quot; &gt;nullprogram&#039;s advice&lt;/a&gt;
+is to start directly with WebGL, since it utilizes the most modern standards
+and has very low overhead. Again, only a modern web browser is needed - no
+need to drag a GUI window library. Portability is also high. Android devices
+do render WebGL, hell even single-board computers
+&lt;a href=&quot;https://www.youtube.com/watch?v=kCadKG3oa_U&amp;ab_channel=ODROIDHardkernel&quot; &gt;do render&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;The author of the best &lt;a href=&quot;https://webgl2fundamentals.org&quot; &gt;WebGL tutorial&lt;/a&gt;
+I&#039;ve seen so far also wrote an utility library &lt;a href=&quot;https://twgljs.org&quot; &gt;TWGL&lt;/a&gt;
+that helps to set up the scene components and start drawing faster
+(without hiding any low-level parts of the WebGL API).&lt;/p&gt;
+
+&lt;p&gt;This brings you GL, and fast, but what about interactiveness? Remember that
+this framework runs entirely in browser. The program that can use javascript to
+control the DOM of pages it shows. So with access to the javascript console one
+could rebuild in parts or in whole an appearance of a page,
+e.g. what is rendered on its &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
+
+&lt;p&gt;This idea is shown in this &lt;a href=&quot;https://github.com/byulparan/websocket-demo&quot; &gt;demo&lt;/a&gt;
+(I mirror the video below), where the author sends instructions
+from the Common Lisp REPL directly into his browser as Js instructions.
+Lisp forms are translated into javascript code using
+&lt;a href=&quot;https://common-lisp.net/project/parenscript/&quot; &gt;Parenscript&lt;/a&gt;
+library and sent as messages through websocket to a client page.
+Though it&#039;s a universal trick to inject any code on a page from any other
+programming environment (not necessarily Lisp), applied to WebGL canvas
+it creates an effect of manipulating a 3D scene without reloading anything!&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/aKYzfew1pnE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And that last part can give a spin to a various tasty hobby projects...
+But those ideas I&#039;ll keep for myself for now.
+Okay, &lt;a href=&quot;https://www.youtube.com/watch?v=kCadKG3oa_U&amp;ab_channel=ODROIDHardkernel&quot; &gt;just a hint&lt;/a&gt;
+one more last time.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt;
   &lt;img src=&quot;/static/rpi-info-deck/title-look.png&quot;
        alt=&quot;Info-Deck in the Underground of Neo-Sabadell&quot; /&gt;
