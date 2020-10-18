@@ -1,5 +1,83 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sat, 17 Oct 2020 19:00:42 +0200</pubDate> <item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 18 Oct 2020 14:27:13 +0200</pubDate> <item> <title>Things Common</title> <link>https://www.ivorysiegetower.com/posts/Things-Common.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Things-Common.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ <div style="display: flex; flex-wrap: wrap;">
+  <div style="max-width: 220px; padding-right: 20px;">
+    <img src="/static/lisplogos/lisplogo_warning_256.png"
+         style="margin: auto;" alt="Warning Lisp Logo" />
+  </div>
+
+  <div style="max-width: 660px;">
+    <p>
+        A probably growing post on things I found <i>rather</i> peculiar when using CL.
+    </p>
+  </div>
+</div>
+
+<!--more-->
+
+<h2>File descriptors exhausted with <code>uiop:launch-program</code></h2>
+
+<p>Quite a critical bug met with standard facility for launching asynchronous system
+calls, since I'm planning to do so a lot with my side-effect manager.</p>
+
+<p>The following code will fail after a couple hundred (maybe thousand)
+of iterations, complaining about &quot;too many open files&quot;:</p><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">loop</span>
+ <span class="ss">:repeat</span> <span class="mi">1000</span>
+ <span class="ss">:do</span>  <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">proc</span> <span class="p">(</span><span class="nv">uiop:launch-program</span>
+                   <span class="s">&quot;cat ~/.bashrc&quot;</span>
+                   <span class="ss">:output</span> <span class="ss">:stream</span> <span class="ss">:error-output</span> <span class="ss">:stream</span><span class="p">)))</span>
+
+        <span class="p">(</span><span class="nb">print</span> <span class="p">(</span><span class="nv">uiop:process-info-pid</span> <span class="nv">proc</span><span class="p">))</span> <span class="c1">; show PID</span>
+
+        <span class="p">(</span><span class="nv">uiop:slurp-stream-lines</span>        <span class="c1">; collect output lines</span>
+         <span class="p">(</span><span class="nv">uiop:process-info-output</span> <span class="nv">proc</span><span class="p">))</span>
+
+        <span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nb">=</span> <span class="mi">0</span> <span class="p">(</span><span class="nv">uiop:wait-process</span> <span class="nv">proc</span><span class="p">))</span> <span class="c1">; wait till end</span>
+          <span class="p">(</span><span class="nb">print</span> <span class="s">&quot;Fail!&quot;</span><span class="p">))))</span>
+</pre></div>
+
+
+<p>Experimentally I found out that <code>uiop:close-streams</code> should be used to mitigate
+the bug. Which is in fact written in the documentation string, saying:</p>
+
+<blockquote>
+<p>Needs to be run whenever streams were requested by passing :stream to :input,
+:output, or :error-output.</p>
+</blockquote>
+
+<p>Which takes place since I do request those outputs as streams.</p>
+
+<p>But how do I know about it in advance? Well, turns out that the corresponding
+<a href="https://common-lisp.net/project/asdf/uiop.html#UIOP_002fLAUNCH_002dPROGRAM" >chapter</a>
+in the ASDF manual opens with description of <code>close-streams</code>, because alphabet.
+So it's one of the &quot;RTFM&quot; cases.</p>
+
+<p>So this works, as many-many times I want:</p><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">loop</span>
+ <span class="ss">:repeat</span> <span class="mi">100000</span>
+ <span class="ss">:do</span>  <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">proc</span> <span class="p">(</span><span class="nv">uiop:launch-program</span>
+                   <span class="s">&quot;cat .bashrc&quot;</span>
+                   <span class="ss">:output</span> <span class="ss">:stream</span> <span class="ss">:error-output</span> <span class="ss">:stream</span><span class="p">)))</span>
+
+        <span class="p">(</span><span class="nb">print</span> <span class="p">(</span><span class="nv">uiop:process-info-pid</span> <span class="nv">proc</span><span class="p">))</span> <span class="c1">; show PID</span>
+
+        <span class="p">(</span><span class="nv">uiop:slurp-stream-lines</span>        <span class="c1">; collect output lines</span>
+         <span class="p">(</span><span class="nv">uiop:process-info-output</span> <span class="nv">proc</span><span class="p">))</span>
+
+        <span class="p">(</span><span class="nb">unless</span> <span class="p">(</span><span class="nb">=</span> <span class="mi">0</span> <span class="p">(</span><span class="nv">uiop:wait-process</span> <span class="nv">proc</span><span class="p">))</span> <span class="c1">; wait till end</span>
+          <span class="p">(</span><span class="nb">print</span> <span class="s">&quot;Fail!&quot;</span><span class="p">))</span>
+
+        <span class="p">(</span><span class="nv">uiop:close-streams</span> <span class="nv">proc</span><span class="p">)))</span> <span class="c1">; &lt;- DAT FIXES</span>
+</pre></div>
+
+
+<p>And given that I defined a macro for this most common pattern of program launching,
+just not to forget to <code>close-streams</code> again. A raw anaphora will serve till I
+produce something more clever:</p><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">aproc</span> <span class="p">(</span><span class="nv">command</span> <span class="k">&amp;body</span> <span class="nv">body</span><span class="p">)</span>
+  <span class="s">&quot;Anaphoric process launcher. Refer to process instance as PROC in &amp;BODY.&quot;</span>
+  <span class="o">`</span><span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">proc</span> <span class="p">(</span><span class="nv">uiop:launch-program</span>
+                <span class="o">,</span><span class="nv">command</span> <span class="ss">:output</span> <span class="ss">:stream</span> <span class="ss">:error-output</span> <span class="ss">:stream</span><span class="p">)))</span>
+     <span class="p">(</span><span class="nb">values</span> <span class="o">,@</span><span class="nv">body</span> <span class="p">(</span><span class="nv">uiop:close-streams</span> <span class="nv">proc</span><span class="p">))))</span>
+</pre></div>
+ ]]></description> </item><item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
 - literally - anything, it used to be disturbing.
 A balance between control, speed, accuracy and easiness seemed unreachable
 even for a routine plotting of data at hand. Well, not anymore!</p>
@@ -1082,43 +1160,4 @@ Cкинуть мусор с верхних этажей, подкрасить к
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/SLd6-5kISHI" frameborder="0" allowfullscreen></iframe>
 </div>
- ]]></description> </item><item> <title>Когнитивная Готика</title> <link>https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html</link> <pubDate>2020-03-02</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html</guid> <category><![CDATA[ ru ]]></category> <description><![CDATA[ <p>Пока строил Башню набрел через HN на
-<a href="https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/" >пост</a>
-о Предвестниках Гипертекстового Ренессанса. Там интересная
-писательская позиция и слегка наивный взгляд на тех. аспекты (кложа
-это &quot;next generation language&quot; оказывается). Но самое забавное, на мой
-взгляд, - то что в пророчестве о Возрождении основной акцент сделан на
-таланте разработчиков экспериментальных форм [доставки контента],
-крутых технологиях и притянутом за уши культурном феномене.
-Но как по мне, появление новых платформ неизбежно просто с течением
-эпохи Когнитивной Готики.</p>
-
-<!--more-->
-
-<p>Еще до бума соцсетей &quot;Компьютерра&quot; со своих приятно шуршащих глянцевых
-страниц предрекала появление профессии &quot;когнитивных советников&quot;,
-этаких профи-датамайнеров, посредством мощного ИИ и алгоритмов
-отдающих клиенту действительно интересные ему медиа.</p>
-
-<p>Ну, допустим ИИ у нас есть, а также: адовая лента в ФБ, лихая
-предложка в ютубе, куча новостного спама во входящих с линком
-&quot;unsubscribe&quot; кегль 8. Дохлый хомяк в блоггере. Твиттор.</p>
-
-<p>Включение осознанного потребления <em>логично</em> приводит к: ведению своего
-пространства смыслов (в чем-то похожем на персональную вики), дропу
-вордпресса в пользу самосборных статических бложиков, платным
-спискам рассылки (вот это новость). Мета-твиттор.</p>
-
-<p>Прелесть момента в том что, видимо, достаточно народу устало от
-старого инфопузыря и смотрят в сторону новых платформ. Много смотрят
-на тикток. Но и новым эверноутам (осознанному инфо-потреблению)
-достает внимания, что делает их коммерчески привлекательными.
-Но это даже еще не ранний Ренессанс.
-Хотя Темная эра точно ушла в прошлое - с выходом Sunless Sea.</p>
-
-<p>В комментах на HN, разумеется,  веселье в духе:</p>
-
-<blockquote>
-<p>When I read 'Text Renaissance' I assumed that the article is going to be about org-mode or nvalt ;)</p>
-</blockquote>
  ]]></description> </item> </channel> </rss>

@@ -1,5 +1,83 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 17 Oct 2020 19:00:42 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html"/> <title>Visuals Made Sane</title> <published>2020-10-01</published> <updated>2020-10-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Almost every time I had to produce a &lt;em&gt;visual representation&lt;/em&gt; for
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 18 Oct 2020 14:27:13 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Things-Common.html"/> <title>Things Common</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;div style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
+  &lt;div style=&quot;max-width: 220px; padding-right: 20px;&quot;&gt;
+    &lt;img src=&quot;/static/lisplogos/lisplogo_warning_256.png&quot;
+         style=&quot;margin: auto;&quot; alt=&quot;Warning Lisp Logo&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;max-width: 660px;&quot;&gt;
+    &lt;p&gt;
+        A probably growing post on things I found &lt;i&gt;rather&lt;/i&gt; peculiar when using CL.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;File descriptors exhausted with &lt;code&gt;uiop:launch-program&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Quite a critical bug met with standard facility for launching asynchronous system
+calls, since I&#039;m planning to do so a lot with my side-effect manager.&lt;/p&gt;
+
+&lt;p&gt;The following code will fail after a couple hundred (maybe thousand)
+of iterations, complaining about &amp;quot;too many open files&amp;quot;:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;loop&lt;/span&gt;
+ &lt;span class=&quot;ss&quot;&gt;:repeat&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;
+ &lt;span class=&quot;ss&quot;&gt;:do&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:launch-program&lt;/span&gt;
+                   &lt;span class=&quot;s&quot;&gt;&amp;quot;cat ~/.bashrc&amp;quot;&lt;/span&gt;
+                   &lt;span class=&quot;ss&quot;&gt;:output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:error-output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-pid&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; show PID&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:slurp-stream-lines&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;; collect output lines&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-output&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:wait-process&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; wait till end&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Fail!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Experimentally I found out that &lt;code&gt;uiop:close-streams&lt;/code&gt; should be used to mitigate
+the bug. Which is in fact written in the documentation string, saying:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Needs to be run whenever streams were requested by passing :stream to :input,
+:output, or :error-output.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Which takes place since I do request those outputs as streams.&lt;/p&gt;
+
+&lt;p&gt;But how do I know about it in advance? Well, turns out that the corresponding
+&lt;a href=&quot;https://common-lisp.net/project/asdf/uiop.html#UIOP_002fLAUNCH_002dPROGRAM&quot; &gt;chapter&lt;/a&gt;
+in the ASDF manual opens with description of &lt;code&gt;close-streams&lt;/code&gt;, because alphabet.
+So it&#039;s one of the &amp;quot;RTFM&amp;quot; cases.&lt;/p&gt;
+
+&lt;p&gt;So this works, as many-many times I want:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;loop&lt;/span&gt;
+ &lt;span class=&quot;ss&quot;&gt;:repeat&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100000&lt;/span&gt;
+ &lt;span class=&quot;ss&quot;&gt;:do&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:launch-program&lt;/span&gt;
+                   &lt;span class=&quot;s&quot;&gt;&amp;quot;cat .bashrc&amp;quot;&lt;/span&gt;
+                   &lt;span class=&quot;ss&quot;&gt;:output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:error-output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-pid&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; show PID&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:slurp-stream-lines&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;; collect output lines&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-output&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:wait-process&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; wait till end&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Fail!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:close-streams&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; &amp;lt;- DAT FIXES&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And given that I defined a macro for this most common pattern of program launching,
+just not to forget to &lt;code&gt;close-streams&lt;/code&gt; again. A raw anaphora will serve till I
+produce something more clever:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;defmacro&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;aproc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;&amp;amp;body&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&amp;quot;Anaphoric process launcher. Refer to process instance as PROC in &amp;amp;BODY.&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:launch-program&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:error-output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+     &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;,@&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:close-streams&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html"/> <title>Visuals Made Sane</title> <published>2020-10-01</published> <updated>2020-10-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Almost every time I had to produce a &lt;em&gt;visual representation&lt;/em&gt; for
 - literally - anything, it used to be disturbing.
 A balance between control, speed, accuracy and easiness seemed unreachable
 even for a routine plotting of data at hand. Well, not anymore!&lt;/p&gt;
@@ -1082,43 +1160,4 @@ Cкинуть мусор с верхних этажей, подкрасить к
 &lt;div class=&quot;video-container&quot;&gt;
     &lt;iframe src=&quot;https://www.youtube.com/embed/SLd6-5kISHI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Когнитивная-Готика.html"/> <title>Когнитивная Готика</title> <published>2020-03-02</published> <updated>2020-03-02</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Пока строил Башню набрел через HN на
-&lt;a href=&quot;https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/&quot; &gt;пост&lt;/a&gt;
-о Предвестниках Гипертекстового Ренессанса. Там интересная
-писательская позиция и слегка наивный взгляд на тех. аспекты (кложа
-это &amp;quot;next generation language&amp;quot; оказывается). Но самое забавное, на мой
-взгляд, - то что в пророчестве о Возрождении основной акцент сделан на
-таланте разработчиков экспериментальных форм [доставки контента],
-крутых технологиях и притянутом за уши культурном феномене.
-Но как по мне, появление новых платформ неизбежно просто с течением
-эпохи Когнитивной Готики.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Еще до бума соцсетей &amp;quot;Компьютерра&amp;quot; со своих приятно шуршащих глянцевых
-страниц предрекала появление профессии &amp;quot;когнитивных советников&amp;quot;,
-этаких профи-датамайнеров, посредством мощного ИИ и алгоритмов
-отдающих клиенту действительно интересные ему медиа.&lt;/p&gt;
-
-&lt;p&gt;Ну, допустим ИИ у нас есть, а также: адовая лента в ФБ, лихая
-предложка в ютубе, куча новостного спама во входящих с линком
-&amp;quot;unsubscribe&amp;quot; кегль 8. Дохлый хомяк в блоггере. Твиттор.&lt;/p&gt;
-
-&lt;p&gt;Включение осознанного потребления &lt;em&gt;логично&lt;/em&gt; приводит к: ведению своего
-пространства смыслов (в чем-то похожем на персональную вики), дропу
-вордпресса в пользу самосборных статических бложиков, платным
-спискам рассылки (вот это новость). Мета-твиттор.&lt;/p&gt;
-
-&lt;p&gt;Прелесть момента в том что, видимо, достаточно народу устало от
-старого инфопузыря и смотрят в сторону новых платформ. Много смотрят
-на тикток. Но и новым эверноутам (осознанному инфо-потреблению)
-достает внимания, что делает их коммерчески привлекательными.
-Но это даже еще не ранний Ренессанс.
-Хотя Темная эра точно ушла в прошлое - с выходом Sunless Sea.&lt;/p&gt;
-
-&lt;p&gt;В комментах на HN, разумеется,  веселье в духе:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;When I read &#039;Text Renaissance&#039; I assumed that the article is going to be about org-mode or nvalt ;)&lt;/p&gt;
-&lt;/blockquote&gt;
 </content> </entry> </feed>

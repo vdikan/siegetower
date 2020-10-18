@@ -356,7 +356,7 @@ tt { font-size: .9em; font-family: (unquote mono-font) }
 .highlight .nx { color: #eeeeee } /* Name.Other */
 .highlight .py { color: #eeeeee } /* Name.Property */
 .highlight .nt { color: #eeeeee } /* Name.Tag */
-.highlight .nv { color: #3affff } /* Name.Variable */
+.highlight .nv { color: #eeeeff} /* Name.Variable */
 .highlight .ow { color: #ffff1e } /* Operator.Word */
 .highlight .w  { color: #eeeeee } /* Text.Whitespace */
 .highlight .mb { color: #ff53ff } /* Literal.Number.Bin */
