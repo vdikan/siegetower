@@ -1,0 +1,90 @@
+;;;;;
+title: Things Common
+tags: en, lisp
+date: 2020-10-18
+format: md
+;;;;;
+
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="max-width: 220px; padding-right: 20px;">
+    <img src="/static/lisplogos/lisplogo_warning_256.png"
+         style="margin: auto;" alt="Warning Lisp Logo" />
+  </div>
+
+  <div style="max-width: 660px;">
+    <p>
+        A probably growing post on things I found <i>rather</i> peculiar when using CL.
+    </p>
+  </div>
+</div>
+
+<!--more-->
+
+## File descriptors exhausted with `uiop:launch-program`
+
+Quite a critical bug met with standard facility for launching asynchronous system
+calls, since I'm planning to do so a lot with my side-effect manager.
+
+The following code will fail after a couple hundred (maybe thousand)
+of iterations, complaining about "too many open files":
+
+```lisp
+(loop
+ :repeat 1000
+ :do  (let ((proc (uiop:launch-program
+                   "cat ~/.bashrc"
+                   :output :stream :error-output :stream)))
+
+        (print (uiop:process-info-pid proc)) ; show PID
+
+        (uiop:slurp-stream-lines        ; collect output lines
+         (uiop:process-info-output proc))
+
+        (unless (= 0 (uiop:wait-process proc)) ; wait till end
+          (print "Fail!"))))
+```
+
+Experimentally I found out that `uiop:close-streams` should be used to mitigate
+the bug. Which is in fact written in the documentation string, saying:
+
+> Needs to be run whenever streams were requested by passing :stream to :input,
+> :output, or :error-output.
+
+Which takes place since I do request those outputs as streams.
+
+But how do I know about it in advance? Well, turns out that the corresponding
+[chapter](https://common-lisp.net/project/asdf/uiop.html#UIOP_002fLAUNCH_002dPROGRAM)
+in the ASDF manual opens with description of `close-streams`, because alphabet.
+So it's one of the "RTFM" cases.
+
+So this works, as many-many times I want:
+
+```lisp
+(loop
+ :repeat 100000
+ :do  (let ((proc (uiop:launch-program
+                   "cat .bashrc"
+                   :output :stream :error-output :stream)))
+
+        (print (uiop:process-info-pid proc)) ; show PID
+
+        (uiop:slurp-stream-lines        ; collect output lines
+         (uiop:process-info-output proc))
+
+        (unless (= 0 (uiop:wait-process proc)) ; wait till end
+          (print "Fail!"))
+
+        (uiop:close-streams proc))) ; <- DAT FIXES
+```
+
+And given that I defined a macro for this most common pattern of program launching,
+just not to forget to `close-streams` again. A raw anaphora will serve till I
+produce something more clever:
+
+```lisp
+(defmacro aproc (command &body body)
+  "Anaphoric process launcher. Refer to process instance as PROC in &BODY."
+  `(let ((proc (uiop:launch-program
+                ,command :output :stream :error-output :stream)))
+     (values ,@body (uiop:close-streams proc))))
+```
