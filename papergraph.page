@@ -1,0 +1,26 @@
+;;;;;
+title: Ether Gate -- {PaperGraph}
+format: html
+URL: papergraph.html
+;;;;;
+<script src="http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js"></script>
+
+<div style="width:  900px; height: 600px;
+            background-image: url('/static/ether-gate.png');
+            background-position: center;
+            background-size: contain;">
+  <object id="papergraph" type="image/svg+xml"
+          data="/static/papergraph.svg"
+          style="width: 900px; height: 600px;">
+    Your browser does not support SVG, the portal therefore shows no signs of life...
+  </object>
+</div>
+
+<script>
+  window.onload = function() {
+    svgPanZoom('#papergraph', {
+    zoomEnabled: true,
+    controlIconsEnabled: true
+    });
+  };
+</script>
