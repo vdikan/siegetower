@@ -32,7 +32,7 @@
                      :cname t))
 
  :sitenav ((:url "https://www.ivorysiegetower.com" :name "Blog")
-           (:url "/papergraph.html" :name "PaperGraph")
+           ;; (:url "/papergraph.html" :name "PaperGraph")
            (:url "/about.html" :name "About"))
 
  :siterefs ((:title "ivorysiegetower @ Twitter"

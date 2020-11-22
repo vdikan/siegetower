@@ -3,11 +3,11 @@ title: Summertime Madness
 tags: ru, personal
 date: 2020-09-01
 format: html
-ogimage: static/summertime-madness/summer-bog-2020.png
+ogimage: static/img/summertime-madness/summer-bog-2020.png
 ;;;;;
 
 <p>
-  <img src="/static/summertime-madness/summer-bog-2020.png"
+  <img src="/static/img/summertime-madness/summer-bog-2020.png"
        alt="Грустный вид Осадной Башни, застрявшей в болоте." />
 </p>
 

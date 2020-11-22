@@ -3,11 +3,11 @@ title: My RPi Cyberpunk Info-Deck Console
 tags: en, raspberry, emacs
 date: 2020-08-19
 format: html
-ogimage: static/rpi-info-deck/title-look.png
+ogimage: static/img/rpi-info-deck/title-look.png
 ;;;;;
 
 <p>
-  <img src="/static/rpi-info-deck/title-look.png"
+  <img src="/static/img/rpi-info-deck/title-look.png"
        alt="Info-Deck in the Underground of Neo-Sabadell" />
 </p>
 
@@ -34,7 +34,7 @@ ogimage: static/rpi-info-deck/title-look.png
 <h1>The Chasis</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/sec-metroid.png" />
+  <img src="/static/img/rpi-info-deck/sec-metroid.png" />
 </p>
 
 <p>
@@ -61,7 +61,7 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/ags-port.png" />
+  <img src="/static/img/rpi-info-deck/ags-port.png" />
   <br/>
   <em>RetroPie's <a href="https://www.adventuregamestudio.co.uk/">AGS</a> port in action</em>
 </p>
@@ -82,7 +82,7 @@ ogimage: static/rpi-info-deck/title-look.png
 <h1>The Port</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/sec-xenogears.png" />
+  <img src="/static/img/rpi-info-deck/sec-xenogears.png" />
 </p>
 
 <p>
@@ -119,7 +119,7 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/qjoypad.png" />
+  <img src="/static/img/rpi-info-deck/qjoypad.png" />
 </p>
 
 <p>
@@ -129,7 +129,7 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/onboard.png" />
+  <img src="/static/img/rpi-info-deck/onboard.png" />
   <br/> <em>Onboard comes in handy when there is no remote keyboard at hand</em>
 </p>
 
@@ -142,7 +142,7 @@ ogimage: static/rpi-info-deck/title-look.png
 <h1>The Info-Deck</h1>
 
 <p>
-  <img src="/static/rpi-info-deck/elfeed-search.png" />
+  <img src="/static/img/rpi-info-deck/elfeed-search.png" />
   <br/><em>Elfeed-search contents screen</em>
 </p>
 
@@ -159,11 +159,11 @@ ogimage: static/rpi-info-deck/title-look.png
 
 <div style="display: flex;">
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/elfeed-header.png"
+    <img src="/static/img/rpi-info-deck/elfeed-header.png"
          style="border-radius: 8px; width: 100%;" />
   </div>
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/elfeed-content.png"
+    <img src="/static/img/rpi-info-deck/elfeed-content.png"
          style="border-radius: 8px; width: 100%;" />
   </div>
 </div>
@@ -193,11 +193,11 @@ ogimage: static/rpi-info-deck/title-look.png
 
 <div style="display: flex;">
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/org-brain-header.png"
+    <img src="/static/img/rpi-info-deck/org-brain-header.png"
          style="border-radius: 8px; width: 100%;" />
   </div>
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/org-brain-content.png"
+    <img src="/static/img/rpi-info-deck/org-brain-content.png"
          style="border-radius: 8px; width: 100%;" />
   </div>
 </div>
@@ -224,24 +224,24 @@ ogimage: static/rpi-info-deck/title-look.png
 
 <div style="display: flex;">
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/scrot-metroid.png"
+    <img src="/static/img/rpi-info-deck/scrot-metroid.png"
          style="border-radius: 4px; width: 95%;" />
   </div>
 
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/scrot-comix-zone.png"
+    <img src="/static/img/rpi-info-deck/scrot-comix-zone.png"
          style="border-radius: 4px; width: 95%;" />
   </div>
 </div>
 
 <div style="display: flex;">
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/scrot-castlevania.png"
+    <img src="/static/img/rpi-info-deck/scrot-castlevania.png"
          style="border-radius: 4px; width: 95%;" />
   </div>
 
   <div style="flex: 50.00%; padding: 5px;">
-    <img src="/static/rpi-info-deck/scrot-xenogears.png"
+    <img src="/static/img/rpi-info-deck/scrot-xenogears.png"
          style="border-radius: 4px; width: 95%;" />
   </div>
 </div>
@@ -253,6 +253,6 @@ ogimage: static/rpi-info-deck/title-look.png
 </p>
 
 <p>
-  <img src="/static/rpi-info-deck/score-metroid.png" />
+  <img src="/static/img/rpi-info-deck/score-metroid.png" />
   <br/> <em>Nope, not a hundred, not even close</em>
 </p>

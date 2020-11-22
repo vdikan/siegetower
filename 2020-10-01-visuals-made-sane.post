@@ -3,7 +3,7 @@ title: Visuals Made Sane
 tags: en, toolbox, visual
 date: 2020-10-01
 format: md
-ogimage: /static/visuals-made-sane/st-floating-gardens.jpg
+ogimage: /static/img/visuals-made-sane/st-floating-gardens.jpg
 ;;;;;
 
 Almost every time I had to produce a *visual representation* for
@@ -17,7 +17,7 @@ that very piece of software you are probably already running.
 
 Yes, I mean the mighty **web browser**. Some observations follow.
 
-![Floating Gardens](/static/visuals-made-sane/st-floating-gardens.jpg) <br/>
+![Floating Gardens](/static/img/visuals-made-sane/st-floating-gardens.jpg) <br/>
 
 <!--more-->
 ## Presentations: [Reveal.js](https://revealjs.com)
@@ -303,7 +303,7 @@ powered with only a Raspberry Pi running a browser. I can't stop thinking
 about them now. I do all the time...
 
 <p>
-  <img src="/static/visuals-made-sane/vega-ws-demo.png"
+  <img src="/static/img/visuals-made-sane/vega-ws-demo.png"
        alt="Siesta-QE workflow results plotted with Vega-Lite"
        style="max-width: 860px;" /> <br/>
   <em>In this test run the Heat Flux components from the two
