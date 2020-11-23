@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 22 Nov 2020 17:31:39 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Summertime-Madness.html"/> <title>Summertime Madness</title> <published>2020-09-01</published> <updated>2020-09-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 23 Nov 2020 01:51:00 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Summertime-Madness.html"/> <title>Summertime Madness</title> <published>2020-09-01</published> <updated>2020-09-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt;
-  &lt;img src=&quot;/static/summertime-madness/summer-bog-2020.png&quot;
+  &lt;img src=&quot;/static/img/summertime-madness/summer-bog-2020.png&quot;
        alt=&quot;Грустный вид Осадной Башни, застрявшей в болоте.&quot; /&gt;
 &lt;/p&gt;
 
@@ -88,7 +88,7 @@
 &lt;p&gt;-- &lt;em&gt;Генри Дэвид Торо&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/20200408_parchment_sketch.jpg&quot; alt=&quot;План апгрейда Башни на старинном пергаменте&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/20200408_parchment_sketch.jpg&quot; alt=&quot;План апгрейда Башни на старинном пергаменте&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;В разгар карантина осады не ведутся, есть возможность навести порядок.
 Cкинуть мусор с верхних этажей, подкрасить крышу, перебрать детали

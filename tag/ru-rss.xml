@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 22 Nov 2020 17:31:39 +0100</pubDate> <item> <title>Summertime Madness</title> <link>https://www.ivorysiegetower.com/posts/Summertime-Madness.html</link> <pubDate>2020-09-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Summertime-Madness.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 23 Nov 2020 01:51:00 +0100</pubDate> <item> <title>Summertime Madness</title> <link>https://www.ivorysiegetower.com/posts/Summertime-Madness.html</link> <pubDate>2020-09-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Summertime-Madness.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ 
 <p>
-  <img src="/static/summertime-madness/summer-bog-2020.png"
+  <img src="/static/img/summertime-madness/summer-bog-2020.png"
        alt="Грустный вид Осадной Башни, застрявшей в болоте." />
 </p>
 
@@ -88,7 +88,7 @@
 <p>-- <em>Генри Дэвид Торо</em></p>
 </blockquote>
 
-<p><img src="/static/20200408_parchment_sketch.jpg" alt="План апгрейда Башни на старинном пергаменте" /></p>
+<p><img src="/static/img/20200408_parchment_sketch.jpg" alt="План апгрейда Башни на старинном пергаменте" /></p>
 
 <p>В разгар карантина осады не ведутся, есть возможность навести порядок.
 Cкинуть мусор с верхних этажей, подкрасить крышу, перебрать детали

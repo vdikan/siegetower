@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 22 Nov 2020 17:31:39 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Things-Common.html"/> <title>Things Common</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;div style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 23 Nov 2020 01:51:00 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Things-Common.html"/> <title>Things Common</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
+
+&lt;div style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
   &lt;div style=&quot;max-width: 220px; padding-right: 20px;&quot;&gt;
-    &lt;img src=&quot;/static/lisplogos/lisplogo_warning_256.png&quot;
+    &lt;img src=&quot;/static/img/lisplogos/lisplogo_warning_256.png&quot;
          style=&quot;margin: auto;&quot; alt=&quot;Warning Lisp Logo&quot; /&gt;
   &lt;/div&gt;
 
@@ -20,21 +24,22 @@
 calls, since I&#039;m planning to do so a lot with my side-effect manager.&lt;/p&gt;
 
 &lt;p&gt;The following code will fail after a couple hundred (maybe thousand)
-of iterations, complaining about &amp;quot;too many open files&amp;quot;:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;loop&lt;/span&gt;
- &lt;span class=&quot;ss&quot;&gt;:repeat&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;
- &lt;span class=&quot;ss&quot;&gt;:do&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:launch-program&lt;/span&gt;
-                   &lt;span class=&quot;s&quot;&gt;&amp;quot;cat ~/.bashrc&amp;quot;&lt;/span&gt;
-                   &lt;span class=&quot;ss&quot;&gt;:output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:error-output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+of iterations, complaining about &amp;quot;too many open files&amp;quot;:&lt;/p&gt;
 
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-pid&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; show PID&lt;/span&gt;
+&lt;pre&gt; &lt;code&gt; (loop
+ :repeat 1000
+ :do  (let ((proc (uiop:launch-program
+                   &quot;cat ~/.bashrc&quot;
+                   :output :stream :error-output :stream)))
 
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:slurp-stream-lines&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;; collect output lines&lt;/span&gt;
-         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-output&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        (print (uiop:process-info-pid proc)) ; show PID
 
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:wait-process&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; wait till end&lt;/span&gt;
-          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Fail!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+        (uiop:slurp-stream-lines        ; collect output lines
+         (uiop:process-info-output proc))
 
+        (unless (= 0 (uiop:wait-process proc)) ; wait till end
+          (print &quot;Fail!&quot;))))
+&lt;/code&gt; &lt;/pre&gt;
 
 &lt;p&gt;Experimentally I found out that &lt;code&gt;uiop:close-streams&lt;/code&gt; should be used to mitigate
 the bug. Which is in fact written in the documentation string, saying:&lt;/p&gt;
@@ -51,32 +56,35 @@ the bug. Which is in fact written in the documentation string, saying:&lt;/p&gt;
 in the ASDF manual opens with description of &lt;code&gt;close-streams&lt;/code&gt;, because alphabet.
 So it&#039;s one of the &amp;quot;RTFM&amp;quot; cases.&lt;/p&gt;
 
-&lt;p&gt;So this works, as many-many times I want:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;loop&lt;/span&gt;
- &lt;span class=&quot;ss&quot;&gt;:repeat&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100000&lt;/span&gt;
- &lt;span class=&quot;ss&quot;&gt;:do&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:launch-program&lt;/span&gt;
-                   &lt;span class=&quot;s&quot;&gt;&amp;quot;cat .bashrc&amp;quot;&lt;/span&gt;
-                   &lt;span class=&quot;ss&quot;&gt;:output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:error-output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;p&gt;So this works, as many-many times I want:&lt;/p&gt;
 
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-pid&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; show PID&lt;/span&gt;
+&lt;pre&gt;&lt;code&gt; (loop
+ :repeat 100000
+ :do  (let ((proc (uiop:launch-program
+                   &quot;cat .bashrc&quot;
+                   :output :stream :error-output :stream)))
 
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:slurp-stream-lines&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;; collect output lines&lt;/span&gt;
-         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:process-info-output&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        (print (uiop:process-info-pid proc)) ; show PID
 
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:wait-process&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; wait till end&lt;/span&gt;
-          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Fail!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        (uiop:slurp-stream-lines        ; collect output lines
+         (uiop:process-info-output proc))
 
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:close-streams&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; &amp;lt;- DAT FIXES&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+        (unless (= 0 (uiop:wait-process proc)) ; wait till end
+          (print &quot;Fail!&quot;))
 
+        (uiop:close-streams proc))) ; &lt;- DAT FIXES
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And given that I defined a macro for this most common pattern of program launching,
 just not to forget to &lt;code&gt;close-streams&lt;/code&gt; again. A raw anaphora will serve till I
-produce something more clever:&lt;/p&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;defmacro&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;aproc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;&amp;amp;body&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;&amp;quot;Anaphoric process launcher. Refer to process instance as PROC in &amp;amp;BODY.&amp;quot;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:launch-program&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:error-output&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-     &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;,@&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uiop:close-streams&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+produce something more clever:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; (defmacro aproc (command &amp;body body)
+  &quot;Anaphoric process launcher. Refer to process instance as PROC in &amp;BODY.&quot;
+  `(let ((proc (uiop:launch-program
+                ,command :output :stream :error-output :stream)))
+     (values ,@body (uiop:close-streams proc))))
+&lt;/code&gt;&lt;/pre&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html"/> <title>Visuals Made Sane</title> <published>2020-10-01</published> <updated>2020-10-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Almost every time I had to produce a &lt;em&gt;visual representation&lt;/em&gt; for
 - literally - anything, it used to be disturbing.
 A balance between control, speed, accuracy and easiness seemed unreachable
@@ -88,7 +96,7 @@ that very piece of software you are probably already running.&lt;/p&gt;
 
 &lt;p&gt;Yes, I mean the mighty &lt;strong&gt;web browser&lt;/strong&gt;. Some observations follow.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/visuals-made-sane/st-floating-gardens.jpg&quot; alt=&quot;Floating Gardens&quot; /&gt; &lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/visuals-made-sane/st-floating-gardens.jpg&quot; alt=&quot;Floating Gardens&quot; /&gt; &lt;br/&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -259,199 +267,96 @@ vegaEmbed(&#039;#vis&#039;, vlSpec);
 
 &lt;p&gt;And it&#039;s not just an export form, but the example itself.
 It&#039;s rendered using Js through Vega-Lite&#039;s modules, on this very page.
-Here&#039;s the complete code:&lt;/p&gt;&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt; 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+Here&#039;s the complete code:&lt;/p&gt;
 
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;Vega-Lite Clack app
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://cdn.jsdelivr.net/npm/vega@5.15.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://cdn.jsdelivr.net/npm/vega-lite@4.15.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://cdn.jsdelivr.net/npm/vega-embed@6.11.1&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vis&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;visVegaSpec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;visVegaSpec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;$schema&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://vega.github.io/schema/vega-lite/v4.json&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Vega-lite chart assembled with CL web libs.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Vega-lite example&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;data&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;values&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.09153984953435515&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.024628329219937537&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.25424937682847376&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.06789449311470507&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.02272393291011522&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.19036725133450748&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.046126591721860055&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.016882629311779522&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.1282773775209184&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.023685530610426934&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.08976102834966887&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;mf&quot;&gt;0.06519893303184349&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;mark&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;line&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;point&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;filled&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fill&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;white&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;encoding&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;x&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;field&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;quantitative&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;step number&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;axis&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;tickCount&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;field&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;quantitative&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;component value&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;axis&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;tickCount&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;color&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;field&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;nominal&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&amp;quot;scale&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;domain&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&amp;quot;range&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;#dc143c&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#ff8c00&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#228b22&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;config&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;axis&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;grid&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}},&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;flatten&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;component&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;flux&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}],&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;vegaEmbed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#vis&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;visVegaSpec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
+
+&lt;pre&gt;&lt;code class=&quot;js&quot;&gt; if (&#039;undefined&#039; === typeof visVegaSpec) {
+    var visVegaSpec = {
+    &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.json&quot;,
+    &quot;description&quot;: &quot;Vega-lite chart assembled with CL web libs.&quot;,
+    &quot;title&quot;: &quot;Vega-lite example&quot;,
+    &quot;data&quot;: {
+        &quot;values&quot;: [
+        {
+            &quot;step&quot;: 5,
+            &quot;flux&quot;: [
+                0.09153984953435515,
+                0.024628329219937537,
+                0.25424937682847376
+                ],
+            &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+        },
+        {
+            &quot;step&quot;: 4,
+            &quot;flux&quot;: [
+                0.06789449311470507,
+                0.02272393291011522,
+                0.19036725133450748
+                ],
+            &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+        },
+        {
+            &quot;step&quot;: 3,
+            &quot;flux&quot;: [
+                0.046126591721860055,
+                0.016882629311779522,
+                0.1282773775209184
+                ],
+            &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+        },
+        {
+            &quot;step&quot;: 2,
+            &quot;flux&quot;: [
+                0.023685530610426934,
+                0.08976102834966887,
+                0.06519893303184349
+                ],
+            &quot;component&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;]
+        }
+        ],
+    },
+    &quot;mark&quot;: {
+        &quot;type&quot;: &quot;line&quot;,
+        &quot;point&quot;: {&quot;filled&quot;: false, &quot;fill&quot;: &quot;white&quot;}
+        },
+    &quot;encoding&quot;: {
+        &quot;x&quot;: {
+        &quot;field&quot;: &quot;step&quot;,
+        &quot;type&quot;: &quot;quantitative&quot;,
+        &quot;title&quot;: &quot;step number&quot;,
+        &quot;axis&quot;: {&quot;tickCount&quot;: 4}
+        },
+        &quot;y&quot;: {
+        &quot;field&quot;: &quot;flux&quot;,
+        &quot;type&quot;: &quot;quantitative&quot;,
+        &quot;title&quot;: &quot;component value&quot;,
+        &quot;axis&quot;: {&quot;tickCount&quot;: 4}
+        },
+        &quot;color&quot;: {
+        &quot;field&quot;: &quot;component&quot;,
+        &quot;type&quot;: &quot;nominal&quot;,
+        &quot;scale&quot;: {
+            &quot;domain&quot;: [&quot;X&quot;, &quot;Y&quot;, &quot;Z&quot;],
+            &quot;range&quot;: [&quot;#dc143c&quot;, &quot;#ff8c00&quot;, &quot;#228b22&quot;]
+        }
+        }
+    },
+    &quot;config&quot;: {&quot;axis&quot;: {&quot;grid&quot;: true}},
+    &quot;transform&quot;: [{&quot;flatten&quot;: [&quot;component&quot;, &quot;flux&quot;]}],
+    &quot;width&quot;: 400, &quot;height&quot;: 300
+    };
+  };
+  vegaEmbed(&#039;#vis&#039;, visVegaSpec);
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Note first that the whole plot spec is just a JSON.
 Here it includes the data points
 too, but in principle the data can be served from a separate &lt;code&gt;csv&lt;/code&gt;-file. That
-would leave here only the plot view spec (from line 59)
-that is short, readable and in general makes sense.&lt;/p&gt;
+would leave here only the plot view spec that is short, readable and in general
+makes sense.&lt;/p&gt;
 
 &lt;p&gt;Mind that round button in the right top corner for the chart export options.
 One of it says &amp;quot;Open in Vega Editor&amp;quot;. It spawns an interactive editor in
@@ -473,7 +378,7 @@ powered with only a Raspberry Pi running a browser. I can&#039;t stop thinking
 about them now. I do all the time...&lt;/p&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/visuals-made-sane/vega-ws-demo.png&quot;
+  &lt;img src=&quot;/static/img/visuals-made-sane/vega-ws-demo.png&quot;
        alt=&quot;Siesta-QE workflow results plotted with Vega-Lite&quot;
        style=&quot;max-width: 860px;&quot; /&gt; &lt;br/&gt;
   &lt;em&gt;In this test run the Heat Flux components from the two
@@ -522,7 +427,7 @@ Okay, &lt;a href=&quot;https://www.youtube.com/watch?v=kCadKG3oa_U&amp;ab_channe
 one more last time.&lt;/p&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Summertime-Madness.html"/> <title>Summertime Madness</title> <published>2020-09-01</published> <updated>2020-09-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt;
-  &lt;img src=&quot;/static/summertime-madness/summer-bog-2020.png&quot;
+  &lt;img src=&quot;/static/img/summertime-madness/summer-bog-2020.png&quot;
        alt=&quot;Грустный вид Осадной Башни, застрявшей в болоте.&quot; /&gt;
 &lt;/p&gt;
 
@@ -572,7 +477,7 @@ one more last time.&lt;/p&gt;
 &lt;/p&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/title-look.png&quot;
+  &lt;img src=&quot;/static/img/rpi-info-deck/title-look.png&quot;
        alt=&quot;Info-Deck in the Underground of Neo-Sabadell&quot; /&gt;
 &lt;/p&gt;
 
@@ -599,7 +504,7 @@ one more last time.&lt;/p&gt;
 &lt;h1&gt;The Chasis&lt;/h1&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/sec-metroid.png&quot; /&gt;
+  &lt;img src=&quot;/static/img/rpi-info-deck/sec-metroid.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -626,7 +531,7 @@ one more last time.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/ags-port.png&quot; /&gt;
+  &lt;img src=&quot;/static/img/rpi-info-deck/ags-port.png&quot; /&gt;
   &lt;br/&gt;
   &lt;em&gt;RetroPie&#039;s &lt;a href=&quot;https://www.adventuregamestudio.co.uk/&quot;&gt;AGS&lt;/a&gt; port in action&lt;/em&gt;
 &lt;/p&gt;
@@ -647,7 +552,7 @@ one more last time.&lt;/p&gt;
 &lt;h1&gt;The Port&lt;/h1&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/sec-xenogears.png&quot; /&gt;
+  &lt;img src=&quot;/static/img/rpi-info-deck/sec-xenogears.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -684,7 +589,7 @@ one more last time.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/qjoypad.png&quot; /&gt;
+  &lt;img src=&quot;/static/img/rpi-info-deck/qjoypad.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -694,7 +599,7 @@ one more last time.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/onboard.png&quot; /&gt;
+  &lt;img src=&quot;/static/img/rpi-info-deck/onboard.png&quot; /&gt;
   &lt;br/&gt; &lt;em&gt;Onboard comes in handy when there is no remote keyboard at hand&lt;/em&gt;
 &lt;/p&gt;
 
@@ -707,7 +612,7 @@ one more last time.&lt;/p&gt;
 &lt;h1&gt;The Info-Deck&lt;/h1&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/elfeed-search.png&quot; /&gt;
+  &lt;img src=&quot;/static/img/rpi-info-deck/elfeed-search.png&quot; /&gt;
   &lt;br/&gt;&lt;em&gt;Elfeed-search contents screen&lt;/em&gt;
 &lt;/p&gt;
 
@@ -724,11 +629,11 @@ one more last time.&lt;/p&gt;
 
 &lt;div style=&quot;display: flex;&quot;&gt;
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/elfeed-header.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/elfeed-header.png&quot;
          style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
   &lt;/div&gt;
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/elfeed-content.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/elfeed-content.png&quot;
          style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -758,11 +663,11 @@ one more last time.&lt;/p&gt;
 
 &lt;div style=&quot;display: flex;&quot;&gt;
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/org-brain-header.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/org-brain-header.png&quot;
          style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
   &lt;/div&gt;
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/org-brain-content.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/org-brain-content.png&quot;
          style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -789,24 +694,24 @@ one more last time.&lt;/p&gt;
 
 &lt;div style=&quot;display: flex;&quot;&gt;
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/scrot-metroid.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-metroid.png&quot;
          style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
   &lt;/div&gt;
 
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/scrot-comix-zone.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-comix-zone.png&quot;
          style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div style=&quot;display: flex;&quot;&gt;
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/scrot-castlevania.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-castlevania.png&quot;
          style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
   &lt;/div&gt;
 
   &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/rpi-info-deck/scrot-xenogears.png&quot;
+    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-xenogears.png&quot;
          style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -818,7 +723,7 @@ one more last time.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
-  &lt;img src=&quot;/static/rpi-info-deck/score-metroid.png&quot; /&gt;
+  &lt;img src=&quot;/static/img/rpi-info-deck/score-metroid.png&quot; /&gt;
   &lt;br/&gt; &lt;em&gt;Nope, not a hundred, not even close&lt;/em&gt;
 &lt;/p&gt;
 </content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html"/> <title>An Ode to Emacs</title> <published>2020-07-12</published> <updated>2020-07-12</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
@@ -1113,7 +1018,7 @@ also is placed within the walls, in a distant but observable section.
 &lt;p&gt;-- &lt;em&gt;Генри Дэвид Торо&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/static/20200408_parchment_sketch.jpg&quot; alt=&quot;План апгрейда Башни на старинном пергаменте&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/img/20200408_parchment_sketch.jpg&quot; alt=&quot;План апгрейда Башни на старинном пергаменте&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;В разгар карантина осады не ведутся, есть возможность навести порядок.
 Cкинуть мусор с верхних этажей, подкрасить крышу, перебрать детали
