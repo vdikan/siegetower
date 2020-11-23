@@ -2,6 +2,7 @@
 (:author "Vladimir Dikan"
  :deploy-dir "deploy/"
  :domain "https://www.ivorysiegetower.com"
+ ;; :domain "http://localhost:5000"        ; <- for debuggging
  :title "Ivory Siege Tower"
  :base-index-title "Parade Ground -- {Blog}"
  :theme "tower"
@@ -20,7 +21,6 @@
  :plugins ((mathjax)
            (sitemap)
            (static-pages)
-           (pygments)
            ;; Metadata
            (opengraph :og-base-url "https://www.ivorysiegetower.com"
                       :og-default-image "css/tower_logo.png")

@@ -181,107 +181,94 @@ And it's not just an export form, but the example itself.
 It's rendered using Js through Vega-Lite's modules, on this very page.
 Here's the complete code:
 
-```html|linenos=1
-<!DOCTYPE html>
 
-<html>
-  <head>
-    <title>Vega-Lite Clack app
-    </title>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.15.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.15.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.11.1"></script>
-  </head>
-  <body>
-    <div id="vis"></div>
-    <script type="text/javascript">
-  if ('undefined' === typeof visVegaSpec) {
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+
+<pre><code class="js"> if ('undefined' === typeof visVegaSpec) {
     var visVegaSpec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "Vega-lite chart assembled with CL web libs.",
-  "title": "Vega-lite example",
-  "data": {
-    "values": [
-      {
-        "step": 5,
-        "flux": [
-            0.09153984953435515,
-            0.024628329219937537,
-            0.25424937682847376
-            ],
-        "component": ["X", "Y", "Z"]
-      },
-      {
-        "step": 4,
-        "flux": [
-            0.06789449311470507,
-            0.02272393291011522,
-            0.19036725133450748
-            ],
-        "component": ["X", "Y", "Z"]
-      },
-      {
-        "step": 3,
-        "flux": [
-            0.046126591721860055,
-            0.016882629311779522,
-            0.1282773775209184
-            ],
-        "component": ["X", "Y", "Z"]
-      },
-      {
-        "step": 2,
-        "flux": [
-            0.023685530610426934,
-            0.08976102834966887,
-            0.06519893303184349
-            ],
-        "component": ["X", "Y", "Z"]
-      }
-    ],
-  },
-  "mark": {
-    "type": "line",
-    "point": {"filled": false, "fill": "white"}
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "Vega-lite chart assembled with CL web libs.",
+    "title": "Vega-lite example",
+    "data": {
+        "values": [
+        {
+            "step": 5,
+            "flux": [
+                0.09153984953435515,
+                0.024628329219937537,
+                0.25424937682847376
+                ],
+            "component": ["X", "Y", "Z"]
+        },
+        {
+            "step": 4,
+            "flux": [
+                0.06789449311470507,
+                0.02272393291011522,
+                0.19036725133450748
+                ],
+            "component": ["X", "Y", "Z"]
+        },
+        {
+            "step": 3,
+            "flux": [
+                0.046126591721860055,
+                0.016882629311779522,
+                0.1282773775209184
+                ],
+            "component": ["X", "Y", "Z"]
+        },
+        {
+            "step": 2,
+            "flux": [
+                0.023685530610426934,
+                0.08976102834966887,
+                0.06519893303184349
+                ],
+            "component": ["X", "Y", "Z"]
+        }
+        ],
     },
-  "encoding": {
-    "x": {
-      "field": "step",
-      "type": "quantitative",
-      "title": "step number",
-      "axis": {"tickCount": 4}
+    "mark": {
+        "type": "line",
+        "point": {"filled": false, "fill": "white"}
+        },
+    "encoding": {
+        "x": {
+        "field": "step",
+        "type": "quantitative",
+        "title": "step number",
+        "axis": {"tickCount": 4}
+        },
+        "y": {
+        "field": "flux",
+        "type": "quantitative",
+        "title": "component value",
+        "axis": {"tickCount": 4}
+        },
+        "color": {
+        "field": "component",
+        "type": "nominal",
+        "scale": {
+            "domain": ["X", "Y", "Z"],
+            "range": ["#dc143c", "#ff8c00", "#228b22"]
+        }
+        }
     },
-    "y": {
-      "field": "flux",
-      "type": "quantitative",
-      "title": "component value",
-      "axis": {"tickCount": 4}
-    },
-    "color": {
-      "field": "component",
-      "type": "nominal",
-      "scale": {
-        "domain": ["X", "Y", "Z"],
-        "range": ["#dc143c", "#ff8c00", "#228b22"]
-      }
-    }
-  },
-  "config": {"axis": {"grid": true}},
-  "transform": [{"flatten": ["component", "flux"]}],
-  "width": 400, "height": 300
+    "config": {"axis": {"grid": true}},
+    "transform": [{"flatten": ["component", "flux"]}],
+    "width": 400, "height": 300
+    };
   };
-};
-vegaEmbed('#vis', visVegaSpec);
-    </script>
-  </body>
-</html>
-```
+  vegaEmbed('#vis', visVegaSpec);
+</code></pre>
 
 Note first that the whole plot spec is just a JSON.
 Here it includes the data points
 too, but in principle the data can be served from a separate `csv`-file. That
-would leave here only the plot view spec (from line 59)
-that is short, readable and in general makes sense.
+would leave here only the plot view spec that is short, readable and in general
+makes sense.
 
 Mind that round button in the right top corner for the chart export options.
 One of it says "Open in Vega Editor". It spawns an interactive editor in

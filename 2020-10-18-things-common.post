@@ -4,6 +4,8 @@ tags: en, lisp
 date: 2020-10-18
 format: md
 ;;;;;
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="max-width: 220px; padding-right: 20px;">
@@ -28,8 +30,7 @@ calls, since I'm planning to do so a lot with my side-effect manager.
 The following code will fail after a couple hundred (maybe thousand)
 of iterations, complaining about "too many open files":
 
-```lisp
-(loop
+<pre> <code> (loop
  :repeat 1000
  :do  (let ((proc (uiop:launch-program
                    "cat ~/.bashrc"
@@ -42,7 +43,7 @@ of iterations, complaining about "too many open files":
 
         (unless (= 0 (uiop:wait-process proc)) ; wait till end
           (print "Fail!"))))
-```
+</code> </pre>
 
 Experimentally I found out that `uiop:close-streams` should be used to mitigate
 the bug. Which is in fact written in the documentation string, saying:
@@ -59,8 +60,7 @@ So it's one of the "RTFM" cases.
 
 So this works, as many-many times I want:
 
-```lisp
-(loop
+<pre><code> (loop
  :repeat 100000
  :do  (let ((proc (uiop:launch-program
                    "cat .bashrc"
@@ -75,16 +75,15 @@ So this works, as many-many times I want:
           (print "Fail!"))
 
         (uiop:close-streams proc))) ; <- DAT FIXES
-```
+</code></pre>
 
 And given that I defined a macro for this most common pattern of program launching,
 just not to forget to `close-streams` again. A raw anaphora will serve till I
 produce something more clever:
 
-```lisp
-(defmacro aproc (command &body body)
+<pre><code> (defmacro aproc (command &body body)
   "Anaphoric process launcher. Refer to process instance as PROC in &BODY."
   `(let ((proc (uiop:launch-program
                 ,command :output :stream :error-output :stream)))
      (values ,@body (uiop:close-streams proc))))
-```
+</code></pre>

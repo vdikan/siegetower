@@ -4,6 +4,8 @@ tags: en, toolbox, siesta
 date: 2020-02-29
 format: md
 ;;;;;
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
 
 The man-made Hell of dependencies management in HPC software has an
 efficient way out: [**Spack**](https://spack.io), initially
@@ -83,16 +85,13 @@ dependencies' modules as well with `-r`/`--dependencies` flag.
 For my emacs + projectile the `.dir-locals` file for recompilarion of
 e.g. Siesta binary looks like this:
 
-```elisp|linenos=1
-((nil
+<pre><code>((nil
   (projectile-project-compilation-dir . "Obj/")
   (projectile-project-compilation-cmd
    .
-   "spack load gcc &&
-spack load mpi &&
-spack load -r siesta@fake &&
-make ")))
-```
+   "spack load gcc && spack load mpi &&
+    spack load -r siesta@fake && make ")))
+</code></pre>
 
 Only compiler and mpi-metapackage need to be load explicitly, the rest
 of the deps are activated via single `spack load -r siesta@fake`
