@@ -3,7 +3,7 @@ title: Ether Gate -- {PaperGraph}
 format: html
 URL: papergraph.html
 ;;;;;
-<script src="http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js"></script>
+<script src="https://www.ivorysiegetower.com/static/js/svg-pan-zoom.js"></script>
 
 <div style="width:  900px; height: 600px;
             background-image: url('/static/papergraph/ether-gate.png');
