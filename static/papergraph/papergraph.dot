@@ -1,0 +1,108 @@
+digraph PaperGraph {
+graph [layout=fdp, truecolor=true, bgcolor="#ffffff01", overlap=false, splines=true];
+node [shape=box, style=filled, color=".7 .3 1.0"];
+edge [arrowhead="vee", color="cyan"];
+subgraph cluster_thermal {
+label="Thermal Transport";
+color=".2 .3 1.0";
+fontcolor=".2 .3 1.0";
+"10.1103/physrevlett.122.255901" [constraint=false,color=".2 .3 1.0",label=<(2019) Theory and Numerical Simulation of Heat Transport in Multicomponent Systems<br/><b>Riccardo Bertossa and Federico Grasselli and Loris Ercole and Stefano Baroni</b><br/><i>Physical Review Letters</i><br/><u>https://doi.org/10.1103/physrevlett.122.255901</u> >];
+
+"10.1038/s41598-017-15843-2" [constraint=false,color=".2 .3 1.0",label=<(2017) Accurate Thermal Conductivities From Optimally Short Molecular Dynamics Simulations<br/><b>Loris Ercole and Aris Marcolongo and Stefano Baroni</b><br/><i>Scientific Reports</i><br/><u>https://doi.org/10.1038/s41598-017-15843-2</u> >];
+
+}
+
+subgraph cluster_md {
+label="Molecular Dynamics";
+color=".3 .3 1.0";
+fontcolor=".3 .3 1.0";
+"10.1063/1.473271" [constraint=false,color=".3 .3 1.0",label=<(1997) A Simple Nonequilibrium Molecular Dynamics Method for Calculating the Thermal Conductivity<br/><b>Florian M{\"u}ller-Plathe</b><br/><i>The Journal of Chemical Physics</i><br/><u>https://doi.org/10.1063/1.473271</u> >];
+
+"10.1063/1.452362" [constraint=false,color=".3 .3 1.0",label=<(1987) Fluctuation‐based Computer Calculation of Partial Molar Properties. I. Molecular Dynamics Simulation of Constant Volume Fluctuations<br/><b>Pablo G. Debenedetti</b><br/><i>The Journal of Chemical Physics</i><br/><u>https://doi.org/10.1063/1.452362</u> >];
+
+"10.1038/nmat2508" [constraint=false,color=".3 .3 1.0",label=<(2009) Surface-Induced Crystallization in Supercooled Tetrahedral Liquids<br/><b>Tianshu Li and Davide Donadio and Luca M. Ghiringhelli and Giulia Galli</b><br/><i>Nature Materials</i><br/><u>https://doi.org/10.1038/nmat2508</u> >];
+
+"10.1063/1.3268346" [constraint=false,color=".3 .3 1.0",label=<(2009) Nucleation of Tetrahedral Solids: a Molecular Dynamics Study of Supercooled Liquid Silicon<br/><b>Tianshu Li and Davide Donadio and Giulia Galli</b><br/><i>The Journal of Chemical Physics</i><br/><u>https://doi.org/10.1063/1.3268346</u> >];
+
+}
+
+subgraph cluster_dft {
+label="ab-initio DFT";
+color=".1 .3 1.0";
+fontcolor=".1 .3 1.0";
+"10.1088/0953-8984/14/11/302" [constraint=false,color=".1 .3 1.0",label=<(2002) The Siesta Method For ab-initio order-N Materials Simulation<br/><b>Jos{\'e} M Soler and Emilio Artacho and Julian D Gale and Alberto Garc{\'i}a and Javier Junquera and Pablo Ordej{\'o}n and Daniel S{\'a}nchez-Portal</b><br/><i>Journal of Physics: Condensed Matter</i><br/><u>https://doi.org/10.1088/0953-8984/14/11/302</u> >];
+
+}
+
+subgraph cluster_cs {
+label="Computer Science";
+color=".5 .3 1.0";
+fontcolor=".5 .3 1.0";
+"10.1007/978-3-642-20712-9_1" [constraint=false,color=".5 .3 1.0",label=<(2011) The Equivalence of Sampling and Searching<br/><b>Scott Aaronson</b><br/><br/><u>https://doi.org/10.1007/978-3-642-20712-9_1</u> >];
+
+"10.1109/tvcg.2016.2599030" [constraint=false,color=".5 .3 1.0",label=<(2017) Vega-Lite: a Grammar of Interactive Graphics<br/><b>Arvind Satyanarayan and Dominik Moritz and Kanit Wongsuphasawat and Jeffrey Heer</b><br/><i>IEEE Transactions on Visualization and Computer Graphics</i><br/><u>https://doi.org/10.1109/tvcg.2016.2599030</u> >];
+
+"10.1145/359168.359176" [constraint=false,color=".5 .3 1.0",label=<(1979) How To Share a Secret<br/><b>Adi Shamir</b><br/><i>Communications of the ACM</i><br/><u>https://doi.org/10.1145/359168.359176</u> >];
+
+}
+
+"10.1063/1.4815945" [constraint=false,color=".7 .3 1.0",label=<(2013) Thermal Conductivity From Approach-To-Equilibrium Molecular Dynamics<br/><b>E. Lampin and P. L. Palla and P.-A. Francioso and F. Cleri</b><br/><i>Journal of Applied Physics</i><br/><u>https://doi.org/10.1063/1.4815945</u> >];
+
+"10.1140/epjb/e2014-50119-0" [constraint=false,color=".7 .3 1.0",label=<(2014) Calculating Thermal Conductivity in a Transient Conduction Regime: Theory and Implementation<br/><b>Claudio Melis and Riccardo Dettori and Simon Vandermeulen and Luciano Colombo</b><br/><i>The European Physical Journal B</i><br/><u>https://doi.org/10.1140/epjb/e2014-50119-0</u> >];
+
+"10.1038/nphys3509" [constraint=false,color=".7 .3 1.0",label=<(2015) Microscopic Theory and Quantum Simulation of Atomic Heat Transport<br/><b>Aris Marcolongo and Paolo Umari and Stefano Baroni</b><br/><i>Nature Physics</i><br/><u>https://doi.org/10.1038/nphys3509</u> >];
+
+"10.1016/j.jssc.2012.05.010" [constraint=false,color=".7 .3 1.0",label=<(2012) A Beginner's Guide To the Modern Theory of Polarization<br/><b>Nicola A. Spaldin</b><br/><i>Journal of Solid State Chemistry</i><br/><u>https://doi.org/10.1016/j.jssc.2012.05.010</u> >];
+
+"10.1103/revmodphys.33.92" [constraint=false,color=".7 .3 1.0",label=<(1961) Theory of Thermal Conductivity of Solids At Low Temperatures<br/><b>Peter Carruthers</b><br/><i>Reviews of Modern Physics</i><br/><u>https://doi.org/10.1103/revmodphys.33.92</u> >];
+
+"10.1016/0010-4655(96)00016-1" [constraint=false,color=".7 .3 1.0",label=<(1996) Ewald Summation Techniques in Perspective: a Survey<br/><b>Abdulnour Y. Toukmaji and John A. Board</b><br/><i>Computer Physics Communications</i><br/><u>https://doi.org/10.1016/0010-4655(96)00016-1</u> >];
+
+"10.1016/j.cpc.2018.02.011" [constraint=false,color=".7 .3 1.0",label=<(2018) The PSML Format and Library for Norm-Conserving Pseudopotential Data Curation and Interoperability<br/><b>Alberto Garc{\'i}a and Matthieu J. Verstraete and Yann Pouillon and Javier Junquera</b><br/><i>Computer Physics Communications</i><br/><u>https://doi.org/10.1016/j.cpc.2018.02.011</u> >];
+
+"10.1103/physrevb.41.7892" [constraint=false,color=".7 .3 1.0",label=<(1990) Soft Self-Consistent Pseudopotentials in a Generalized Eigenvalue Formalism<br/><b>David Vanderbilt</b><br/><i>Physical Review B</i><br/><u>https://doi.org/10.1103/physrevb.41.7892</u> >];
+
+"10.1007/978-3-319-44680-6_145" [constraint=false,color=".7 .3 1.0",label=<(2020) Thermal Transport: Overview<br/><b>Davide Donadio</b><br/><br/><u>https://doi.org/10.1007/978-3-319-44680-6_145</u> >];
+
+"10.1007/978-3-319-50257-1_12-1" [constraint=false,color=".7 .3 1.0",label=<(2018) Heat Transport in Insulators from Ab Initio Green-Kubo Theory<br/><b>Stefano Baroni and Riccardo Bertossa and Loris Ercole and Federico Grasselli and Aris Marcolongo</b><br/><br/><u>https://doi.org/10.1007/978-3-319-50257-1_12-1</u> >];
+
+"10.1109/proc.1977.10747" [constraint=false,color=".7 .3 1.0",label=<(1977) The Cepstrum: a Guide To Processing<br/><b>D.G. Childers and D.P. Skinner and R.C. Kemerait</b><br/><i>Proceedings of the IEEE</i><br/><u>https://doi.org/10.1109/proc.1977.10747</u> >];
+
+"10.1007/978-3-319-50257-1_10-1" [constraint=false,color=".7 .3 1.0",label=<(2018) Thermal Transport by First-Principles Anharmonic Lattice Dynamics<br/><b>Lucas Lindsay and Carlos A. Polanco</b><br/><br/><u>https://doi.org/10.1007/978-3-319-50257-1_10-1</u> >];
+
+"10.1093/mind/lix.236.433" [constraint=false,color=".7 .3 1.0",label=<(1950) I.-computing Machinery and Intelligence<br/><b>A. M. TURING</b><br/><i>Mind</i><br/><u>https://doi.org/10.1093/mind/lix.236.433</u> >];
+
+"10.1103/physrevlett.104.208501" [constraint=false,color=".7 .3 1.0",label=<(2010) Thermal Conductivity of Periclase (MgO) From First Principles<br/><b>Stephen Stackhouse and Lars Stixrude and Bijaya B. Karki</b><br/><i>Physical Review Letters</i><br/><u>https://doi.org/10.1103/physrevlett.104.208501</u> >];
+
+"10.1103/physrevb.99.024103" [constraint=false,color=".7 .3 1.0",label=<(2019) Low-Temperature Thermal Rectification By Tailoring Isotope Distributions<br/><b>Miquel Royo and Pol Torres and Miquel L{\'o}pez-Su{\'a}rez and Riccardo Rurali</b><br/><i>Physical Review B</i><br/><u>https://doi.org/10.1103/physrevb.99.024103</u> >];
+
+"10.1103/physrevb.27.6083" [constraint=false,color=".7 .3 1.0",label=<(1983) Quantization of Particle Transport<br/><b>D. J. Thouless</b><br/><i>Physical Review B</i><br/><u>https://doi.org/10.1103/physrevb.27.6083</u> >];
+
+"10.1103/physrevlett.49.405" [constraint=false,color=".7 .3 1.0",label=<(1982) Quantized Hall Conductance in a Two-Dimensional Periodic Potential<br/><b>D. J. Thouless and M. Kohmoto and M. P. Nightingale and M. den Nijs</b><br/><i>Physical Review Letters</i><br/><u>https://doi.org/10.1103/physrevlett.49.405</u> >];
+
+"10.1103/revmodphys.64.51" [constraint=false,color=".7 .3 1.0",label=<(1992) The Geometric Phase in Molecular Systems<br/><b>C. Alden Mead</b><br/><i>Reviews of Modern Physics</i><br/><u>https://doi.org/10.1103/revmodphys.64.51</u> >];
+
+"10.1103/physrevlett.48.1425" [constraint=false,color=".7 .3 1.0",label=<(1982) Efficacious Form for Model Pseudopotentials<br/><b>Leonard Kleinman and D. M. Bylander</b><br/><i>Physical Review Letters</i><br/><u>https://doi.org/10.1103/physrevlett.48.1425</u> >];
+
+"10.1214/aos/1176346079" [constraint=false,color=".7 .3 1.0",label=<(1983) Negative Association of Random Variables With
+                  Applications<br/><b>Kumar Joag-Dev and Frank Proschan</b><br/><i>The Annals of Statistics</i><br/><u>https://doi.org/10.1214/aos/1176346079</u> >];
+
+
+
+"10.1140/epjb/e2014-50119-0" -> "10.1063/1.4815945" [tooltip="1268_CR12"];
+"10.1140/epjb/e2014-50119-0" -> "10.1063/1.473271" [tooltip="1268_CR16"];
+"10.1038/nphys3509" -> "10.1063/1.473271" [tooltip="BFnphys3509_CR6"];
+"10.1007/978-3-319-44680-6_145" -> "10.1038/nphys3509" [tooltip="145_CR46"];
+"10.1007/978-3-319-44680-6_145" -> "10.1063/1.473271" [tooltip="145_CR49"];
+"10.1007/978-3-319-50257-1_12-1" -> "10.1038/s41598-017-15843-2" [tooltip="12-1_CR16"];
+"10.1007/978-3-319-50257-1_12-1" -> "10.1063/1.4815945" [tooltip="12-1_CR35"];
+"10.1007/978-3-319-50257-1_12-1" -> "10.1038/nphys3509" [tooltip="12-1_CR37"];
+"10.1007/978-3-319-50257-1_12-1" -> "10.1063/1.473271" [tooltip="12-1_CR41"];
+"10.1103/physrevlett.122.255901" -> "10.1038/nphys3509" [tooltip="PhysRevLett.122.255901Cc8R1"];
+"10.1103/physrevlett.122.255901" -> "10.1063/1.452362" [tooltip="PhysRevLett.122.255901Cc10R1"];
+"10.1103/physrevlett.122.255901" -> "10.1038/s41598-017-15843-2" [tooltip="PhysRevLett.122.255901Cc17R1"];
+"10.1038/s41598-017-15843-2" -> "10.1038/nphys3509" [tooltip="15843_CR13"];
+"10.1103/physrevlett.104.208501" -> "10.1063/1.473271" [tooltip="PhysRevLett.104.208501Cc12R1"];
+"10.1063/1.3268346" -> "10.1038/nmat2508" [tooltip="c31"];
+
+}
