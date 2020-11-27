@@ -1,5 +1,31 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Wed, 25 Nov 2020 00:46:25 +0100</pubDate> <item> <title>Кросс-аут-кантри</title> <link>https://www.ivorysiegetower.com/posts/Кросс-аут-кантри.html</link> <pubDate>2020-11-24</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Кросс-аут-кантри.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Fri, 27 Nov 2020 18:51:22 +0100</pubDate> <item> <title>Самокатик снова тащит!</title> <link>https://www.ivorysiegetower.com/posts/Самокатик-снова-тащит.html</link> <pubDate>2020-11-26</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Самокатик-снова-тащит.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category><category><![CDATA[ scooter ]]></category> <description><![CDATA[ 
+<p>
+  <img style="max-width: 300px;"
+       src="/static/img/20201126_scooter_battery.jpg"
+       alt="Kugoo S1 с разобранным батарейным отсеком." />
+</p>
+
+<p>
+  Заменил батарею своему электрическому Kugoo.
+</p>
+
+<p>
+  Сначала обрадовался тому, что, как оказалось, отсек открывается за 5 минут
+  (почему-то думал что займет полдня). Затем налажал, слишком густо обклеив
+  новую батарейку дэмпфером - она застряла. Теперь чтоб достать
+  придется снимать заднее колесо чтоб снять крышку с другого торца отсека.
+</p>
+
+<p>
+  Замена решила проблему (самокат не тащил в гору, глох на подъемах).
+</p>
+
+<p>
+  Заодно обрисовал дурацкую переднюю крышку. Задизайню и напечатаю для нее
+  щиток-подставку.
+</p>
+ ]]></description> </item><item> <title>Кросс-аут-кантри</title> <link>https://www.ivorysiegetower.com/posts/Кросс-аут-кантри.html</link> <pubDate>2020-11-24</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Кросс-аут-кантри.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ 
 <p>
   За окном - вяло открывающиеся бары, депрессия, "невозможность спасти Рождество".
 </p>
@@ -1030,40 +1056,4 @@ also is placed within the walls, in a distant but observable section.
   <2020-05-04 Mon> UPD: И даже если ты спикер, но показываешь только свой экран,
   можно пройтись до кухни во время вопросительной части доклада!
 </p>
- ]]></description> </item><item> <title>Журнал строительства #1: Чертеж</title> <link>https://www.ivorysiegetower.com/posts/Журнал-строительства-1-Чертеж.html</link> <pubDate>2020-04-08</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Журнал-строительства-1-Чертеж.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ siegetower ]]></category> <description><![CDATA[ <blockquote>
-<p>Если ты возвел замки из воздуха, твоя работа не была напрасной:
-воздушным замкам место в облаках.
-Осталось только подвести под них фундамент.</p>
-
-<p>-- <em>Генри Дэвид Торо</em></p>
-</blockquote>
-
-<p><img src="/static/img/20200408_parchment_sketch.jpg" alt="План апгрейда Башни на старинном пергаменте" /></p>
-
-<p>В разгар карантина осады не ведутся, есть возможность навести порядок.
-Cкинуть мусор с верхних этажей, подкрасить крышу, перебрать детали
-двигателя и набросать схему модернизации боевого дома на колесах.</p>
-
-<!--more-->
-
-<p>Планов громадье: первым делом будут трекеры книг и статей. Уже есть
-идеи как это сделать технически, только до конца не ясно, как в случае
-со статьями автоматом перелинковывать цитирования. Вместе с блогом это
-будут три основных раздела, дополняемые страницами проектов и
-полезностей. И CV, разумеется CV. Правда расчет на то, что
-впечатлительным благородным донам, не чуждым иронии и прекрасного,
-далекий силуэт осадной башни уже должен напоминать витающий
-куррикулум. Для менее впечатлительных есть ссылка на Линкедин где мое
-фото в костюме.</p>
-
-<p>Блог уже органично поделился на &quot;Светлую&quot; и &quot;Темную&quot; стороны по
-языковой принадлежности постов, изменений тут не предвидится. Думаю,
-понятно, на какой стороне больше рабочих заметок, а где - странного :)</p>
-
-<p>Удобно оказалось кстати, что движок с минимумом настроек генерит RSS
-для каждого тега. Люди фидлент уже не читают, но их (ленты, не людей)
-можно скармливать ботам. Один бот уже висит на RaspberryPi и репостит
-странное в Телеграм.</p>
-
-<p>В пределе будет свое, уютное, осадное пространство смыслов.</p>
  ]]></description> </item> </channel> </rss>
