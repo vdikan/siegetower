@@ -1,5 +1,57 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 14 Feb 2021 02:21:38 +0100</pubDate> <item> <title>File descriptors exhausted with `launch-program`</title> <link>https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 14 Feb 2021 16:59:51 +0100</pubDate> <item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visuals ]]></category><category><![CDATA[ clojure ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
+
+<script>hljs.initLineNumbersOnLoad();</script>
+
+<p>For the Clojure shell scripting environment with a funny name
+<a href="https://github.com/babashka/babashka" >Babashka</a>
+there is a simple example of a
+<a href="https://github.com/bherrmann7/bb-common/blob/master/wee_httpd.bb" >web server</a>.
+It's funny and impressive at the same time, being only a short single script.</p>
+
+<p>I've remixed it and thus got me a console
+<a href="https://gist.github.com/vdikan/6b6063d6e1b00a3cd79bc7b3ce3853d6" >Vega-Lite plotter</a>
+(that of course requires a browser to view the plot).</p>
+
+<p>The command looks like</p>
+
+<pre><code>$ vega-serv.bb -p PORT -f FILE</code></pre>
+
+<p>Where <code>FILE</code> is a clojure EDN with a map containing full
+<a href="https://vega.github.io/vega-lite/" >Vega-Lite</a>
+grammar spec for the plot. It is converted to JSON via
+Cheshire library shipped with Babashka. An example that contains data points:</p>
+
+<pre><code><span class="code">{:$schema     "https://vega.github.io/schema/vega-lite/v4.json"
+ :description "A simple bar chart with embedded data."
+ :mark "bar"
+ :encoding <span class="paren1">{<span class="code"><span class="keyword">:x</span> <span class="paren2">{<span class="code"><span class="keyword">:field</span> <span class="string">"a"</span> <span class="keyword">:type</span> <span class="string">"ordinal"</span></span>}</span>
+            <span class="keyword">:y</span> <span class="paren2">{<span class="code"><span class="keyword">:field</span> <span class="string">"b"</span> <span class="keyword">:type</span> <span class="string">"quantitative"</span></span>}</span></span>}</span>
+ :width  800
+ :height 600
+ <span class="comment">;;
+</span> :data <span class="paren1">{<span class="code"><span class="keyword">:values</span> <span class="paren2">[<span class="code"><span class="paren3">{<span class="code"><span class="keyword">:a</span> <span class="string">"A"</span> <span class="keyword">:b</span> 28}
+                 <span class="paren4">{<span class="code"><span class="keyword">:a</span> <span class="string">"B"</span> <span class="keyword">:b</span> 55}
+                 <span class="paren5">{<span class="code"><span class="keyword">:a</span> <span class="string">"C"</span> <span class="keyword">:b</span> 43}
+                 <span class="paren6">{<span class="code"><span class="keyword">:a</span> <span class="string">"D"</span> <span class="keyword">:b</span> 91}]</span>}</span></span>}</span></span></span></span></span></span></span></span></span></span></code></pre>
+
+<p>Looks even cleaner than JSON to me.</p>
+
+<p>I might want to remix it a bit further, to e.g. serve a CSV-file with data points
+separately from the view-encoding map. But right now I see whole maps like this
+more likely to be built inside a shell pipe through other calls to BB.</p>
+
+<p>Such implementation already has a couple of pros:</p>
+
+<ol>
+<li>Starts pretty fast, thanks to Babashka binary</li>
+<li>I can tweak the resulting plot by editing the description file,
+ no need to stop the server</li>
+<li>It is a single-file exectutable script placed under <code>$PATH</code></li>
+</ol>
+
+<p>Motivation? A rapid cli- plotter better than gnuplot!</p>
+ ]]></description> </item><item> <title>File descriptors exhausted with `launch-program`</title> <link>https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
 
 <script>hljs.initLineNumbersOnLoad();</script>
 

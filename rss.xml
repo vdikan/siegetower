@@ -1,5 +1,57 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 14 Feb 2021 02:21:38 +0100</pubDate> <item> <title>New Year Fades</title> <link>https://www.ivorysiegetower.com/posts/new-year-fades.html</link> <pubDate>2021-01-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/new-year-fades.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ siegetower ]]></category> <description><![CDATA[ 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 14 Feb 2021 16:59:51 +0100</pubDate> <item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visuals ]]></category><category><![CDATA[ clojure ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
+
+<script>hljs.initLineNumbersOnLoad();</script>
+
+<p>For the Clojure shell scripting environment with a funny name
+<a href="https://github.com/babashka/babashka" >Babashka</a>
+there is a simple example of a
+<a href="https://github.com/bherrmann7/bb-common/blob/master/wee_httpd.bb" >web server</a>.
+It's funny and impressive at the same time, being only a short single script.</p>
+
+<p>I've remixed it and thus got me a console
+<a href="https://gist.github.com/vdikan/6b6063d6e1b00a3cd79bc7b3ce3853d6" >Vega-Lite plotter</a>
+(that of course requires a browser to view the plot).</p>
+
+<p>The command looks like</p>
+
+<pre><code>$ vega-serv.bb -p PORT -f FILE</code></pre>
+
+<p>Where <code>FILE</code> is a clojure EDN with a map containing full
+<a href="https://vega.github.io/vega-lite/" >Vega-Lite</a>
+grammar spec for the plot. It is converted to JSON via
+Cheshire library shipped with Babashka. An example that contains data points:</p>
+
+<pre><code><span class="code">{:$schema     "https://vega.github.io/schema/vega-lite/v4.json"
+ :description "A simple bar chart with embedded data."
+ :mark "bar"
+ :encoding <span class="paren1">{<span class="code"><span class="keyword">:x</span> <span class="paren2">{<span class="code"><span class="keyword">:field</span> <span class="string">"a"</span> <span class="keyword">:type</span> <span class="string">"ordinal"</span></span>}</span>
+            <span class="keyword">:y</span> <span class="paren2">{<span class="code"><span class="keyword">:field</span> <span class="string">"b"</span> <span class="keyword">:type</span> <span class="string">"quantitative"</span></span>}</span></span>}</span>
+ :width  800
+ :height 600
+ <span class="comment">;;
+</span> :data <span class="paren1">{<span class="code"><span class="keyword">:values</span> <span class="paren2">[<span class="code"><span class="paren3">{<span class="code"><span class="keyword">:a</span> <span class="string">"A"</span> <span class="keyword">:b</span> 28}
+                 <span class="paren4">{<span class="code"><span class="keyword">:a</span> <span class="string">"B"</span> <span class="keyword">:b</span> 55}
+                 <span class="paren5">{<span class="code"><span class="keyword">:a</span> <span class="string">"C"</span> <span class="keyword">:b</span> 43}
+                 <span class="paren6">{<span class="code"><span class="keyword">:a</span> <span class="string">"D"</span> <span class="keyword">:b</span> 91}]</span>}</span></span>}</span></span></span></span></span></span></span></span></span></span></code></pre>
+
+<p>Looks even cleaner than JSON to me.</p>
+
+<p>I might want to remix it a bit further, to e.g. serve a CSV-file with data points
+separately from the view-encoding map. But right now I see whole maps like this
+more likely to be built inside a shell pipe through other calls to BB.</p>
+
+<p>Such implementation already has a couple of pros:</p>
+
+<ol>
+<li>Starts pretty fast, thanks to Babashka binary</li>
+<li>I can tweak the resulting plot by editing the description file,
+ no need to stop the server</li>
+<li>It is a single-file exectutable script placed under <code>$PATH</code></li>
+</ol>
+
+<p>Motivation? A rapid cli- plotter better than gnuplot!</p>
+ ]]></description> </item><item> <title>New Year Fades</title> <link>https://www.ivorysiegetower.com/posts/new-year-fades.html</link> <pubDate>2021-01-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/new-year-fades.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ siegetower ]]></category> <description><![CDATA[ 
 <p> Ок, все написанное раньше было игрой-разминкой. </p>
 
 <p>
@@ -1027,43 +1079,4 @@ also is placed within the walls, in a distant but observable section.
   <a href="https://www.cs.rochester.edu/~gildea/guile-scmutils/">the one</a>
   I'm tinkering with now, based on Guile Scheme.
 </p>
- ]]></description> </item><item> <title>Когнитивная Готика</title> <link>https://www.ivorysiegetower.com/posts/когнитивная-готика.html</link> <pubDate>2020-03-02</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/когнитивная-готика.html</guid> <category><![CDATA[ ru ]]></category> <description><![CDATA[ <p>Пока строил Башню набрел через HN на
-<a href="https://www.ribbonfarm.com/2020/02/24/a-text-renaissance/" >пост</a>
-о Предвестниках Гипертекстового Ренессанса. Там интересная
-писательская позиция и слегка наивный взгляд на тех. аспекты (кложа
-это &quot;next generation language&quot; оказывается). Но самое забавное, на мой
-взгляд, - то что в пророчестве о Возрождении основной акцент сделан на
-таланте разработчиков экспериментальных форм [доставки контента],
-крутых технологиях и притянутом за уши культурном феномене.
-Но как по мне, появление новых платформ неизбежно просто с течением
-эпохи Когнитивной Готики.</p>
-
-<!--more-->
-
-<p>Еще до бума соцсетей &quot;Компьютерра&quot; со своих приятно шуршащих глянцевых
-страниц предрекала появление профессии &quot;когнитивных советников&quot;,
-этаких профи-датамайнеров, посредством мощного ИИ и алгоритмов
-отдающих клиенту действительно интересные ему медиа.</p>
-
-<p>Ну, допустим ИИ у нас есть, а также: адовая лента в ФБ, лихая
-предложка в ютубе, куча новостного спама во входящих с линком
-&quot;unsubscribe&quot; кегль 8. Дохлый хомяк в блоггере. Твиттор.</p>
-
-<p>Включение осознанного потребления <em>логично</em> приводит к: ведению своего
-пространства смыслов (в чем-то похожем на персональную вики), дропу
-вордпресса в пользу самосборных статических бложиков, платным
-спискам рассылки (вот это новость). Мета-твиттор.</p>
-
-<p>Прелесть момента в том что, видимо, достаточно народу устало от
-старого инфопузыря и смотрят в сторону новых платформ. Много смотрят
-на тикток. Но и новым эверноутам (осознанному инфо-потреблению)
-достает внимания, что делает их коммерчески привлекательными.
-Но это даже еще не ранний Ренессанс.
-Хотя Темная эра точно ушла в прошлое - с выходом Sunless Sea.</p>
-
-<p>В комментах на HN, разумеется,  веселье в духе:</p>
-
-<blockquote>
-<p>When I read 'Text Renaissance' I assumed that the article is going to be about org-mode or nvalt ;)</p>
-</blockquote>
  ]]></description> </item> </channel> </rss>

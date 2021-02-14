@@ -1,5 +1,57 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 14 Feb 2021 02:21:38 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html"/> <title>File descriptors exhausted with `launch-program`</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 14 Feb 2021 16:59:51 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html"/> <title>Simple Vega-Lite plotter app script</title> <published>2021-02-14</published> <updated>2021-02-14</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
+
+&lt;p&gt;For the Clojure shell scripting environment with a funny name
+&lt;a href=&quot;https://github.com/babashka/babashka&quot; &gt;Babashka&lt;/a&gt;
+there is a simple example of a
+&lt;a href=&quot;https://github.com/bherrmann7/bb-common/blob/master/wee_httpd.bb&quot; &gt;web server&lt;/a&gt;.
+It&#039;s funny and impressive at the same time, being only a short single script.&lt;/p&gt;
+
+&lt;p&gt;I&#039;ve remixed it and thus got me a console
+&lt;a href=&quot;https://gist.github.com/vdikan/6b6063d6e1b00a3cd79bc7b3ce3853d6&quot; &gt;Vega-Lite plotter&lt;/a&gt;
+(that of course requires a browser to view the plot).&lt;/p&gt;
+
+&lt;p&gt;The command looks like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ vega-serv.bb -p PORT -f FILE&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt;FILE&lt;/code&gt; is a clojure EDN with a map containing full
+&lt;a href=&quot;https://vega.github.io/vega-lite/&quot; &gt;Vega-Lite&lt;/a&gt;
+grammar spec for the plot. It is converted to JSON via
+Cheshire library shipped with Babashka. An example that contains data points:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;code&quot;&gt;{:$schema     &quot;https://vega.github.io/schema/vega-lite/v4.json&quot;
+ :description &quot;A simple bar chart with embedded data.&quot;
+ :mark &quot;bar&quot;
+ :encoding &lt;span class=&quot;paren1&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:x&lt;/span&gt; &lt;span class=&quot;paren2&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:field&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;a&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;:type&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;ordinal&quot;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;
+            &lt;span class=&quot;keyword&quot;&gt;:y&lt;/span&gt; &lt;span class=&quot;paren2&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:field&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;b&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;:type&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;quantitative&quot;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;
+ :width  800
+ :height 600
+ &lt;span class=&quot;comment&quot;&gt;;;
+&lt;/span&gt; :data &lt;span class=&quot;paren1&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:values&lt;/span&gt; &lt;span class=&quot;paren2&quot;&gt;[&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;paren3&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:a&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;A&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;:b&lt;/span&gt; 28}
+                 &lt;span class=&quot;paren4&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:a&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;B&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;:b&lt;/span&gt; 55}
+                 &lt;span class=&quot;paren5&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:a&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;C&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;:b&lt;/span&gt; 43}
+                 &lt;span class=&quot;paren6&quot;&gt;{&lt;span class=&quot;code&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;:a&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;D&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;:b&lt;/span&gt; 91}]&lt;/span&gt;}&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Looks even cleaner than JSON to me.&lt;/p&gt;
+
+&lt;p&gt;I might want to remix it a bit further, to e.g. serve a CSV-file with data points
+separately from the view-encoding map. But right now I see whole maps like this
+more likely to be built inside a shell pipe through other calls to BB.&lt;/p&gt;
+
+&lt;p&gt;Such implementation already has a couple of pros:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Starts pretty fast, thanks to Babashka binary&lt;/li&gt;
+&lt;li&gt;I can tweak the resulting plot by editing the description file,
+ no need to stop the server&lt;/li&gt;
+&lt;li&gt;It is a single-file exectutable script placed under &lt;code&gt;$PATH&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Motivation? A rapid cli- plotter better than gnuplot!&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html"/> <title>File descriptors exhausted with `launch-program`</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 
 &lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
 
