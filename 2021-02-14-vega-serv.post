@@ -1,0 +1,59 @@
+;;;;;
+title: Simple Vega-Lite plotter app script
+tags: en, toolbox, visuals, clojure
+date: 2021-02-14
+format: md
+;;;;;
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+
+For the Clojure shell scripting environment with a funny name
+[Babashka](https://github.com/babashka/babashka)
+there is a simple example of a
+[web server](https://github.com/bherrmann7/bb-common/blob/master/wee_httpd.bb).
+It's funny and impressive at the same time, being only a short single script.
+
+I've remixed it and thus got me a console
+[Vega-Lite plotter](https://gist.github.com/vdikan/6b6063d6e1b00a3cd79bc7b3ce3853d6)
+(that of course requires a browser to view the plot).
+
+The command looks like
+
+``` shell
+$ vega-serv.bb -p PORT -f FILE
+```
+
+Where `FILE` is a clojure EDN with a map containing full
+[Vega-Lite](https://vega.github.io/vega-lite/)
+grammar spec for the plot. It is converted to JSON via
+Cheshire library shipped with Babashka. An example that contains data points:
+
+``` clojure
+{:$schema     "https://vega.github.io/schema/vega-lite/v4.json"
+ :description "A simple bar chart with embedded data."
+ :mark "bar"
+ :encoding {:x {:field "a" :type "ordinal"}
+            :y {:field "b" :type "quantitative"}}
+ :width  800
+ :height 600
+ ;;
+ :data {:values [{:a "A" :b 28}
+                 {:a "B" :b 55}
+                 {:a "C" :b 43}
+                 {:a "D" :b 91}]}}
+```
+
+Looks even cleaner than JSON to me.
+
+I might want to remix it a bit further, to e.g. serve a CSV-file with data points
+separately from the view-encoding map. But right now I see whole maps like this
+more likely to be built inside a shell pipe through other calls to BB.
+
+Such implementation already has a couple of pros:
+
+  1. Starts pretty fast, thanks to Babashka binary
+  2. I can tweak the resulting plot by editing the description file,
+     no need to stop the server
+  3. It is a single-file exectutable script placed under `$PATH`
+
+Motivation? A rapid cli- plotter better than gnuplot!
