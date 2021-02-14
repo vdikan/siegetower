@@ -1,27 +1,12 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Fri, 27 Nov 2020 18:51:22 +0100</pubDate> <item> <title>Things Common</title> <link>https://www.ivorysiegetower.com/posts/Things-Common.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Things-Common.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 14 Feb 2021 02:21:38 +0100</pubDate> <item> <title>File descriptors exhausted with `launch-program`</title> <link>https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
 
 <script>hljs.initLineNumbersOnLoad();</script>
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="max-width: 220px; padding-right: 20px;">
-    <img src="/static/img/lisplogos/lisplogo_warning_256.png"
-         style="margin: auto;" alt="Warning Lisp Logo" />
-  </div>
-
-  <div style="max-width: 660px;">
-    <p>
-        A probably growing post on things I found <i>rather</i> peculiar when using CL.
-    </p>
-  </div>
-</div>
-
-<!--more-->
-
-<h2>File descriptors exhausted with <code>uiop:launch-program</code></h2>
-
-<p>Quite a critical bug met with standard facility for launching asynchronous system
-calls, since I'm planning to do so a lot with my side-effect manager.</p>
+<p>I've recently introduced an issue in my workflow when using Common Lisp's UIOP
+standard facility for launching asynchronous system calls.
+It appears to be quite a critical one since I'm planning to use that
+functionality a lot with my side-effect manager.</p>
 
 <p>The following code will fail after a couple hundred (maybe thousand)
 of iterations, complaining about &quot;too many open files&quot;:</p>
@@ -85,7 +70,7 @@ produce something more clever:</p>
                 ,command :output :stream :error-output :stream)))
      (values ,@body (uiop:close-streams proc))))
 </code></pre>
- ]]></description> </item><item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
+ ]]></description> </item><item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/visuals-made-sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/visuals-made-sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
 - literally - anything, it used to be disturbing.
 A balance between control, speed, accuracy and easiness seemed unreachable
 even for a routine plotting of data at hand. Well, not anymore!</p>
@@ -425,7 +410,7 @@ it creates an effect of manipulating a 3D scene without reloading anything!</p>
 But those ideas I'll keep for myself for now.
 Okay, <a href="https://www.youtube.com/watch?v=kCadKG3oa_U&ab_channel=ODROIDHardkernel" >just a hint</a>
 one more last time.</p>
- ]]></description> </item><item> <title>My RPi Cyberpunk Info-Deck Console</title> <link>https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</link> <pubDate>2020-08-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ raspberry ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
+ ]]></description> </item><item> <title>My RPi Cyberpunk Info-Deck Console</title> <link>https://www.ivorysiegetower.com/posts/my-rpi-cyberpunk-info-deck-console.html</link> <pubDate>2020-08-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/my-rpi-cyberpunk-info-deck-console.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ raspberry ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
 <p>
   <img src="/static/img/rpi-info-deck/title-look.png"
        alt="Info-Deck in the Underground of Neo-Sabadell" />
@@ -676,7 +661,7 @@ one more last time.</p>
   <img src="/static/img/rpi-info-deck/score-metroid.png" />
   <br/> <em>Nope, not a hundred, not even close</em>
 </p>
- ]]></description> </item><item> <title>An Ode to Emacs</title> <link>https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</link> <pubDate>2020-07-12</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
+ ]]></description> </item><item> <title>An Ode to Emacs</title> <link>https://www.ivorysiegetower.com/posts/an-ode-to-emacs.html</link> <pubDate>2020-07-12</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/an-ode-to-emacs.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="max-width: 220px; padding-right: 20px;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png"
@@ -854,7 +839,7 @@ one more last time.</p>
   <a href="https://www.ivorysiegetower.com/posts/Lets-go.html">"showcased"</a>
   in the welcome post XD. That guy also deserves a story.
 </p>
- ]]></description> </item><item> <title>An Interactive Haven</title> <link>https://www.ivorysiegetower.com/posts/An-Interactive-Haven.html</link> <pubDate>2020-04-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/An-Interactive-Haven.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ 
+ ]]></description> </item><item> <title>An Interactive Haven</title> <link>https://www.ivorysiegetower.com/posts/an-interactive-haven.html</link> <pubDate>2020-04-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/an-interactive-haven.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ 
 <p> Recently I took part in a <a href="https://www.cecam.org/workshop-details/986" >discussion</a>
 organized by CECAM<a href="#interactive-haven-1" >[1]</a>
 on the topic of Digital Learning, a subject which <em>all of a sudden</em> became
@@ -929,7 +914,7 @@ also is placed within the walls, in a distant but observable section.
   <a href="https://www.cs.rochester.edu/~gildea/guile-scmutils/">the one</a>
   I'm tinkering with now, based on Guile Scheme.
 </p>
- ]]></description> </item><item> <title>Developing with Spack</title> <link>https://www.ivorysiegetower.com/posts/Developing-with-Spack.html</link> <pubDate>2020-02-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Developing-with-Spack.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ siesta ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
+ ]]></description> </item><item> <title>Developing with Spack</title> <link>https://www.ivorysiegetower.com/posts/developing-with-spack.html</link> <pubDate>2020-02-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/developing-with-spack.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ siesta ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
 
 <script>hljs.initLineNumbersOnLoad();</script>
 
@@ -1036,7 +1021,7 @@ enabeled) in the <code>siesta-dft</code> branch of
 In case it proves useful on our clusters, these updates will be
 polished and pull-requested rather soon. Otherwise I will continue
 editing them on my own and make a pull request when ready.</p>
- ]]></description> </item><item> <title>Fortls: comfy indexing of Fortran</title> <link>https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html</link> <pubDate>2020-02-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category> <description><![CDATA[ <p>If you happen to find yourself in HPC research or engineering, you
+ ]]></description> </item><item> <title>Fortls: comfy indexing of Fortran</title> <link>https://www.ivorysiegetower.com/posts/fortls-comfy-indexing-of-fortran.html</link> <pubDate>2020-02-19</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/fortls-comfy-indexing-of-fortran.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category> <description><![CDATA[ <p>If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy
 young men's feelings in 2020: 1st being the ambiguity of which
@@ -1098,7 +1083,7 @@ here I briefly show the looks of my own setup in <code>Emacs</code>
        style="max-width: 860px;" /> <br/>
   <em><code>Fortls + emacs lsp-mode</code>: hover, reference finder and jump-to-def.</em>
 </p>
- ]]></description> </item><item> <title>Let&#039;s go</title> <link>https://www.ivorysiegetower.com/posts/Lets-go.html</link> <pubDate>2020-02-09</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/Lets-go.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <p>Usually here goes some kind of welcoming post... But nay!</p>
+ ]]></description> </item><item> <title>Let&#039;s go</title> <link>https://www.ivorysiegetower.com/posts/lets-go.html</link> <pubDate>2020-02-09</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/lets-go.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <p>Usually here goes some kind of welcoming post... But nay!</p>
 
 <p>Instead I'll just leave here a picture of my Sunday morning newspaper.</p>
 

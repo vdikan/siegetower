@@ -1,27 +1,12 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Fri, 27 Nov 2020 18:51:22 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Things-Common.html"/> <title>Things Common</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 14 Feb 2021 02:21:38 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html"/> <title>File descriptors exhausted with `launch-program`</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 
 &lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
 
-&lt;div style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
-  &lt;div style=&quot;max-width: 220px; padding-right: 20px;&quot;&gt;
-    &lt;img src=&quot;/static/img/lisplogos/lisplogo_warning_256.png&quot;
-         style=&quot;margin: auto;&quot; alt=&quot;Warning Lisp Logo&quot; /&gt;
-  &lt;/div&gt;
-
-  &lt;div style=&quot;max-width: 660px;&quot;&gt;
-    &lt;p&gt;
-        A probably growing post on things I found &lt;i&gt;rather&lt;/i&gt; peculiar when using CL.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!--more--&gt;
-
-&lt;h2&gt;File descriptors exhausted with &lt;code&gt;uiop:launch-program&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;Quite a critical bug met with standard facility for launching asynchronous system
-calls, since I&#039;m planning to do so a lot with my side-effect manager.&lt;/p&gt;
+&lt;p&gt;I&#039;ve recently introduced an issue in my workflow when using Common Lisp&#039;s UIOP
+standard facility for launching asynchronous system calls.
+It appears to be quite a critical one since I&#039;m planning to use that
+functionality a lot with my side-effect manager.&lt;/p&gt;
 
 &lt;p&gt;The following code will fail after a couple hundred (maybe thousand)
 of iterations, complaining about &amp;quot;too many open files&amp;quot;:&lt;/p&gt;
@@ -85,7 +70,7 @@ produce something more clever:&lt;/p&gt;
                 ,command :output :stream :error-output :stream)))
      (values ,@body (uiop:close-streams proc))))
 &lt;/code&gt;&lt;/pre&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Visuals-Made-Sane.html"/> <title>Visuals Made Sane</title> <published>2020-10-01</published> <updated>2020-10-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Almost every time I had to produce a &lt;em&gt;visual representation&lt;/em&gt; for
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/visuals-made-sane.html"/> <title>Visuals Made Sane</title> <published>2020-10-01</published> <updated>2020-10-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Almost every time I had to produce a &lt;em&gt;visual representation&lt;/em&gt; for
 - literally - anything, it used to be disturbing.
 A balance between control, speed, accuracy and easiness seemed unreachable
 even for a routine plotting of data at hand. Well, not anymore!&lt;/p&gt;
@@ -425,7 +410,7 @@ it creates an effect of manipulating a 3D scene without reloading anything!&lt;/
 But those ideas I&#039;ll keep for myself for now.
 Okay, &lt;a href=&quot;https://www.youtube.com/watch?v=kCadKG3oa_U&amp;ab_channel=ODROIDHardkernel&quot; &gt;just a hint&lt;/a&gt;
 one more last time.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/My-RPi-Cyberpunk-Info-Deck-Console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/my-rpi-cyberpunk-info-deck-console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt;
   &lt;img src=&quot;/static/img/rpi-info-deck/title-look.png&quot;
        alt=&quot;Info-Deck in the Underground of Neo-Sabadell&quot; /&gt;
@@ -676,7 +661,7 @@ one more last time.&lt;/p&gt;
   &lt;img src=&quot;/static/img/rpi-info-deck/score-metroid.png&quot; /&gt;
   &lt;br/&gt; &lt;em&gt;Nope, not a hundred, not even close&lt;/em&gt;
 &lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/An-Ode-to-Emacs.html"/> <title>An Ode to Emacs</title> <published>2020-07-12</published> <updated>2020-07-12</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/an-ode-to-emacs.html"/> <title>An Ode to Emacs</title> <published>2020-07-12</published> <updated>2020-07-12</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;div style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
   &lt;div style=&quot;max-width: 220px; padding-right: 20px;&quot;&gt;
     &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png&quot;
@@ -854,7 +839,7 @@ one more last time.&lt;/p&gt;
   &lt;a href=&quot;https://www.ivorysiegetower.com/posts/Lets-go.html&quot;&gt;&quot;showcased&quot;&lt;/a&gt;
   in the welcome post XD. That guy also deserves a story.
 &lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/An-Interactive-Haven.html"/> <title>An Interactive Haven</title> <published>2020-04-29</published> <updated>2020-04-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/an-interactive-haven.html"/> <title>An Interactive Haven</title> <published>2020-04-29</published> <updated>2020-04-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
 &lt;p&gt; Recently I took part in a &lt;a href=&quot;https://www.cecam.org/workshop-details/986&quot; &gt;discussion&lt;/a&gt;
 organized by CECAM&lt;a href=&quot;#interactive-haven-1&quot; &gt;[1]&lt;/a&gt;
 on the topic of Digital Learning, a subject which &lt;em&gt;all of a sudden&lt;/em&gt; became
@@ -929,7 +914,7 @@ also is placed within the walls, in a distant but observable section.
   &lt;a href=&quot;https://www.cs.rochester.edu/~gildea/guile-scmutils/&quot;&gt;the one&lt;/a&gt;
   I&#039;m tinkering with now, based on Guile Scheme.
 &lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Developing-with-Spack.html"/> <title>Developing with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/developing-with-spack.html"/> <title>Developing with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 
 &lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
 
@@ -1036,7 +1021,7 @@ enabeled) in the &lt;code&gt;siesta-dft&lt;/code&gt; branch of
 In case it proves useful on our clusters, these updates will be
 polished and pull-requested rather soon. Otherwise I will continue
 editing them on my own and make a pull request when ready.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Fortls-comfy-indexing-of-Fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/fortls-comfy-indexing-of-fortran.html"/> <title>Fortls: comfy indexing of Fortran</title> <published>2020-02-19</published> <updated>2020-02-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;If you happen to find yourself in HPC research or engineering, you
 will most probably deal with Fortran codebases at some point.
 With two major problems that hurt lazy
 young men&#039;s feelings in 2020: 1st being the ambiguity of which
@@ -1098,7 +1083,7 @@ here I briefly show the looks of my own setup in &lt;code&gt;Emacs&lt;/code&gt;
        style=&quot;max-width: 860px;&quot; /&gt; &lt;br/&gt;
   &lt;em&gt;&lt;code&gt;Fortls + emacs lsp-mode&lt;/code&gt;: hover, reference finder and jump-to-def.&lt;/em&gt;
 &lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/Lets-go.html"/> <title>Let&#039;s go</title> <published>2020-02-09</published> <updated>2020-02-09</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Usually here goes some kind of welcoming post... But nay!&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/lets-go.html"/> <title>Let&#039;s go</title> <published>2020-02-09</published> <updated>2020-02-09</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Usually here goes some kind of welcoming post... But nay!&lt;/p&gt;
 
 &lt;p&gt;Instead I&#039;ll just leave here a picture of my Sunday morning newspaper.&lt;/p&gt;
 
