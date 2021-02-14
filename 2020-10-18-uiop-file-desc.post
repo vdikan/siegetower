@@ -1,5 +1,5 @@
 ;;;;;
-title: Things Common
+title: File descriptors exhausted with `launch-program`
 tags: en, lisp
 date: 2020-10-18
 format: md
@@ -7,25 +7,10 @@ format: md
 <script>hljs.initHighlightingOnLoad();</script>
 <script>hljs.initLineNumbersOnLoad();</script>
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="max-width: 220px; padding-right: 20px;">
-    <img src="/static/img/lisplogos/lisplogo_warning_256.png"
-         style="margin: auto;" alt="Warning Lisp Logo" />
-  </div>
-
-  <div style="max-width: 660px;">
-    <p>
-        A probably growing post on things I found <i>rather</i> peculiar when using CL.
-    </p>
-  </div>
-</div>
-
-<!--more-->
-
-## File descriptors exhausted with `uiop:launch-program`
-
-Quite a critical bug met with standard facility for launching asynchronous system
-calls, since I'm planning to do so a lot with my side-effect manager.
+I've recently introduced an issue in my workflow when using Common Lisp's UIOP
+standard facility for launching asynchronous system calls.
+It appears to be quite a critical one since I'm planning to use that
+functionality a lot with my side-effect manager.
 
 The following code will fail after a couple hundred (maybe thousand)
 of iterations, complaining about "too many open files":
