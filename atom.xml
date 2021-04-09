@@ -1,7 +1,24 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Tue, 09 Mar 2021 00:32:55 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html"/> <title>Simple Vega-Lite plotter app script</title> <published>2021-02-14</published> <updated>2021-02-14</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Fri, 09 Apr 2021 15:58:20 +0300</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html"/> <title>Simple Vega-Lite plotter app script</title> <published>2021-02-14</published> <updated>2021-02-14</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
 
 &lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
+
+&lt;h3&gt;Update [04/2021]&lt;/h3&gt;
+
+&lt;p&gt;A couple of discoveries followed my initial playing with Clojure and Vega library.&lt;/p&gt;
+
+&lt;p&gt;First, the author of Babashka himself pointed to me on twitter that
+Bb is now bundled with &lt;a href=&quot;https://github.com/http-kit/http-kit&quot; &gt;http-kit&lt;/a&gt;
+which should streamline creation of app-server scripts. No need to bootstrap
+everything from scratch, unlike in the following example.&lt;/p&gt;
+
+&lt;p&gt;Another one is &lt;a href=&quot;https://github.com/dkogan/feedgnuplot&quot; &gt;Feedgnuplot&lt;/a&gt;: a nice
+frontend to Gnuplot that simplifies data piping to charts. I ran into it while
+searching for an ascii-terminal plotter that would fit for my
+&lt;a href=&quot;https://en.wikipedia.org/wiki/StumpWM&quot; &gt;StumpWM&lt;/a&gt; extensions.
+However, it is in fact a handy &amp;quot;every day gnuplot inliner&amp;quot;.&lt;/p&gt;
+
+&lt;h3&gt;Babaska + Vega-lite plotter app (Original)&lt;/h3&gt;
 
 &lt;p&gt;For the Clojure shell scripting environment with a funny name
 &lt;a href=&quot;https://github.com/babashka/babashka&quot; &gt;Babashka&lt;/a&gt;
