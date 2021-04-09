@@ -7,6 +7,23 @@ format: md
 <script>hljs.initHighlightingOnLoad();</script>
 <script>hljs.initLineNumbersOnLoad();</script>
 
+### Update [04/2021]
+
+A couple of discoveries followed my initial playing with Clojure and Vega library.
+
+First, the author of Babashka himself pointed to me on twitter that
+Bb is now bundled with [http-kit](https://github.com/http-kit/http-kit)
+which should streamline creation of app-server scripts. No need to bootstrap
+everything from scratch, unlike in the following example.
+
+Another one is [Feedgnuplot](https://github.com/dkogan/feedgnuplot): a nice
+frontend to Gnuplot that simplifies data piping to charts. I ran into it while
+searching for an ascii-terminal plotter that would fit for my
+[StumpWM](https://en.wikipedia.org/wiki/StumpWM) extensions.
+However, it is in fact a handy "every day gnuplot inliner".
+
+### Babaska + Vega-lite plotter app (Original)
+
 For the Clojure shell scripting environment with a funny name
 [Babashka](https://github.com/babashka/babashka)
 there is a simple example of a
