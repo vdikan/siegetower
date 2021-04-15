@@ -2,7 +2,7 @@
 (:author "Vladimir Dikan"
  :deploy-dir "deploy/"
  :domain "https://www.ivorysiegetower.com"
- ;; :domain "http://localhost:5000"        ; <- for debuggging
+         ;; :domain "http://localhost:5000"        ; <- for debuggging
  :title "Ivory Siege Tower"
  :base-index-title "Parade Ground -- {Blog}"
  :theme "tower"
@@ -12,15 +12,19 @@
            (:month-index    "date/~a")
            (:numeric-index  "~d")
            (:feed           "~a.xml")
-           (:tag-feed       "tag/~a.xml"))
+           (:tag-feed       "tag/~a.xml")
+           (:shelf          "shelf/~a")) ;wip
 
  :staging-dir "/tmp/coleslaw/"
  :excerpt-sep "<!--more-->"
  :feeds ("en" "ru")
 
+ :org-books-src     #p"~/Grimoire/org/brain/Books-Revised.org"
+
  :plugins ((mathjax)
            (sitemap)
            (static-pages)
+           ;; (org-books) <- is an INDEX obj plugin in the core :coleslaw sources
            ;; Metadata
            (opengraph :og-base-url "https://www.ivorysiegetower.com"
                       :og-default-image "css/tower_logo.png")
@@ -32,6 +36,7 @@
                      :cname t))
 
  :sitenav ((:url "https://www.ivorysiegetower.com" :name "Blog")
+           (:url "/shelf/all.html" :name "BookTracker")
            (:url "/papergraph.html" :name "PaperGraph")
            (:url "/about.html" :name "About"))
 
