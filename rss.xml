@@ -1,5 +1,82 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Thu, 15 Apr 2021 21:30:40 +0300</pubDate> <item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ clojure ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 10 May 2021 21:51:09 +0200</pubDate> <item> <title>Стихийный Отпуск</title> <link>https://www.ivorysiegetower.com/posts/стихийный-отпуск.html</link> <pubDate>2021-05-10</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/стихийный-отпуск.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <p>На заре 2021 откладывать волевое решение по отпуску уже стало
+невозможным. Ситуация с пандемией не думала стабилизироваться, а на
+другом конце зумопровода уже четко слышалась истерика. К тому же
+отбой в четвертом часу утра вторую неделю подряд как бы намекал что
+сам я долго так тоже больше не выдержу. Решение: билет
+Валенсия-&gt;Борисполь, в обход неудобных путей пересадок (типа
+Амстердама, для которого совершенно непонятно где брать тест на
+<em>антигены</em> во 2-м часу ночи для утреннего рейса). Три недельки
+свидания в Одессе с последующим прямым самолетом в Барселону, прямо
+перед Пасхальными праздниками. На них ожидалось очередное временное
+ослабление карантинных ограничений. Что могло пойти не так?</p>
+
+<p>В принципе, <strong>все</strong>... но мне повезло на этот раз, и путешествие
+выдалось на редкость удачным!</p>
+
+<p><img src="/static/img/20210503_manej.jpg" alt="At the Heart of the Evil empire" /></p>
+
+<!--more-->
+
+<p>Началось с того, что отменились два подряд моих обратных билета до
+Барны. И если первый кэнсел можно списать на финансовые трудности
+украинского лоукостера, то отмена второй брони именно на участке
+Рига-Барселона выглядела уже подозрительно. Дело в том что число
+реальных заражений в Испании и Каталонии в частности, на тот момент
+действительно будто бы снизилось, и чтоб &quot;закрепить&quot; результат
+планировалось на Пасху ввести дополнительных ограничений. Формальных
+рестриктов в итоге никто не ввёл, но негласные, видимо, оказались в
+силе. А раз так, то билет был разменян на такой же, но в Москву, и тут
+же оформлена запись на прививку. Намек был понят.</p>
+
+<p>Запомнилась хтоническая картина: абсолютно пустой аэропорт Валенсии,
+на табло единственный рейс из страны, но каждые 15 минут громко
+объявляется необходимость соблюдать социальную дистанцию... пробирало
+до мурашек...</p>
+
+<p>В Одессе совершенно безумное количество вкусного кофе и котов. Первый
+подают в более чем ста аутентичных несетевых <em>кав'ярнях</em>, что редко
+где сейчас найдешь. Сетевые тоже есть, а вкусный кофе купить можно
+даже с мобильной авто-кафехи. И абсолютный топ - <strong>та самая</strong> палатка
+на рынке, про которую знают все местные. И там он действительно зе
+бест!</p>
+
+<p>Котики абсолютные хозяева городских улиц, здесь их просто толпы:
+толстых, откормленных, живущих часто на своей обособленной жилплощади.
+Одна из особенностей одесситов - многие из них покупают пакетики
+мокрого корма и берут их с собой, когда идут куда-то по своим делам.
+Одна дама даже возмущалась при мне, что де кормить (ничейных уличных)
+котов остатками с кухни - зашквар и очень невежливо.</p>
+
+<p>Сам город кстати выглядит так, как если бы власть в условном
+Санкт-Петербурге действительно захватили коты. Во-первых, у Одессы
+изначально был (и есть, если верить В.) план строительства,
+архитектурно похожий на Питер. А во-вторых, город очень запущен, что
+печалит. Дома в его центре рушатся каждый год, просто от старости.
+Можно конечно рассуждать о том что ракушняк не далеко не лучший
+стройматериал (другого нету - надо завозить), но объективно ремонтных
+и реставрационных работ в городе почти не ведется, а то что делают
+подчас <a href="https://mayak.org.ua/article/snimok-dnya-u-skulptury-na-dome-russova-v-odesse-otvalilos-lico/" >лучше бы и не делали</a>.</p>
+
+<p>Все же у города есть характер, его можно оценить в процессе
+бегства от ночников и номерных новостроев Аркадии через пляж и
+набережную в порт, а оттуда - в центр по Потемкинской лестнице.
+Ощущается как восхождение из ада через пещеры атлантов домой на землю,
+где все плохо, но еще есть шанс многое исправить...</p>
+
+<p><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CN-qPu9pVRC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CN-qPu9pVRC/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CN-qPu9pVRC/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Siege Tower (@ivorysiegetower)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></p>
+
+<p>А, вот еще чего много в Одессе: очень-преочень вкусной нямки! Теперь
+понятна вселенская грусть в глазах В. в наших походах за провиантом в
+других городах и странах.</p>
+
+<p>Москва тоже порадовала множеством приятных сюрпризов. Встречи с
+родными, друзьями и старой гвардией со школы. Профилактическая
+инъекция от модной болезни. Собрание средневековых комиксов руки
+Альбрехта Дюрера. Уроки вождения в проливной дождь и 10 баллов.
+Излечение бессонницы и невроза; вновь обретенное ощущение жизни,
+подконтрольной мне.</p>
+ ]]></description> </item><item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ clojure ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
 
 <script>hljs.initLineNumbersOnLoad();</script>
 
@@ -1020,80 +1097,5 @@ one more last time.</p>
   [4] Myself I keep a setup of <code>emacs+elfeed</code> on my GameHat handheld,
   <a href="https://www.ivorysiegetower.com/posts/Lets-go.html">"showcased"</a>
   in the welcome post XD. That guy also deserves a story.
-</p>
- ]]></description> </item><item> <title>An Interactive Haven</title> <link>https://www.ivorysiegetower.com/posts/an-interactive-haven.html</link> <pubDate>2020-04-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/an-interactive-haven.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ 
-<p> Recently I took part in a <a href="https://www.cecam.org/workshop-details/986" >discussion</a>
-organized by CECAM<a href="#interactive-haven-1" >[1]</a>
-on the topic of Digital Learning, a subject which <em>all of a sudden</em> became
-critical to all the educational institutions. Of course there was a
-section on adaptation of existing courseware to remote learning
-formats. With opinions on difficulties to follow, grade and adapt to
-e-learning. And a traditional certain skepticism expressed on
-technologies that fail to create revolutions in education.</p>
-
-<p>I agree on that, it's hard to imagine a revolt in internal thinking
-process by mere upgrade in the educational media. But certain
-breakthroughs <s><em>can</em> be achieved with modern technologies.</s>
-False. They <em>are</em> already present, with help of tech that is decades
-old.</p>
-
-<!--more-->
-
-<p>J.L.Borges pictured us books as labyrinths of symbols.
-He dreamed of libraries as an infinite combinatorial symbolic spaces,
-where all texts of natural languages are present - even those yet to
-be written. One can develop artistic writing skills by
-  navigating and extending such a labyrinth -
-  still incomplete yet already enormously large.
-  Guides help to speed up learning, teaching
-helps to faster build a decent taste, but the labyrinth of fiction is
-self-contained, and lacks dreadful &quot;motivation problem&quot; if the goal
-also is placed within the walls, in a distant but observable section.
-  A laboratory rat<a href="#interactive-haven-2" >[2]</a> that senses cheese
-  learns to find it faster every next time.</p>
-
-<p>
-  Programming allows us to build extensible interactive environments for
-  symbolic formalisms. <code>Maxima</code> and <code>Wolfram Mathematica</code>
-  are both great examples, it's hard to find any better for illustration purposes.
-  But there are more. The infamous
-  <a href="https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs">SICP</a>
-  book has a <a href="https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html">younger sister</a>
-  also authored by G.J. Sussman.
-  It is backed up with Scheme language environment<a href="#interactive-haven-3" >[3]</a>
-  that implements core Classical Mechanics formalism and allows readers to
-  simulate described examples - or their own. A popular online course
-  <a href="https://www.nand2tetris.org/">NAND2Tetris</a>
-  ships a Verilog-like simplified HDL and its testing grounds in order to let
-  students describe electronic components and simulate bigger systems using these custom gates.</p>
-
-<p>
-  These examples do not embody something breaking new neither in
-  educational principles not in the underlying implementations
-  (those have been
-  <a href="https://github.com/norvig/paip-lisp/blob/master/docs/chapter8.md">developed</a>
-  a while ago as computer algebra systems).
-  However, they demonstrate live reconstruction of labyrinths from Borges's dreams.
-  One should just realize that building such an interactive haven,
-  as much as exploring its dark waters, is tough.
-  But Hell, how rewarding can it be!
-</p>
-
-<hr/>
-
-<p id="interactive-haven-1">
-[1] As the title suggests, they organize many events around Atomic &amp; Molecular Simulations
-</p>
-
-<p id="interactive-haven-2">
-  [2] In no way an offensive comparison. Rats are adorable and smart.
-  I used to own a pet rat a while ago. The biggest disenchantment is their short lifespan.
-</p>
-
-<p id="interactive-haven-3">
-  [3] Outside MIT the most suitable port
-  <a href="https://news.ycombinator.com/item?id=9007467">seems</a> to be
-  <a href="https://www.cs.rochester.edu/~gildea/guile-scmutils/">the one</a>
-  I'm tinkering with now, based on Guile Scheme.
 </p>
  ]]></description> </item> </channel> </rss>
