@@ -40,7 +40,10 @@
            (:url "/papergraph.html" :name "PaperGraph")
            (:url "/about.html" :name "About"))
 
- :siterefs ((:title "ivorysiegetower @ Twitter"
+ :siterefs ((:title "ivorysiegetower @ Instagram"
+             :url "https://www.instagram.com/ivorysiegetower/"
+             :icon "css/icon_instagram.png")
+            (:title "ivorysiegetower @ Twitter"
              :url "https://twitter.com/ivorysiegetower"
              :icon "css/icon_twitter.png")
             (:title "vdikan @ GitHub"
