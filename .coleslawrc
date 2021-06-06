@@ -55,4 +55,6 @@
              :icon "css/icon_linkedin.png")
             (:title "Atomic Feed of the Good Side"
              :url "https://www.ivorysiegetower.com/tag/en-atom.xml"
-             :icon "css/icon_rss.png")))
+             :icon "css/icon_rss.png")
+            (:title "hawthorne_a @ MyAnimeList"
+             :hidden t)))
