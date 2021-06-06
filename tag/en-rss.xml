@@ -1,9 +1,46 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 10 May 2021 22:04:55 +0200</pubDate> <item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ clojure ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 06 Jun 2021 23:05:46 +0200</pubDate> <item> <title>A Hundred Bucks Second Best Spent</title> <link>https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</link> <pubDate>2021-06-06</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <p>The best buy for a spare hundred bucks would be a second-hand bike, if
+you don't have any. Or, within an advanced cityscape, a one year
+subscription for rental bike service. But after that, what should a
+second hundred go for?</p>
 
-<script>hljs.initLineNumbersOnLoad();</script>
+<p>My answer would be, again, if you don't have anything like that yet -
+go get yourself a 3D printer. Not a professional designer's model.
+Limit yourself for a hundred bucks, try to get the best for that
+amount.</p>
 
-<h3>Update [04/2021]</h3>
+<p>It won't be a quiet pleasure to use. It won't be able to create
+something complicated from the ready-to-use proprietary STL files.</p>
+
+<p>It will, though, change the way you think.</p>
+
+<!--more-->
+
+<p>My <code>Tronxy X1 Kit</code> arrived in two boxes, disassembled. That's how I
+learned what word &quot;kit&quot; meant in the title. Assembling it was fun,
+even more surprising fun was to see that it'd actually worked, with
+only minor artifacts of motion visible on large and curly shapes.</p>
+
+<p>No heating bed, single nozzle, PLA only. Dimensions are also rather
+small: work space is 15cm cube. Not much to brag about, but...</p>
+
+<p>It is enough to set a certain reassuring feeling:</p>
+
+<blockquote>
+<p>Many of the things I'll ever need I just create on demand!</p>
+</blockquote>
+
+<p>From keyboard casing and AC hoof hangers to numerous containers and
+organizers, plus some creative madness using procedural CAD and
+attempts to practice generative art.</p>
+
+<p>In a sense, I think, the device has already paid off. Or will soon,
+after I replace it's cheap extruder.</p>
+
+<p>Oh and for the <strong>third best spent</strong>, check the stores for earbuds with
+active noise cancelling. Some decent models already available for one
+hundred bucks. Amazing.</p>
+ ]]></description> </item><item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ clojure ]]></category><category><![CDATA[ code ]]></category> <description><![CDATA[ <h3>Update [04/2021]</h3>
 
 <p>A couple of discoveries followed my initial playing with Clojure and Vega library.</p>
 
@@ -68,11 +105,7 @@ more likely to be built inside a shell pipe through other calls to BB.</p>
 </ol>
 
 <p>Motivation? A rapid cli- plotter better than gnuplot!</p>
- ]]></description> </item><item> <title>File descriptors exhausted with `launch-program`</title> <link>https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
-
-<script>hljs.initLineNumbersOnLoad();</script>
-
-<p>I've recently introduced an issue in my workflow when using Common Lisp's UIOP
+ ]]></description> </item><item> <title>File descriptors exhausted with `launch-program`</title> <link>https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category><category><![CDATA[ code ]]></category> <description><![CDATA[ <p>I've recently introduced an issue in my workflow when using Common Lisp's UIOP
 standard facility for launching asynchronous system calls.
 It appears to be quite a critical one since I'm planning to use that
 functionality a lot with my side-effect manager.</p>
@@ -139,7 +172,7 @@ produce something more clever:</p>
                 ,command :output :stream :error-output :stream)))
      (values ,@body (uiop:close-streams proc))))
 </code></pre>
- ]]></description> </item><item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/visuals-made-sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/visuals-made-sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
+ ]]></description> </item><item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/visuals-made-sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/visuals-made-sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ code ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
 - literally - anything, it used to be disturbing.
 A balance between control, speed, accuracy and easiness seemed unreachable
 even for a routine plotting of data at hand. Well, not anymore!</p>
@@ -322,10 +355,6 @@ vegaEmbed('#vis', vlSpec);
 <p>And it's not just an export form, but the example itself.
 It's rendered using Js through Vega-Lite's modules, on this very page.
 Here's the complete code:</p>
-
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script>hljs.initLineNumbersOnLoad();</script>
 
 <pre><code class="js"> if ('undefined' === typeof visVegaSpec) {
     var visVegaSpec = {
@@ -983,11 +1012,7 @@ also is placed within the walls, in a distant but observable section.
   <a href="https://www.cs.rochester.edu/~gildea/guile-scmutils/">the one</a>
   I'm tinkering with now, based on Guile Scheme.
 </p>
- ]]></description> </item><item> <title>Developing with Spack</title> <link>https://www.ivorysiegetower.com/posts/developing-with-spack.html</link> <pubDate>2020-02-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/developing-with-spack.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ siesta ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
-
-<script>hljs.initLineNumbersOnLoad();</script>
-
-<p>The man-made Hell of dependencies management in HPC software has an
+ ]]></description> </item><item> <title>Developing with Spack</title> <link>https://www.ivorysiegetower.com/posts/developing-with-spack.html</link> <pubDate>2020-02-29</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/developing-with-spack.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ siesta ]]></category><category><![CDATA[ code ]]></category> <description><![CDATA[ <p>The man-made Hell of dependencies management in HPC software has an
 efficient way out: <a href="https://spack.io" ><strong>Spack</strong></a>, initially
 <a href="https://computing.llnl.gov/projects/spack-hpc-package-manager" >established at Lawrence Livermore</a>
 and actively community-supported manager of program packages and

@@ -1,9 +1,46 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 10 May 2021 22:04:55 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html"/> <title>Simple Vega-Lite plotter app script</title> <published>2021-02-14</published> <updated>2021-02-14</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 06 Jun 2021 23:05:46 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html"/> <title>A Hundred Bucks Second Best Spent</title> <published>2021-06-06</published> <updated>2021-06-06</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The best buy for a spare hundred bucks would be a second-hand bike, if
+you don&#039;t have any. Or, within an advanced cityscape, a one year
+subscription for rental bike service. But after that, what should a
+second hundred go for?&lt;/p&gt;
 
-&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
+&lt;p&gt;My answer would be, again, if you don&#039;t have anything like that yet -
+go get yourself a 3D printer. Not a professional designer&#039;s model.
+Limit yourself for a hundred bucks, try to get the best for that
+amount.&lt;/p&gt;
 
-&lt;h3&gt;Update [04/2021]&lt;/h3&gt;
+&lt;p&gt;It won&#039;t be a quiet pleasure to use. It won&#039;t be able to create
+something complicated from the ready-to-use proprietary STL files.&lt;/p&gt;
+
+&lt;p&gt;It will, though, change the way you think.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;My &lt;code&gt;Tronxy X1 Kit&lt;/code&gt; arrived in two boxes, disassembled. That&#039;s how I
+learned what word &amp;quot;kit&amp;quot; meant in the title. Assembling it was fun,
+even more surprising fun was to see that it&#039;d actually worked, with
+only minor artifacts of motion visible on large and curly shapes.&lt;/p&gt;
+
+&lt;p&gt;No heating bed, single nozzle, PLA only. Dimensions are also rather
+small: work space is 15cm cube. Not much to brag about, but...&lt;/p&gt;
+
+&lt;p&gt;It is enough to set a certain reassuring feeling:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Many of the things I&#039;ll ever need I just create on demand!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;From keyboard casing and AC hoof hangers to numerous containers and
+organizers, plus some creative madness using procedural CAD and
+attempts to practice generative art.&lt;/p&gt;
+
+&lt;p&gt;In a sense, I think, the device has already paid off. Or will soon,
+after I replace it&#039;s cheap extruder.&lt;/p&gt;
+
+&lt;p&gt;Oh and for the &lt;strong&gt;third best spent&lt;/strong&gt;, check the stores for earbuds with
+active noise cancelling. Some decent models already available for one
+hundred bucks. Amazing.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html"/> <title>Simple Vega-Lite plotter app script</title> <published>2021-02-14</published> <updated>2021-02-14</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;h3&gt;Update [04/2021]&lt;/h3&gt;
 
 &lt;p&gt;A couple of discoveries followed my initial playing with Clojure and Vega library.&lt;/p&gt;
 
@@ -68,11 +105,7 @@ more likely to be built inside a shell pipe through other calls to BB.&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Motivation? A rapid cli- plotter better than gnuplot!&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html"/> <title>File descriptors exhausted with `launch-program`</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
-
-&lt;p&gt;I&#039;ve recently introduced an issue in my workflow when using Common Lisp&#039;s UIOP
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html"/> <title>File descriptors exhausted with `launch-program`</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;I&#039;ve recently introduced an issue in my workflow when using Common Lisp&#039;s UIOP
 standard facility for launching asynchronous system calls.
 It appears to be quite a critical one since I&#039;m planning to use that
 functionality a lot with my side-effect manager.&lt;/p&gt;
@@ -322,10 +355,6 @@ vegaEmbed(&#039;#vis&#039;, vlSpec);
 &lt;p&gt;And it&#039;s not just an export form, but the example itself.
 It&#039;s rendered using Js through Vega-Lite&#039;s modules, on this very page.
 Here&#039;s the complete code:&lt;/p&gt;
-
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
 
 &lt;pre&gt;&lt;code class=&quot;js&quot;&gt; if (&#039;undefined&#039; === typeof visVegaSpec) {
     var visVegaSpec = {
@@ -983,11 +1012,7 @@ also is placed within the walls, in a distant but observable section.
   &lt;a href=&quot;https://www.cs.rochester.edu/~gildea/guile-scmutils/&quot;&gt;the one&lt;/a&gt;
   I&#039;m tinkering with now, based on Guile Scheme.
 &lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/developing-with-spack.html"/> <title>Developing with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
-
-&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/developing-with-spack.html"/> <title>Developing with Spack</title> <published>2020-02-29</published> <updated>2020-02-29</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The man-made Hell of dependencies management in HPC software has an
 efficient way out: &lt;a href=&quot;https://spack.io&quot; &gt;&lt;strong&gt;Spack&lt;/strong&gt;&lt;/a&gt;, initially
 &lt;a href=&quot;https://computing.llnl.gov/projects/spack-hpc-package-manager&quot; &gt;established at Lawrence Livermore&lt;/a&gt;
 and actively community-supported manager of program packages and

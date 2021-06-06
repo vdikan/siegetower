@@ -1,5 +1,46 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Mon, 10 May 2021 22:04:55 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/стихийный-отпуск.html"/> <title>Стихийный Отпуск</title> <published>2021-05-10</published> <updated>2021-05-10</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;На заре 2021 откладывать волевое решение по отпуску уже стало
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 06 Jun 2021 23:05:46 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html"/> <title>A Hundred Bucks Second Best Spent</title> <published>2021-06-06</published> <updated>2021-06-06</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The best buy for a spare hundred bucks would be a second-hand bike, if
+you don&#039;t have any. Or, within an advanced cityscape, a one year
+subscription for rental bike service. But after that, what should a
+second hundred go for?&lt;/p&gt;
+
+&lt;p&gt;My answer would be, again, if you don&#039;t have anything like that yet -
+go get yourself a 3D printer. Not a professional designer&#039;s model.
+Limit yourself for a hundred bucks, try to get the best for that
+amount.&lt;/p&gt;
+
+&lt;p&gt;It won&#039;t be a quiet pleasure to use. It won&#039;t be able to create
+something complicated from the ready-to-use proprietary STL files.&lt;/p&gt;
+
+&lt;p&gt;It will, though, change the way you think.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;My &lt;code&gt;Tronxy X1 Kit&lt;/code&gt; arrived in two boxes, disassembled. That&#039;s how I
+learned what word &amp;quot;kit&amp;quot; meant in the title. Assembling it was fun,
+even more surprising fun was to see that it&#039;d actually worked, with
+only minor artifacts of motion visible on large and curly shapes.&lt;/p&gt;
+
+&lt;p&gt;No heating bed, single nozzle, PLA only. Dimensions are also rather
+small: work space is 15cm cube. Not much to brag about, but...&lt;/p&gt;
+
+&lt;p&gt;It is enough to set a certain reassuring feeling:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Many of the things I&#039;ll ever need I just create on demand!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;From keyboard casing and AC hoof hangers to numerous containers and
+organizers, plus some creative madness using procedural CAD and
+attempts to practice generative art.&lt;/p&gt;
+
+&lt;p&gt;In a sense, I think, the device has already paid off. Or will soon,
+after I replace it&#039;s cheap extruder.&lt;/p&gt;
+
+&lt;p&gt;Oh and for the &lt;strong&gt;third best spent&lt;/strong&gt;, check the stores for earbuds with
+active noise cancelling. Some decent models already available for one
+hundred bucks. Amazing.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/стихийный-отпуск.html"/> <title>Стихийный Отпуск</title> <published>2021-05-10</published> <updated>2021-05-10</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;На заре 2021 откладывать волевое решение по отпуску уже стало
 невозможным. Ситуация с пандемией не думала стабилизироваться, а на
 другом конце зумопровода уже четко слышалась истерика. К тому же
 отбой в четвертом часу утра вторую неделю подряд как бы намекал что
@@ -76,11 +117,7 @@
 Альбрехта Дюрера. Уроки вождения в проливной дождь и 10 баллов.
 Излечение бессонницы и невроза; вновь обретенное ощущение жизни,
 подконтрольной мне.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html"/> <title>Simple Vega-Lite plotter app script</title> <published>2021-02-14</published> <updated>2021-02-14</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
-
-&lt;h3&gt;Update [04/2021]&lt;/h3&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html"/> <title>Simple Vega-Lite plotter app script</title> <published>2021-02-14</published> <updated>2021-02-14</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;h3&gt;Update [04/2021]&lt;/h3&gt;
 
 &lt;p&gt;A couple of discoveries followed my initial playing with Clojure and Vega library.&lt;/p&gt;
 
@@ -208,11 +245,7 @@ more likely to be built inside a shell pipe through other calls to BB.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;blockquote class=&quot;instagram-media&quot; data-instgrm-captioned data-instgrm-permalink=&quot;https://www.instagram.com/tv/CGvFIy9jjUF/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; data-instgrm-version=&quot;13&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:16px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/tv/CGvFIy9jjUF/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;&quot; target=&quot;_blank&quot;&gt; &lt;div style=&quot; display: flex; flex-direction: row; align-items: center;&quot;&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 19% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display:block; height:50px; margin:0 auto 12px; width:50px;&quot;&gt;&lt;svg width=&quot;50px&quot; height=&quot;50px&quot; viewBox=&quot;0 0 60 60&quot; version=&quot;1.1&quot; xmlns=&quot;https://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;https://www.w3.org/1999/xlink&quot;&gt;&lt;g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;g transform=&quot;translate(-511.000000, -20.000000)&quot; fill=&quot;#000000&quot;&gt;&lt;g&gt;&lt;path d=&quot;M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div style=&quot;padding-top: 8px;&quot;&gt; &lt;div style=&quot; color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;&quot;&gt; View this post on Instagram&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 12.5% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;&quot;&gt;&lt;div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: 8px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: auto;&quot;&gt; &lt;div style=&quot; width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/tv/CGvFIy9jjUF/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_blank&quot;&gt;A post shared by Dmitry Vishnevsky (@dmitri.visnevski)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt; &lt;script async src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html"/> <title>File descriptors exhausted with `launch-program`</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
-
-&lt;p&gt;I&#039;ve recently introduced an issue in my workflow when using Common Lisp&#039;s UIOP
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html"/> <title>File descriptors exhausted with `launch-program`</title> <published>2020-10-18</published> <updated>2020-10-18</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;I&#039;ve recently introduced an issue in my workflow when using Common Lisp&#039;s UIOP
 standard facility for launching asynchronous system calls.
 It appears to be quite a critical one since I&#039;m planning to use that
 functionality a lot with my side-effect manager.&lt;/p&gt;
@@ -462,10 +495,6 @@ vegaEmbed(&#039;#vis&#039;, vlSpec);
 &lt;p&gt;And it&#039;s not just an export form, but the example itself.
 It&#039;s rendered using Js through Vega-Lite&#039;s modules, on this very page.
 Here&#039;s the complete code:&lt;/p&gt;
-
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;script&gt;hljs.initLineNumbersOnLoad();&lt;/script&gt;
 
 &lt;pre&gt;&lt;code class=&quot;js&quot;&gt; if (&#039;undefined&#039; === typeof visVegaSpec) {
     var visVegaSpec = {
@@ -919,183 +948,5 @@ one more last time.&lt;/p&gt;
 &lt;p&gt;
   &lt;img src=&quot;/static/img/rpi-info-deck/score-metroid.png&quot; /&gt;
   &lt;br/&gt; &lt;em&gt;Nope, not a hundred, not even close&lt;/em&gt;
-&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/an-ode-to-emacs.html"/> <title>An Ode to Emacs</title> <published>2020-07-12</published> <updated>2020-07-12</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
-&lt;div style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
-  &lt;div style=&quot;max-width: 220px; padding-right: 20px;&quot;&gt;
-    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png&quot;
-         style=&quot;margin: auto;&quot; alt=&quot;Emacs logo from the Wiki&quot; /&gt;
-  &lt;/div&gt;
-
-  &lt;div style=&quot;max-width: 660px;&quot;&gt;
-    &lt;p&gt;
-      A rare &lt;em&gt;positive&lt;/em&gt; result of the lockdown - increased friendship
-      towards my editor of choice. After explaining configuration basics to
-      a friend another day I think I can finally formulate what clings me to
-      this &lt;s&gt;ancient&lt;/s&gt; everlasting piece of software.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!--more--&gt;
-
-&lt;h2&gt;Code&lt;/h2&gt;
-
-&lt;p&gt;
-  Well, yeah, first reason: code developing tool. Major modes for almost
-  everything that deserves a title of programming / scripting / markup
-  language out there. But not only.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Take &lt;a href=&quot;https://emacs-lsp.github.io/lsp-mode/&quot;&gt;Language Server Protocol&lt;/a&gt;
-  for introspection where you did not expect any.
-  &lt;a href=&quot;https://github.com/bbatsov/projectile&quot;&gt;Projectile&lt;/a&gt;
-  and &lt;a href=&quot;https://magit.vc/&quot;&gt;magit&lt;/a&gt;
-  to manage the state of the project.
-  Even in vanilla emacs there are handy tools for development, including
-  &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html&quot;&gt;local variables&lt;/a&gt;
-  and
-  &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Version-Control.html&quot;&gt;version control&lt;/a&gt;
-  (useful for versioning systems other than git).
-&lt;/p&gt;
-
-&lt;p&gt;
-  Then, amidst the lockdown madness, find out that all of this works on
-  remote machines too through
-  &lt;a href=&quot;https://www.emacswiki.org/emacs/TrampMode&quot;&gt;TRAMP&lt;/a&gt;.
-  Yes, the same precious editing environment that took you so much effort to assemble.
-  Awesome, isn&#039;t it?
-&lt;/p&gt;
-
-&lt;h2&gt;Compose&lt;/h2&gt;
-
-&lt;p&gt;
-  Skipping the obvious (autocompletions, spellchecking, etc):
-  &lt;a href=&quot;https://orgmode.org/&quot;&gt;Org-mode&lt;/a&gt;.
-  Now a built-in part of vanilla Emacs, it&#039;s the greatest
-  get-things-not-forgotten tool. It powers my private log, work and
-  accounting notes and literally any documentation set that I compose.
-&lt;/p&gt;
-
-&lt;p&gt;
-  It does not power this static blog for reasons I cannot well explain.
-  Somehow I thought that tweaking a different static site generator
-  would be faster than making Org export look fine and not at all
-  crappy. I still do think so by the way.&lt;a href=&quot;#ode-emacs-1&quot;&gt;[1]&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  One distinct remarkable feature of org-mode is a support for fashy
-  &lt;em&gt;literate programming&lt;/em&gt; in the most literate way. Not only does
-  &lt;a href=&quot;https://orgmode.org/worg/org-contrib/babel/&quot;&gt;org-babel&lt;/a&gt;
-  have a big number of supported languages for source blocks
-  - one can also join them in pipes.&lt;a href=&quot;#ode-emacs-2&quot;&gt;[2]&lt;/a&gt;
-  Even those that need compilation!
-  I one can feed an output of a C-block as an output to a Fortran-block
-  within a scope of one document.
-  This is possible because the medium here is the
-  contents of the document itself, not the state of underlying
-  interpreter &quot;kernel&quot;.&lt;a href=&quot;#ode-emacs-3&quot;&gt;[3]&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  And of course for a researcher it is hard to find better citation system
-  than John Kitchin&#039;s &lt;a href=&quot;https://github.com/jkitchin/org-ref&quot;&gt;org-ref&lt;/a&gt;.
-  It allows one to build her own collection of papers that is visible in
-  org-mode buffers for note-taking and draft-editing. Charming!
-&lt;/p&gt;
-
-&lt;h2&gt;Communicate&lt;/h2&gt;
-
-&lt;p&gt;
-  &lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/mu4e/&quot;&gt;Mu4e&lt;/a&gt; for emails,
-  &lt;a href=&quot;https://github.com/zevlg/telega.el&quot;&gt;telega.el&lt;/a&gt; for Telegram.
-  Those cover the majority of the daily communications I do at the moment.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Most of other media accounts can be accessed through
-  &lt;a href=&quot;https://www.bitlbee.org/main.php/news.r.html&quot;&gt;bitlbee&lt;/a&gt;
-  + &lt;code&gt;erc&lt;/code&gt; (Emacs built-in IRC client).
-  The list is impressive, including Skype, Fb, Discord and Steam.
-  Ideal to keep all this social rubbish in one place for chatting over
-  weekends.
-&lt;/p&gt;
-
-&lt;p&gt;
-  For those old-fashioned like me who still manage their lists of RSS subscriptions,
-  good news: no need to stop, since there is
-  &lt;a href=&quot;https://github.com/skeeto/elfeed&quot;&gt;elfeed&lt;/a&gt;
-  and &lt;code&gt;elfeed-org&lt;/code&gt;.&lt;a href=&quot;#ode-emacs-4&quot;&gt;[4]&lt;/a&gt;
-  By the way, its author Chris Wellons writes an interesting
-  &lt;a href=&quot;https://nullprogram.com/&quot;&gt;blog&lt;/a&gt;
-  about emacs&#039; internals and other curious stuff.
-  A good candidate for your refreshed feedlist.
-&lt;/p&gt;
-
-&lt;h2&gt;Dark secrets revealed&lt;/h2&gt;
-
-&lt;p&gt;If you are looking for the &amp;quot;dark secret of emacs&amp;quot;, I can name a couple.&lt;/p&gt;
-
-&lt;p&gt;
-  The first one lies in the prodigious extensiveness of the editor by
-  design, which, over time, led to a series of really good plugins that
-  have a great level of synergy among themselves. I list some examples
-  above. Together they aid me with three daily activities: Coding, Composing
-  and Communicating - within one universal editor.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Why does it matter?
-  The answer is, of course, all of these tasks deal with manipulation of
-  &lt;em&gt;textual&lt;/em&gt; data. And a second glance on it reveals that emacs
-  to date is maybe the best textual UI tool. Some push this idea to
-  &lt;a href=&quot;https://github.com/ch11ng/exwm&quot;&gt;extreme limits&lt;/a&gt;,
-  somewhat materializing the famous joke about an &quot;OS without a proper
-  editor&quot;.
-&lt;/p&gt;
-
-&lt;p&gt;
-  I am not THAT zealous, but myself I find useful unifying
-  the text-processing tasks. Being able to store an IM conversation
-  branch as a diary entry, email the bibtex citations to colleagues
-  and blog about all this without leaving an editor&#039;s window may sound
-  like an overkill, but after a while it feels quite essential. It&#039;s
-  all text after all!
-&lt;/p&gt;
-
-&lt;p&gt;
-  Emacs has it&#039;s flaws and legacy anchors.
-  (My biggest personal regret is that it still uses a somewhat clumsy emacs lisp
-  language with some Common Lisp -like features instead of normal support for
-  CL-standard).
-  Yes, emacs is not perfect, let&#039;s say it is just very good.
-  Or &quot;the worst editor out there, except for the rest ones&quot;, if you prefer.
-&lt;/p&gt;
-
-&lt;hr/&gt;
-
-&lt;p id=&quot;ode-emacs-1&quot;&gt;
-  [1] Well, in fact I intentionally searched for (and found!)
-  a Common Lisp static blogging platform package,
-  because &lt;a href=&quot;http://stumpwm.github.io/&quot;&gt;StumpWM&lt;/a&gt;.
-  But that is another story for another time, maybe...
-&lt;/p&gt;
-
-&lt;p id=&quot;ode-emacs-2&quot;&gt;
-  [2] John Kitchin
-  &lt;a href=&quot;https://kitchingroup.cheme.cmu.edu/blog/2014/02/04/Literate-programming-example-with-Fortran-and-org-mode/&quot;&gt;showed&lt;/a&gt;
-  another method, with tangling and linking through a makefile.
-&lt;/p&gt;
-
-&lt;p id=&quot;ode-emacs-3&quot;&gt;
-  [3] Though &lt;code&gt;session&lt;/code&gt; can often be specified where it makes sense.
-&lt;/p&gt;
-
-&lt;p id=&quot;ode-emacs-4&quot;&gt;
-  [4] Myself I keep a setup of &lt;code&gt;emacs+elfeed&lt;/code&gt; on my GameHat handheld,
-  &lt;a href=&quot;https://www.ivorysiegetower.com/posts/Lets-go.html&quot;&gt;&quot;showcased&quot;&lt;/a&gt;
-  in the welcome post XD. That guy also deserves a story.
 &lt;/p&gt;
 </content> </entry> </feed>

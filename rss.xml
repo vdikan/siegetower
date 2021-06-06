@@ -1,5 +1,46 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Mon, 10 May 2021 22:04:55 +0200</pubDate> <item> <title>Стихийный Отпуск</title> <link>https://www.ivorysiegetower.com/posts/стихийный-отпуск.html</link> <pubDate>2021-05-10</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/стихийный-отпуск.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <p>На заре 2021 откладывать волевое решение по отпуску уже стало
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 06 Jun 2021 23:05:46 +0200</pubDate> <item> <title>A Hundred Bucks Second Best Spent</title> <link>https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</link> <pubDate>2021-06-06</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <p>The best buy for a spare hundred bucks would be a second-hand bike, if
+you don't have any. Or, within an advanced cityscape, a one year
+subscription for rental bike service. But after that, what should a
+second hundred go for?</p>
+
+<p>My answer would be, again, if you don't have anything like that yet -
+go get yourself a 3D printer. Not a professional designer's model.
+Limit yourself for a hundred bucks, try to get the best for that
+amount.</p>
+
+<p>It won't be a quiet pleasure to use. It won't be able to create
+something complicated from the ready-to-use proprietary STL files.</p>
+
+<p>It will, though, change the way you think.</p>
+
+<!--more-->
+
+<p>My <code>Tronxy X1 Kit</code> arrived in two boxes, disassembled. That's how I
+learned what word &quot;kit&quot; meant in the title. Assembling it was fun,
+even more surprising fun was to see that it'd actually worked, with
+only minor artifacts of motion visible on large and curly shapes.</p>
+
+<p>No heating bed, single nozzle, PLA only. Dimensions are also rather
+small: work space is 15cm cube. Not much to brag about, but...</p>
+
+<p>It is enough to set a certain reassuring feeling:</p>
+
+<blockquote>
+<p>Many of the things I'll ever need I just create on demand!</p>
+</blockquote>
+
+<p>From keyboard casing and AC hoof hangers to numerous containers and
+organizers, plus some creative madness using procedural CAD and
+attempts to practice generative art.</p>
+
+<p>In a sense, I think, the device has already paid off. Or will soon,
+after I replace it's cheap extruder.</p>
+
+<p>Oh and for the <strong>third best spent</strong>, check the stores for earbuds with
+active noise cancelling. Some decent models already available for one
+hundred bucks. Amazing.</p>
+ ]]></description> </item><item> <title>Стихийный Отпуск</title> <link>https://www.ivorysiegetower.com/posts/стихийный-отпуск.html</link> <pubDate>2021-05-10</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/стихийный-отпуск.html</guid> <category><![CDATA[ ru ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <p>На заре 2021 откладывать волевое решение по отпуску уже стало
 невозможным. Ситуация с пандемией не думала стабилизироваться, а на
 другом конце зумопровода уже четко слышалась истерика. К тому же
 отбой в четвертом часу утра вторую неделю подряд как бы намекал что
@@ -76,11 +117,7 @@
 Альбрехта Дюрера. Уроки вождения в проливной дождь и 10 баллов.
 Излечение бессонницы и невроза; вновь обретенное ощущение жизни,
 подконтрольной мне.</p>
- ]]></description> </item><item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ clojure ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
-
-<script>hljs.initLineNumbersOnLoad();</script>
-
-<h3>Update [04/2021]</h3>
+ ]]></description> </item><item> <title>Simple Vega-Lite plotter app script</title> <link>https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</link> <pubDate>2021-02-14</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/simple-vega-lite-plotter-app-script.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ clojure ]]></category><category><![CDATA[ code ]]></category> <description><![CDATA[ <h3>Update [04/2021]</h3>
 
 <p>A couple of discoveries followed my initial playing with Clojure and Vega library.</p>
 
@@ -208,11 +245,7 @@ more likely to be built inside a shell pipe through other calls to BB.</p>
 </p>
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/tv/CGvFIy9jjUF/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/tv/CGvFIy9jjUF/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/tv/CGvFIy9jjUF/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Dmitry Vishnevsky (@dmitri.visnevski)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
- ]]></description> </item><item> <title>File descriptors exhausted with `launch-program`</title> <link>https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category> <description><![CDATA[ <script>hljs.initHighlightingOnLoad();</script>
-
-<script>hljs.initLineNumbersOnLoad();</script>
-
-<p>I've recently introduced an issue in my workflow when using Common Lisp's UIOP
+ ]]></description> </item><item> <title>File descriptors exhausted with `launch-program`</title> <link>https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</link> <pubDate>2020-10-18</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/file-descriptors-exhausted-with-launch-program.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ lisp ]]></category><category><![CDATA[ code ]]></category> <description><![CDATA[ <p>I've recently introduced an issue in my workflow when using Common Lisp's UIOP
 standard facility for launching asynchronous system calls.
 It appears to be quite a critical one since I'm planning to use that
 functionality a lot with my side-effect manager.</p>
@@ -279,7 +312,7 @@ produce something more clever:</p>
                 ,command :output :stream :error-output :stream)))
      (values ,@body (uiop:close-streams proc))))
 </code></pre>
- ]]></description> </item><item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/visuals-made-sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/visuals-made-sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
+ ]]></description> </item><item> <title>Visuals Made Sane</title> <link>https://www.ivorysiegetower.com/posts/visuals-made-sane.html</link> <pubDate>2020-10-01</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/visuals-made-sane.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ toolbox ]]></category><category><![CDATA[ visual ]]></category><category><![CDATA[ code ]]></category> <description><![CDATA[ <p>Almost every time I had to produce a <em>visual representation</em> for
 - literally - anything, it used to be disturbing.
 A balance between control, speed, accuracy and easiness seemed unreachable
 even for a routine plotting of data at hand. Well, not anymore!</p>
@@ -462,10 +495,6 @@ vegaEmbed('#vis', vlSpec);
 <p>And it's not just an export form, but the example itself.
 It's rendered using Js through Vega-Lite's modules, on this very page.
 Here's the complete code:</p>
-
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script>hljs.initLineNumbersOnLoad();</script>
 
 <pre><code class="js"> if ('undefined' === typeof visVegaSpec) {
     var visVegaSpec = {
@@ -919,183 +948,5 @@ one more last time.</p>
 <p>
   <img src="/static/img/rpi-info-deck/score-metroid.png" />
   <br/> <em>Nope, not a hundred, not even close</em>
-</p>
- ]]></description> </item><item> <title>An Ode to Emacs</title> <link>https://www.ivorysiegetower.com/posts/an-ode-to-emacs.html</link> <pubDate>2020-07-12</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/an-ode-to-emacs.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="max-width: 220px; padding-right: 20px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png"
-         style="margin: auto;" alt="Emacs logo from the Wiki" />
-  </div>
-
-  <div style="max-width: 660px;">
-    <p>
-      A rare <em>positive</em> result of the lockdown - increased friendship
-      towards my editor of choice. After explaining configuration basics to
-      a friend another day I think I can finally formulate what clings me to
-      this <s>ancient</s> everlasting piece of software.
-    </p>
-  </div>
-</div>
-
-<!--more-->
-
-<h2>Code</h2>
-
-<p>
-  Well, yeah, first reason: code developing tool. Major modes for almost
-  everything that deserves a title of programming / scripting / markup
-  language out there. But not only.
-</p>
-
-<p>
-  Take <a href="https://emacs-lsp.github.io/lsp-mode/">Language Server Protocol</a>
-  for introspection where you did not expect any.
-  <a href="https://github.com/bbatsov/projectile">Projectile</a>
-  and <a href="https://magit.vc/">magit</a>
-  to manage the state of the project.
-  Even in vanilla emacs there are handy tools for development, including
-  <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">local variables</a>
-  and
-  <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Version-Control.html">version control</a>
-  (useful for versioning systems other than git).
-</p>
-
-<p>
-  Then, amidst the lockdown madness, find out that all of this works on
-  remote machines too through
-  <a href="https://www.emacswiki.org/emacs/TrampMode">TRAMP</a>.
-  Yes, the same precious editing environment that took you so much effort to assemble.
-  Awesome, isn't it?
-</p>
-
-<h2>Compose</h2>
-
-<p>
-  Skipping the obvious (autocompletions, spellchecking, etc):
-  <a href="https://orgmode.org/">Org-mode</a>.
-  Now a built-in part of vanilla Emacs, it's the greatest
-  get-things-not-forgotten tool. It powers my private log, work and
-  accounting notes and literally any documentation set that I compose.
-</p>
-
-<p>
-  It does not power this static blog for reasons I cannot well explain.
-  Somehow I thought that tweaking a different static site generator
-  would be faster than making Org export look fine and not at all
-  crappy. I still do think so by the way.<a href="#ode-emacs-1">[1]</a>
-</p>
-
-<p>
-  One distinct remarkable feature of org-mode is a support for fashy
-  <em>literate programming</em> in the most literate way. Not only does
-  <a href="https://orgmode.org/worg/org-contrib/babel/">org-babel</a>
-  have a big number of supported languages for source blocks
-  - one can also join them in pipes.<a href="#ode-emacs-2">[2]</a>
-  Even those that need compilation!
-  I one can feed an output of a C-block as an output to a Fortran-block
-  within a scope of one document.
-  This is possible because the medium here is the
-  contents of the document itself, not the state of underlying
-  interpreter "kernel".<a href="#ode-emacs-3">[3]</a>
-</p>
-
-<p>
-  And of course for a researcher it is hard to find better citation system
-  than John Kitchin's <a href="https://github.com/jkitchin/org-ref">org-ref</a>.
-  It allows one to build her own collection of papers that is visible in
-  org-mode buffers for note-taking and draft-editing. Charming!
-</p>
-
-<h2>Communicate</h2>
-
-<p>
-  <a href="https://www.djcbsoftware.nl/code/mu/mu4e/">Mu4e</a> for emails,
-  <a href="https://github.com/zevlg/telega.el">telega.el</a> for Telegram.
-  Those cover the majority of the daily communications I do at the moment.
-</p>
-
-<p>
-  Most of other media accounts can be accessed through
-  <a href="https://www.bitlbee.org/main.php/news.r.html">bitlbee</a>
-  + <code>erc</code> (Emacs built-in IRC client).
-  The list is impressive, including Skype, Fb, Discord and Steam.
-  Ideal to keep all this social rubbish in one place for chatting over
-  weekends.
-</p>
-
-<p>
-  For those old-fashioned like me who still manage their lists of RSS subscriptions,
-  good news: no need to stop, since there is
-  <a href="https://github.com/skeeto/elfeed">elfeed</a>
-  and <code>elfeed-org</code>.<a href="#ode-emacs-4">[4]</a>
-  By the way, its author Chris Wellons writes an interesting
-  <a href="https://nullprogram.com/">blog</a>
-  about emacs' internals and other curious stuff.
-  A good candidate for your refreshed feedlist.
-</p>
-
-<h2>Dark secrets revealed</h2>
-
-<p>If you are looking for the &quot;dark secret of emacs&quot;, I can name a couple.</p>
-
-<p>
-  The first one lies in the prodigious extensiveness of the editor by
-  design, which, over time, led to a series of really good plugins that
-  have a great level of synergy among themselves. I list some examples
-  above. Together they aid me with three daily activities: Coding, Composing
-  and Communicating - within one universal editor.
-</p>
-
-<p>
-  Why does it matter?
-  The answer is, of course, all of these tasks deal with manipulation of
-  <em>textual</em> data. And a second glance on it reveals that emacs
-  to date is maybe the best textual UI tool. Some push this idea to
-  <a href="https://github.com/ch11ng/exwm">extreme limits</a>,
-  somewhat materializing the famous joke about an "OS without a proper
-  editor".
-</p>
-
-<p>
-  I am not THAT zealous, but myself I find useful unifying
-  the text-processing tasks. Being able to store an IM conversation
-  branch as a diary entry, email the bibtex citations to colleagues
-  and blog about all this without leaving an editor's window may sound
-  like an overkill, but after a while it feels quite essential. It's
-  all text after all!
-</p>
-
-<p>
-  Emacs has it's flaws and legacy anchors.
-  (My biggest personal regret is that it still uses a somewhat clumsy emacs lisp
-  language with some Common Lisp -like features instead of normal support for
-  CL-standard).
-  Yes, emacs is not perfect, let's say it is just very good.
-  Or "the worst editor out there, except for the rest ones", if you prefer.
-</p>
-
-<hr/>
-
-<p id="ode-emacs-1">
-  [1] Well, in fact I intentionally searched for (and found!)
-  a Common Lisp static blogging platform package,
-  because <a href="http://stumpwm.github.io/">StumpWM</a>.
-  But that is another story for another time, maybe...
-</p>
-
-<p id="ode-emacs-2">
-  [2] John Kitchin
-  <a href="https://kitchingroup.cheme.cmu.edu/blog/2014/02/04/Literate-programming-example-with-Fortran-and-org-mode/">showed</a>
-  another method, with tangling and linking through a makefile.
-</p>
-
-<p id="ode-emacs-3">
-  [3] Though <code>session</code> can often be specified where it makes sense.
-</p>
-
-<p id="ode-emacs-4">
-  [4] Myself I keep a setup of <code>emacs+elfeed</code> on my GameHat handheld,
-  <a href="https://www.ivorysiegetower.com/posts/Lets-go.html">"showcased"</a>
-  in the welcome post XD. That guy also deserves a story.
 </p>
  ]]></description> </item> </channel> </rss>
