@@ -1,6 +1,6 @@
 ;;;;;
 title: Visuals Made Sane
-tags: en, toolbox, visual
+tags: en, toolbox, visual, code
 date: 2020-10-01
 format: md
 ogimage: /static/img/visuals-made-sane/st-floating-gardens.jpg
@@ -180,10 +180,6 @@ vegaEmbed('#vis', vlSpec);
 And it's not just an export form, but the example itself.
 It's rendered using Js through Vega-Lite's modules, on this very page.
 Here's the complete code:
-
-
-<script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initLineNumbersOnLoad();</script>
 
 <pre><code class="js"> if ('undefined' === typeof visVegaSpec) {
     var visVegaSpec = {

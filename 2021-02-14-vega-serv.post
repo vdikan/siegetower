@@ -1,11 +1,9 @@
 ;;;;;
 title: Simple Vega-Lite plotter app script
-tags: en, toolbox, visual, clojure
+tags: en, toolbox, visual, clojure, code
 date: 2021-02-14
 format: md
 ;;;;;
-<script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initLineNumbersOnLoad();</script>
 
 ### Update [04/2021]
 

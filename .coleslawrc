@@ -22,6 +22,7 @@
  :org-books-src     #p"~/Grimoire/org/brain/Books-Revised.org"
 
  :plugins ((mathjax)
+           (highlightjs :base-url "https://www.ivorysiegetower.com")
            (sitemap)
            (static-pages)
            ;; (org-books) <- is an INDEX obj plugin in the core :coleslaw sources

@@ -1,11 +1,9 @@
 ;;;;;
 title: Developing with Spack
-tags: en, toolbox, siesta
+tags: en, toolbox, siesta, code
 date: 2020-02-29
 format: md
 ;;;;;
-<script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initLineNumbersOnLoad();</script>
 
 The man-made Hell of dependencies management in HPC software has an
 efficient way out: [**Spack**](https://spack.io), initially

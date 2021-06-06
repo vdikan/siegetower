@@ -4,6 +4,7 @@ format: html
 URL: papergraph.html
 ;;;;;
 <script src="https://www.ivorysiegetower.com/static/js/svg-pan-zoom.js"></script>
+<script src="https://www.ivorysiegetower.com/js/highlight.pack.js"></script>
 
 <script>hljs.initHighlightingOnLoad();</script>
 

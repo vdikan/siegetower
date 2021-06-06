@@ -1,11 +1,9 @@
 ;;;;;
 title: File descriptors exhausted with `launch-program`
-tags: en, lisp
+tags: en, lisp, code
 date: 2020-10-18
 format: md
 ;;;;;
-<script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initLineNumbersOnLoad();</script>
 
 I've recently introduced an issue in my workflow when using Common Lisp's UIOP
 standard facility for launching asynchronous system calls.
