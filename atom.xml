@@ -1,5 +1,45 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 06 Jun 2021 23:05:46 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html"/> <title>A Hundred Bucks Second Best Spent</title> <published>2021-06-06</published> <updated>2021-06-06</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The best buy for a spare hundred bucks would be a second-hand bike, if
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 03 Jul 2021 19:25:12 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html"/> <title>SIESTA on Paperscape</title> <published>2021-07-03</published> <updated>2021-07-03</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;While preparing one other talk I&#039;ve ran into a funny feature
+of &lt;a href=&quot;https://paperscape.org/&quot; &gt;PaperScape&lt;/a&gt; that allows to view
+a graph of references or citations of a certain paper on arXiv.
+Moreover, such graph can be referred as a link (as stated in
+&lt;a href=&quot;https://blog.paperscape.org/?p=133&quot; &gt;this post&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;So &lt;a href=&quot;https://paperscape.org/?s=%3Fcites+cond-mat/0111138&quot; &gt;here&lt;/a&gt;
+is the citations&#039; projection of the original SIESTA
+paper onto the arXiv manifold - the overall number of citations
+of that publication is one order of magnitude higher, spanning
+over &lt;strong&gt;11,5+k&lt;/strong&gt; citing papers in total!&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&quot;https://paperscape.org/?s=%3Fcites+cond-mat/0111138&quot;
+        title=&quot;The SIESTA method for ab initio order-N materials simulation&quot;
+        width=800 height=600&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;And connected is
+&lt;a href=&quot;https://paperscape.org/?s=%3Frefs+2006.01270&quot; &gt;one new star&lt;/a&gt;
+in this sub-Universe, referring to its massive predecessor:
+&lt;em&gt;SIESTA: recent developments and applications&lt;/em&gt;.
+Their relations are visible on the - yet not very bright -
+references graph (mind the &amp;quot;heavy star&amp;quot; to the bottom right):&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&quot;https://paperscape.org/?s=%3Frefs+2006.01270&quot;
+        title=&quot;The SIESTA method for ab initio order-N materials simulation&quot;
+        width=800 height=600&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/это-ряд-наблюдений.html"/> <title>Это ряд наблюдений</title> <published>2021-06-28</published> <updated>2021-06-28</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Июньский кризис подтвердил то, что я и так, в принципе, знал:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;У меня суперская семья, просто dream team! Обожаю их.&lt;/li&gt;
+&lt;li&gt;У меня есть друзья. Разные есть, отличные тоже!
+   Те самые, что помогут в трудную минуту.&lt;/li&gt;
+&lt;li&gt;Когда ситуация обостряется, в определенный момент включается
+   fight-or-flight режим, благодаря которому далекие расстояния
+   преодолеваются автоматически, быстро и даже как-то незаметно. Даже
+   в пандемию, ага. С идеальным порядком в документах и с 0 забытых
+   вещей. Такое вот забавное наблюдение.&lt;/li&gt;
+&lt;/ol&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html"/> <title>A Hundred Bucks Second Best Spent</title> <published>2021-06-06</published> <updated>2021-06-06</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;The best buy for a spare hundred bucks would be a second-hand bike, if
 you don&#039;t have any. Or, within an advanced cityscape, a one year
 subscription for rental bike service. But after that, what should a
 second hundred go for?&lt;/p&gt;
@@ -648,305 +688,4 @@ it creates an effect of manipulating a 3D scene without reloading anything!&lt;/
 But those ideas I&#039;ll keep for myself for now.
 Okay, &lt;a href=&quot;https://www.youtube.com/watch?v=kCadKG3oa_U&amp;ab_channel=ODROIDHardkernel&quot; &gt;just a hint&lt;/a&gt;
 one more last time.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/summertime-madness.html"/> <title>Summertime Madness</title> <published>2020-09-01</published> <updated>2020-09-01</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/summertime-madness/summer-bog-2020.png&quot;
-       alt=&quot;Грустный вид Осадной Башни, застрявшей в болоте.&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  При всем известном положении дел в этом адовом году, находиться недалеко от Барселоны в карантин было очень комфортно. Ну разве что кроме первых дней тотальной информационной паники. Никто не шумел и не путался под ногами, электричество и связь работали без перебоев, радовал атмосферный фронт. Можно было полностью посвятить себя вкорячиванию расчетных схем Эвальда в рабочий код и пет-прожектам. Ну и Башня стала строиться тогда же (хотя домен я &quot;презентовал&quot; себе еще на Новый Год).
-&lt;/p&gt;
-
-&lt;p&gt;
-  В общем, кому война - а аутистам вот и норм. Но пришло лето, отменили тревожное положение - и почалося...
-&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;
-  Каталонцы (и не только) стали радостно отмечать приход &quot;новой нормальности&quot; и отмену карантина. Владельцы летних террас, четко выполняя нормы соц. дистанцирования, иной раз превращали всю площадь или улицу в одну сплошную террасу. Как у меня под окнами, например. И они тут же были битком (кого-то еще удивляет, что вторая волна у нас де-факто бушует с середины августа?). Чуть ранее проснулись все ближайшие стройки (не видел ни разу ни одного строителя в маске). Вскоре ожил и мой любимый ночной клуб за углом (прямо напротив 100-летней действующей витражной мастерской. Когда переезжал был уверен, что злачных мест тут не воткнут, но нет. Nice city planning, Sabadell!).
-&lt;/p&gt;
-
-&lt;p&gt;
-  Институт при этом, разумеется, предписывает нам работать удаленно из дома, посреди этого балагана. И если у экспериментаторов еще разумные квоты на office days, то про расчетчиков тупо забыли в этом внутреннем регламенте. Очень мило, ага.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Для полноты картины веселый квест на продление карты резидента. Направление на сдачу отпечатков в участке всегда было трудно достать, а уж после карантина у нас тут тотальный коллапс, и нечистые на руку хацкеры дерут втридорога за фарминг этих направлений на местном сайте госуслуг. (Шляпа, а не сайт! А теперь он еще по утрам и лежит намертво, атакованный ботами). Моя карта истекала сразу после окончания &lt;em&gt;estado de alarma&lt;/em&gt;, т.е. даже на эмбарго в 6 месяцев для истекших в карантин ВНЖ лучше было не рассчитывать.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Резюмируя экспозицию: я внезапно понимаю, что застрял на раскаленной барной стойке и без документов. Начинается &lt;b&gt;экшен&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Беру короткий отпуск. Заряжаю скрипт на ловлю &lt;em&gt;cita previa&lt;/em&gt; в участок (буду я еще каким-то уродам платить!). Параллельно ищу куда переехать. Ровно через три недели скрипт схватил мне направление. За все это время найден единственный вариант новой квартиры уровня &quot;ну окей, сойдет&quot;. Радостно иду сдаю пальчики, хвастаюсь в сообществе IT-экспатов. Там идею развивают до состояния production-ready. Заключаю контракт на квартиру, но в день выдачи ключей понимаю - это подстава. Меня захотели приземлить прямо под отбитыми соседями, у которых целыми днями реггетон и трава. Целыми днями, за исключением дней показа, разумеется. А еще они держат в страхе и ужасе всех соседей, вызовы копов в прошлом не помогли.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Отменяю договор. Агентство зажимает &lt;b&gt;весь&lt;/b&gt; превоначальный взнос, включая &lt;b&gt;весь&lt;/b&gt; залог. Удивительно? Нет. Возмутительно? Like Hell! Громко возмущаюсь, и один из товарищей-экспатов скидывает контакт адвоката. Скоро запилим с ней иск. Готовую карту резидента забрал вчера. А дней через десять пойду на встречу с новыми друзьями из айтишного чата.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Такое себе выдалось лето. Сейчас уже лучше. Легальный статус подтвержден, жара ушла, а ночник закрыт. Ведь счетчик заболевших снова пробивает дно.
-&lt;/p&gt;
-
-&lt;hr/&gt;
-
-&lt;p style=&quot;font-size: 0.9em;&quot;&gt;
-  P.S. Винрарная иллюстрация к посту сделана на заказ :P &lt;br/&gt;
-  Кому интересно - могу законтачить на иллюстраторку.
-&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/my-rpi-cyberpunk-info-deck-console.html"/> <title>My RPi Cyberpunk Info-Deck Console</title> <published>2020-08-19</published> <updated>2020-08-19</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/title-look.png&quot;
-       alt=&quot;Info-Deck in the Underground of Neo-Sabadell&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  A while ago I used to own an HP PocketPC device. Yep, that
-  pre-smartphone era handheld personal planner. It did not make me
-  very productive though, on the contrary, but there was definitely
-  something to it. An enthralling tactile sensation of hunting pixels
-  on the screen with a stylus pen - that kind of resistive screen one
-  has to hit hard - added to the fascination of surfing through
-  &lt;b&gt;teh personal knowledgebase&lt;/b&gt; consisting
-  of FreeDict dictionaries, &lt;code&gt;.chm&lt;/code&gt;-formatted textbooks and
-  Wikipedia snapshots. Back then all this treasure could fit on a 32Gb
-  SD-card.
-&lt;/p&gt;
-
-&lt;p style=&quot;font-style: italic;&quot;&gt;
-  I guess dat muscle memory, as much as anything, is the reason I
-  obtained this monster.
-&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h1&gt;The Chasis&lt;/h1&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/sec-metroid.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  This one (it goes by the hostname &lt;code&gt;mimir&lt;/code&gt; for the reasons
-  explained later) is not a DIY device. I wanted a capable working
-  handheld more than I wanted to build one myself. The only physical
-  addition I made was a 3D-printed lid that covers the battery section
-  on the bottom. &lt;br/&gt;
-  (&lt;mark&gt;NOTE:&lt;/mark&gt; need a similar one on the top)
-&lt;/p&gt;
-
-&lt;p&gt;
-  Many commercial indie handhelds are built on top of Raspberry Pi ARM
-  boards or similar and sold for $100-$400.
-  But a board like that can do more than be just a host for a number of
-  retro console emulators. The &lt;b&gt;creative tweaking&lt;/b&gt; is
-  already part of the game with growing DIY culture in &lt;em&gt;both&lt;/em&gt; hardware
-  and software. That ends up with
-  &lt;a href=&quot;https://www.clockworkpi.com/gameshell&quot;&gt;GameShell&lt;/a&gt;,
-  embracing open standards and &lt;b&gt;fantasy consoles&lt;/b&gt;, being out of
-  stock, while Playdate - which creators took a path of restrictions
-  and misbehavior towards the indie dev community -
-  &lt;a href=&quot;https://theoutline.com/post/7538/playdate-the-most-exciting-device-in-indie-gaming-is-also-the-most-depressing&quot;&gt;did not launch that well&lt;/a&gt; at all.
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/ags-port.png&quot; /&gt;
-  &lt;br/&gt;
-  &lt;em&gt;RetroPie&#039;s &lt;a href=&quot;https://www.adventuregamestudio.co.uk/&quot;&gt;AGS&lt;/a&gt; port in action&lt;/em&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  Myself I went along
-  with &lt;a href=&quot;https://www.waveshare.com/game-hat.htm&quot;&gt;GameHAT&lt;/a&gt;
-  low-budget variant. Not only the
-  whole kit (the HAT plus RPi-3 plus 18650 li-ion battery) costs less than a
-  hundred bucks, it also has demonstrates obvious &lt;em&gt;tweakability&lt;/em&gt;.
-  Its joypad, buttons, speakers etc. are those ones you&#039;ll get in any
-  &quot;Arduino first steps&quot; educational kit, so much for the repairs.
-  The screen is connected via 1-to-1 HDMI adapter: plug a monitor
-  instead, get a keyboard - and here you have an emergency desktop.
-  After a funny configuration quest, of course.
-&lt;/p&gt;
-
-&lt;h1&gt;The Port&lt;/h1&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/sec-xenogears.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  GameHAT comes with pre-built RetroPie image with support for
-  joystick/buttons (realized through a kernel module I failed to
-  compile from, apparently, a very indie piece of code).
-  RetroPie bundles a collection of RetroARCH&#039;s emulation libs together
-  with some PC goodies called &lt;code&gt;ports&lt;/code&gt; under a handy
-  &lt;code&gt;EmulationStation&lt;/code&gt; UI
-  overlay. Among those ports, together with Duke3d and Adventure Game
-  Studio, hides &quot;Pixel desktop&quot; that is basically LXDE for RPi. Its
-  installation allows to switch to Desktop from EmulationStation (and
-  back on logout).
-&lt;/p&gt;
-
-&lt;p&gt;
-  One bit of frustration was found in the way that setup supports
-  fantasy consoles, in particular
-  &lt;a href=&quot;https://github.com/nesbox/TIC-80/wiki&quot;&gt;TIC-80&lt;/a&gt;.
-  Somehow EmulationStation
-  fails to launch with support for OpenGL turned on explicitly
-  with &lt;code&gt;raspi-config&lt;/code&gt;, that&#039;s needed for TIC-80 to work.
-  And though RetroArch does have a &lt;code&gt;libretro&lt;/code&gt; library for TIC, the
-  performance is approximately two times slower than normal!
-  A workaround is to launch desktop separately and build TIC from
-  source.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Luckily the joystick is recognized by SDL and mapping software
-  (remember, it talks straight to the linux kernel).
-  In the desktop I use &lt;code&gt;QJoyPad&lt;/code&gt; to map joystick to mouse, as well as
-  give buttons the default clicking | scrolling | entering | cancelling roles:
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/qjoypad.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  Another input program that autostarts is the &lt;code&gt;Onboard&lt;/code&gt; virtual
-  keyboard. Fits well, and has a feature of &quot;sticking&quot; to fullscreen
-  windows.
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/onboard.png&quot; /&gt;
-  &lt;br/&gt; &lt;em&gt;Onboard comes in handy when there is no remote keyboard at hand&lt;/em&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  And after those little tweaks it&#039;s time for &lt;i&gt;real enhancement&lt;/i&gt;,
-  where my &lt;i&gt;Semantic Space&lt;/i&gt; tears through the fabric of reality
-  with help of &lt;code&gt;Emacs OS&lt;/code&gt;!
-&lt;/p&gt;
-
-&lt;h1&gt;The Info-Deck&lt;/h1&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/elfeed-search.png&quot; /&gt;
-  &lt;br/&gt;&lt;em&gt;Elfeed-search contents screen&lt;/em&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  Work, emails, numerous chats and social networks do not leave
-  neither time nor stamina for relaxing glancing through them
-  news &lt;code&gt;feeds&lt;/code&gt;.
-  &lt;a href=&quot;https://github.com/skeeto/elfeed&quot;&gt;Elfeed&lt;/a&gt;
-  emacs feedreader package on Mimir
-  brings me back my rss subscriptions in places where there are no
-  other distractions from lazy news consumption: in the canteen, while
-  travelling or before getting asleep etc. Yeah, pun intended.
-&lt;/p&gt;
-
-&lt;div style=&quot;display: flex;&quot;&gt;
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/elfeed-header.png&quot;
-         style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/elfeed-content.png&quot;
-         style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div style=&quot;text-align: center;&quot;&gt;
-  &lt;em style=&quot;font-size: 90%;&quot;&gt;Elfeed&#039;s entry view&lt;/em&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-  Important articles are tagged for analysis later on. I sync Elfeed&#039;s
-  database with my private cloud through &lt;code&gt;Syncthing&lt;/code&gt;,
-  along with a set of &lt;code&gt;Org-mode&lt;/code&gt; files that form my
-  personal knowledgebase.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Speaking of latter, I was quite happy to find
-  &lt;a href=&quot;https://github.com/Kungsgeten/org-brain&quot;&gt;org-brain&lt;/a&gt; -
-  a project that helps me turning my orgmode linear journals into a
-  wiki-style mind maps, and brings no editing overhead. On the
-  contrary, writing structural notes is actually &lt;em&gt;faster&lt;/em&gt; in
-  org-brain than in linear form. Perfect! Org-brain already consumed
-  my Elfeed&#039;s subscriptions list and
-  &lt;a href=&quot;https://github.com/jkitchin/org-ref&quot;&gt;org-ref&lt;/a&gt;
-  notes, and I just hope it won&#039;t get slow after the indexed
-  knowledgebase grows tenfold.
-&lt;/p&gt;
-
-&lt;div style=&quot;display: flex;&quot;&gt;
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/org-brain-header.png&quot;
-         style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/org-brain-content.png&quot;
-         style=&quot;border-radius: 8px; width: 100%;&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div style=&quot;text-align: center;&quot;&gt;
-  &lt;em style=&quot;font-size: 90%;&quot;&gt;Concept map view in Org-brain&lt;/em&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-  With Mimir the heavy assets are not synced, only the wiki itself.
-  And wandering through it sometimes &lt;em&gt;does&lt;/em&gt; reveal me the
-  overlooked connections... Btw, I had to build emacs v.26 for
-  org-brain to work.
-&lt;/p&gt;
-
-&lt;p&gt;
-  I estimate 2/3 of my time with Mimir I spend on thinking over feeds
-  and thoughts. That justifies the hostname of this little thingie,
-  &lt;em&gt;reciting me unrevealed knowledge and counsel&lt;/em&gt;.
-&lt;/p&gt;
-
-&lt;h1&gt;The End&lt;/h1&gt;
-
-&lt;p&gt;Yes of course, games, we have some:&lt;/p&gt;
-
-&lt;div style=&quot;display: flex;&quot;&gt;
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-metroid.png&quot;
-         style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
-  &lt;/div&gt;
-
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-comix-zone.png&quot;
-         style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;display: flex;&quot;&gt;
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-castlevania.png&quot;
-         style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
-  &lt;/div&gt;
-
-  &lt;div style=&quot;flex: 50.00%; padding: 5px;&quot;&gt;
-    &lt;img src=&quot;/static/img/rpi-info-deck/scrot-xenogears.png&quot;
-         style=&quot;border-radius: 4px; width: 95%;&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-  Though, honestly, quite often the old-school goodies often turn out
-  to be enormously repetitive and boring. Yet some of them I manage to
-  finish eventually...
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;img src=&quot;/static/img/rpi-info-deck/score-metroid.png&quot; /&gt;
-  &lt;br/&gt; &lt;em&gt;Nope, not a hundred, not even close&lt;/em&gt;
-&lt;/p&gt;
 </content> </entry> </feed>

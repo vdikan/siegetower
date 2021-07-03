@@ -1,5 +1,33 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sun, 06 Jun 2021 23:05:46 +0200</pubDate> <item> <title>A Hundred Bucks Second Best Spent</title> <link>https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</link> <pubDate>2021-06-06</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <p>The best buy for a spare hundred bucks would be a second-hand bike, if
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sat, 03 Jul 2021 19:25:12 +0200</pubDate> <item> <title>SIESTA on Paperscape</title> <link>https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html</link> <pubDate>2021-07-03</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ siesta ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>While preparing one other talk I've ran into a funny feature
+of <a href="https://paperscape.org/" >PaperScape</a> that allows to view
+a graph of references or citations of a certain paper on arXiv.
+Moreover, such graph can be referred as a link (as stated in
+<a href="https://blog.paperscape.org/?p=133" >this post</a>).</p>
+
+<p>So <a href="https://paperscape.org/?s=%3Fcites+cond-mat/0111138" >here</a>
+is the citations' projection of the original SIESTA
+paper onto the arXiv manifold - the overall number of citations
+of that publication is one order of magnitude higher, spanning
+over <strong>11,5+k</strong> citing papers in total!</p>
+
+<p><iframe src="https://paperscape.org/?s=%3Fcites+cond-mat/0111138"
+        title="The SIESTA method for ab initio order-N materials simulation"
+        width=800 height=600>
+</iframe></p>
+
+<p>And connected is
+<a href="https://paperscape.org/?s=%3Frefs+2006.01270" >one new star</a>
+in this sub-Universe, referring to its massive predecessor:
+<em>SIESTA: recent developments and applications</em>.
+Their relations are visible on the - yet not very bright -
+references graph (mind the &quot;heavy star&quot; to the bottom right):</p>
+
+<p><iframe src="https://paperscape.org/?s=%3Frefs+2006.01270"
+        title="The SIESTA method for ab initio order-N materials simulation"
+        width=800 height=600>
+</iframe></p>
+ ]]></description> </item><item> <title>A Hundred Bucks Second Best Spent</title> <link>https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</link> <pubDate>2021-06-06</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/a-hundred-bucks-second-best-spent.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <p>The best buy for a spare hundred bucks would be a second-hand bike, if
 you don't have any. Or, within an advanced cityscape, a one year
 subscription for rental bike service. But after that, what should a
 second hundred go for?</p>
@@ -1177,10 +1205,4 @@ here I briefly show the looks of my own setup in <code>Emacs</code>
        style="max-width: 860px;" /> <br/>
   <em><code>Fortls + emacs lsp-mode</code>: hover, reference finder and jump-to-def.</em>
 </p>
- ]]></description> </item><item> <title>Let&#039;s go</title> <link>https://www.ivorysiegetower.com/posts/lets-go.html</link> <pubDate>2020-02-09</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/lets-go.html</guid> <category><![CDATA[ en ]]></category> <description><![CDATA[ <p>Usually here goes some kind of welcoming post... But nay!</p>
-
-<p>Instead I'll just leave here a picture of my Sunday morning newspaper.</p>
-
-<p><img src="/static/img/20200209_morning_post.jpg" alt="Newspaper and coffee" /> <br/>
-<em>Morning post. Canvas, oil, emacs.</em></p>
  ]]></description> </item> </channel> </rss>

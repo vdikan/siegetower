@@ -1,5 +1,17 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sun, 06 Jun 2021 23:05:46 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/стихийный-отпуск.html"/> <title>Стихийный Отпуск</title> <published>2021-05-10</published> <updated>2021-05-10</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;На заре 2021 откладывать волевое решение по отпуску уже стало
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 03 Jul 2021 19:25:12 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/это-ряд-наблюдений.html"/> <title>Это ряд наблюдений</title> <published>2021-06-28</published> <updated>2021-06-28</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;Июньский кризис подтвердил то, что я и так, в принципе, знал:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;У меня суперская семья, просто dream team! Обожаю их.&lt;/li&gt;
+&lt;li&gt;У меня есть друзья. Разные есть, отличные тоже!
+   Те самые, что помогут в трудную минуту.&lt;/li&gt;
+&lt;li&gt;Когда ситуация обостряется, в определенный момент включается
+   fight-or-flight режим, благодаря которому далекие расстояния
+   преодолеваются автоматически, быстро и даже как-то незаметно. Даже
+   в пандемию, ага. С идеальным порядком в документах и с 0 забытых
+   вещей. Такое вот забавное наблюдение.&lt;/li&gt;
+&lt;/ol&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/стихийный-отпуск.html"/> <title>Стихийный Отпуск</title> <published>2021-05-10</published> <updated>2021-05-10</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;На заре 2021 откладывать волевое решение по отпуску уже стало
 невозможным. Ситуация с пандемией не думала стабилизироваться, а на
 другом конце зумопровода уже четко слышалась истерика. К тому же
 отбой в четвертом часу утра вторую неделю подряд как бы намекал что
