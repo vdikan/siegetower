@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sat, 03 Jul 2021 19:25:12 +0200</pubDate> <item> <title>SIESTA on Paperscape</title> <link>https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html</link> <pubDate>2021-07-03</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ siesta ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>While preparing one other talk I've ran into a funny feature
-of <a href="https://paperscape.org/" >PaperScape</a> that allows to view
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Sat, 03 Jul 2021 19:37:43 +0200</pubDate> <item> <title>SIESTA on Paperscape</title> <link>https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html</link> <pubDate>2021-07-03</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ siesta ]]></category><category><![CDATA[ visual ]]></category> <description><![CDATA[ <p>While preparing one other talk I've ran into a funny feature
+of <a href="https://paperscape.org/" >Paperscape</a> that allows to view
 a graph of references or citations of a certain paper on arXiv.
 Moreover, such graph can be referred as a link (as stated in
 <a href="https://blog.paperscape.org/?p=133" >this post</a>).</p>
@@ -15,6 +15,11 @@ over <strong>11,5+k</strong> citing papers in total!</p>
         title="The SIESTA method for ab initio order-N materials simulation"
         width=800 height=600>
 </iframe></p>
+
+<p>Funny thing, according to Miguel Pruneda that long-distance
+connection with &quot;dark matter&quot; area must be through a work on
+electronic stopping power for detectors. Or it may as well be
+a clustering artifact...</p>
 
 <p>And connected is
 <a href="https://paperscape.org/?s=%3Frefs+2006.01270" >one new star</a>

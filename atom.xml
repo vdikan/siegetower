@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 03 Jul 2021 19:25:12 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html"/> <title>SIESTA on Paperscape</title> <published>2021-07-03</published> <updated>2021-07-03</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;While preparing one other talk I&#039;ve ran into a funny feature
-of &lt;a href=&quot;https://paperscape.org/&quot; &gt;PaperScape&lt;/a&gt; that allows to view
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Sat, 03 Jul 2021 19:37:43 +0200</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/siesta-on-paperscape.html"/> <title>SIESTA on Paperscape</title> <published>2021-07-03</published> <updated>2021-07-03</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;While preparing one other talk I&#039;ve ran into a funny feature
+of &lt;a href=&quot;https://paperscape.org/&quot; &gt;Paperscape&lt;/a&gt; that allows to view
 a graph of references or citations of a certain paper on arXiv.
 Moreover, such graph can be referred as a link (as stated in
 &lt;a href=&quot;https://blog.paperscape.org/?p=133&quot; &gt;this post&lt;/a&gt;).&lt;/p&gt;
@@ -15,6 +15,11 @@ over &lt;strong&gt;11,5+k&lt;/strong&gt; citing papers in total!&lt;/p&gt;
         title=&quot;The SIESTA method for ab initio order-N materials simulation&quot;
         width=800 height=600&gt;
 &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;Funny thing, according to Miguel Pruneda that long-distance
+connection with &amp;quot;dark matter&amp;quot; area must be through a work on
+electronic stopping power for detectors. Or it may as well be
+a clustering artifact...&lt;/p&gt;
 
 &lt;p&gt;And connected is
 &lt;a href=&quot;https://paperscape.org/?s=%3Frefs+2006.01270&quot; &gt;one new star&lt;/a&gt;
