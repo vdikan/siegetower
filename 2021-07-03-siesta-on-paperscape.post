@@ -1,0 +1,40 @@
+;;;;;
+title: SIESTA on Paperscape
+tags: en, siesta, visual
+date: 2021-07-03
+format: md
+;;;;;
+
+While preparing one other talk I've ran into a funny feature
+of [Paperscape](https://paperscape.org/) that allows to view
+a graph of references or citations of a certain paper on arXiv.
+Moreover, such graph can be referred as a link (as stated in
+[this post](https://blog.paperscape.org/?p=133)).
+
+So [here](https://paperscape.org/?s=%3Fcites+cond-mat/0111138)
+is the citations' projection of the original SIESTA
+paper onto the arXiv manifold - the overall number of citations
+of that publication is one order of magnitude higher, spanning
+over **11,5+k** citing papers in total!
+
+<iframe src="https://paperscape.org/?s=%3Fcites+cond-mat/0111138"
+        title="The SIESTA method for ab initio order-N materials simulation"
+        width=800 height=600>
+</iframe>
+
+Funny thing, according to Miguel Pruneda that long-distance
+connection with "dark matter" area must be through a work on
+electronic stopping power for detectors. Or it may as well be
+a clustering artifact...
+
+And connected is
+[one new star](https://paperscape.org/?s=%3Frefs+2006.01270)
+in this sub-Universe, referring to its massive predecessor:
+_SIESTA: recent developments and applications_.
+Their relations are visible on the - yet not very bright -
+references graph (mind the "heavy star" to the bottom right):
+
+<iframe src="https://paperscape.org/?s=%3Frefs+2006.01270"
+        title="The SIESTA method for ab initio order-N materials simulation"
+        width=800 height=600>
+</iframe>
