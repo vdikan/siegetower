@@ -1,0 +1,367 @@
+#content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+#content {
+    background: #333c57;
+    padding-top: 1em;
+    color:#f4f4f4;
+    border: 2px solid;
+    border-color: #000;
+    line-height: 1.2;
+    max-width: 1100px;
+}
+#header { float: right; margin-left: 1em; margin-bottom: 1em }
+#coleslaw-logo { float: right; }
+#tagsoup, #monthsoup { color: #ffcd75 }
+a { text-decoration: none; color: #a7f070 }
+a.anchor { color: #38b764 }
+.tags {
+    color: #ffcd75;
+    margin-left: 2em;
+}
+.date {
+    font-style: italic;
+    color: #94b0c2;
+    margin-left: 2em;
+}
+.title {
+    color:#ef7d57
+}
+#content .title, .article-meta .title {
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+}
+.article-meta {
+    margin-bottom: 2.2em;
+}
+.article-meta .article, .article-content{
+    margin-left: 2.2em;
+    margin-right: 2.2em;
+    text-align: justify;
+}
+.archive-title { font-size: 1em }
+.article-title {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 2em
+}
+.fineprint {
+    line-height: 1.2;
+    text-align: center;
+    font-size: .9em;
+    margin-top: .5em;
+    margin-left: 2.2em;
+    color: #41a6f6;
+    max-width: 1100px;
+}
+.tag-low { font-size: .8em; font-weight: 200 }
+.tag-medium { font-size: 1.2em; font-weight: 600 }
+.tag-high { font-size: 1.8em; font-weight: 800 }
+code { color: #73eff7 }
+body { background-color: #161e3b; font-family: PT Mono; font-size: 14pt }
+pre {
+    overflow: auto;
+    margin-top: 0;
+    font-family: (unquote mono-font);
+    max-height: 400px;
+}
+tt { font-size: .9em; font-family: (unquote mono-font) }
+
+.linenos { color: #a1d45b }
+
+.navigation {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1.2fr 4.8fr;
+    grid-auto-rows: minmax(60px, auto);
+    margin-bottom: 8px;
+    row-gap: 24px;
+    background: url("tower_logo.png") no-repeat;
+    background-size: 180px;
+    background-position: 20px 0px;
+}
+
+.nav_logo {
+    min-height: 155px;
+    min-width: 220px;
+}
+
+.nav_header {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.nav_title {
+    font-size: 2.8em;
+    display: flex;
+}
+
+.nav_title a {
+    display: flex;
+    align-self: flex-end;
+}
+
+.nav_sitenav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sitenav_link {
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    color: #41a6f6;
+}
+
+.sitenav_link a {
+    font-size: 1.2em;
+}
+
+.nav_refs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav_refs div{
+    min-width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.ref_button {
+     background-size: 55px 55px;
+     background-position: 0px 0px;
+}
+
+.nav_sides {
+    min-width: 220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.side_en, .side_ru {
+    font-size: 1.4em;
+    display: flex;
+    cursor: pointer;
+}
+
+.side_en span, .side_ru span {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.6em;
+}
+
+.side_en {
+    color: #ffcd75;
+    background: url("side_en.png") no-repeat;
+    background-size: 110px 60px;
+    background-position: 0px 0px;
+}
+
+.side_en:hover {
+    background: url("side_en_hov.png") no-repeat;
+    background-size: 110px 60px;
+    background-position: 0px 0px;
+}
+
+.side_ru {
+    color: #41a6f6;
+    background: url("side_ru.png") no-repeat;
+    background-size: 110px 60px;
+    background-position: 0px 0px;
+}
+
+.side_ru:hover {
+    background: url("side_ru_hov.png") no-repeat;
+    background-size: 110px 60px;
+    background-position: 0px 0px;
+}
+
+.article img {
+    display: block;
+    margin-left: none;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 65%;
+}
+.article-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 640px;
+}
+
+/* for image caption */
+.article img + br + em {
+    font-style: normal;
+    display: inherit;
+    text-align: left;
+    font-size: 90%;
+}
+.article-content img + br + em {
+    font-style: normal;
+    display: inherit;
+    text-align: center;
+    font-size: 90%;
+}
+
+/* responsive video embeds */
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;        /* sets the aspect ratio */
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Library Hall */
+.library-hall {
+    max-width:1100px;
+    width:100%;
+    margin: 0 auto;
+}
+
+.library-hall img {
+    width:100%;
+}
+
+#book-list {
+    margin-left: 1.6em;
+    margin-right: 1.6em;
+}
+
+.book-record {
+    margin-bottom: 0.6em;
+    text-align: justify;
+}
+
+.book-title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.book-author-date {
+    color: #94b0c2;
+}
+
+.shelf-fiction, .shelf-fiction a {
+    color: #7ec7ff;
+}
+
+.shelf-compsci, .shelf-compsci a {
+    color: #9cffca;
+}
+
+.shelf-natural, .shelf-natural a {
+    color: #ff6a6a;
+}
+
+.shelf-social, .shelf-social a {
+    color: #d57dff;
+}
+
+/* responsive-ness */
+@media (max-width: 680px) {
+
+    #content {
+        padding-top: 0em;
+        padding-right: 0.3em;
+    }
+
+    #content .title,
+    .article-meta .title,
+    .article-meta .article-title,
+    .article-meta .article,
+    .tags, .date {
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+    }
+
+    .article-meta {
+        margin-bottom: 1em;
+    }
+
+    .article-meta, .article-content {
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+        width: 100%;
+    }
+
+    .article, .article-content,
+    #book-list {
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+        text-align: justify;
+    }
+
+    .article img,
+    .article-content img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    #coleslaw-logo {
+        float: none;
+    }
+
+    #coleslaw-logo img {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: auto;
+    }
+
+    .fineprint {
+        margin-left: 0em;
+    }
+
+    .fineprint a img {
+        width: auto;
+        clear: both;
+    }
+}
+
+/* HihglightJS */
+
+/* for block of numbers */
+.hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    text-align: right;
+    color: #a7f070;
+    border-right: 1px solid #38b764;
+    vertical-align: top;
+}
+
+.hljs-ln-n {
+    padding-right: 4px;
+}
+
+/* for block of code */
+.hljs-ln-code {
+    padding-left: 10px;
+}

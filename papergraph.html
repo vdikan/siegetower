@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"> <head> <title>Ivory Siege Tower</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1">  <link rel="apple-touch-icon" sizes="180x180" href="https://www.ivorysiegetower.com/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="https://www.ivorysiegetower.com/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="https://www.ivorysiegetower.com/favicon-16x16.png"> <link rel="manifest" href="https://www.ivorysiegetower.com/site.webmanifest"> <link rel="alternate" href="https://www.ivorysiegetower.com/rss.xml" type="application/rss+xml" /> <link href="//fonts.googleapis.com/css?family=PT Mono:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" /> <link href="https://www.ivorysiegetower.com/css/night-owl.css" rel="stylesheet" type="text/css" /> <link href="https://www.ivorysiegetower.com/css/style.css" rel="stylesheet" type="text/css" /> </head> <body> <div class="navigation"> <div class="nav_logo"></div> <div class="nav_header"> <div class="nav_title"> <a href="https://www.ivorysiegetower.com">Ivory Siege Tower</a> </div> <div class="nav_sitenav"> <div class="sitenav_link"> <a href="https://www.ivorysiegetower.com">Blog</a>  |  </div><div class="sitenav_link"> <a href="/shelf/all.html">BookTracker</a>  |  </div><div class="sitenav_link"> <a href="/papergraph.html">PaperGraph</a>  |  </div><div class="sitenav_link"> <a href="/about.html">About</a>  </div> </div> </div> <div class="nav_sides"> <div class="side_en" title="Good Side" onclick="window.location='https://www.ivorysiegetower.com/tag/en.html';"> <span>En</span> </div> <div class="side_ru" title="Dark Side" onclick="window.location='https://www.ivorysiegetower.com/tag/ru.html';"> <span>Ru</span> </div> </div> <div class="nav_refs"> <div class="ref_button" title="Atomic Feed of the Good Side" style="background: url('https://www.ivorysiegetower.com/css/icon_rss.png') no-repeat; background-size: 55px 55px; background-position: 0px 0px;" onclick="window.location='https://www.ivorysiegetower.com/tag/en-atom.xml';"></div> </div> </div> <div id="content-wrapper"> <div id="content"> <div class="article-meta">
+<h1 class="title">Ether Gate -- {PaperGraph}</h1>
+<div class="tags">
+ </div>
+<div class="date">
+ </div>
+</div>
+<div class="article-content">
+<script src="https://www.ivorysiegetower.com/static/js/svg-pan-zoom.js"></script>
+<script src="https://www.ivorysiegetower.com/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+  window.onload = function() {
+    svgPanZoom('#papergraph', {
+    zoomEnabled: true,
+    controlIconsEnabled: true,
+    maxZoom: 100
+    });
+  };
+</script>
+
+<p style="text-align:center">
+  This place is a map of research papers that I, at some point, found
+  useful and/or interesting...
+</p>
+
+<div style="width:  1020px; height: 800px;
+            background-image: url('/static/papergraph/ether-gate.png');
+            background-position: center;
+            background-size: cover;">
+  <object id="papergraph" type="image/svg+xml"
+          data="/static/papergraph/papergraph.svg"
+          style="width: 1020px; height: 800px;">
+    Your browser does not support SVG, the portal therefore shows no signs of life...
+  </object>
+  <p style="text-align:center; font-size: 0.9em">
+    <code>DblClick</code> to zoom in, <code>Shift+DblClick</code> to zoom out
+    <hr/>
+  </p>
+</div>
+
+<h3 style="margin-top: 3.5em;">How it is built</h3>
+
+<p>
+  The other day I had an idea of an utility that, given a set
+  of <code>.bibtex</code> files, would produce me a diagram showing who
+  cites what <i>within</i> that set.
+</p>
+
+<p>
+  A couple of not very sober evenings later
+  a <a href="https://github.com/vdikan/papergraph" target="_blank">papergraph</a>
+  prototype was ready, starring multi-threaded metadata
+  requests from <code>CrossRef</code>'s API and a remix of a simple
+  .bib file <a href="https://gist.github.com/Neronus/2224741" target="_blank" >parser</a>
+  found on gists. I even dockerized the app to preserve
+  this piece of a drunken Common-Lisp-Fu. The parser is still somewhat
+  brittle and will fail on a weakly formatted .bib files,
+  but here I sort of do have a convention for an extra strict formatting.
+</p>
+
+<p>
+  See, for keeping my library of research publications in a relative order
+  I use the congenial emacs package called
+  <a href="https://github.com/jkitchin/org-ref" target="_blank">org-ref</a>.
+  It proved to be the most handy  organizer,
+  beating others in my opinion, and also integrating organically into
+  <code>org-brain</code> that I started to use for taking notes. Any notes.
+</p>
+
+<p>
+  Almost all the .bib-entries in my collection are fetched (by DOI, or
+  even from .pdf files' metadata) and formatted
+  by <code>org-ref</code> itself. Result looks like:
+</p>
+
+<pre> <code>@article {soler-2002-siest-method,
+  author =       {Jos{\'e} M Soler and Emilio Artacho and Julian D Gale and Alberto Garc{\'i}a and Javier Junquera and Pablo Ordej{\'o}n and Daniel S{\'a}nchez-Portal},
+  title =        {The Siesta Method For ab-initio order-N Materials Simulation},
+  journal =      {Journal of Physics: Condensed Matter},
+  volume =       14,
+  number =       11,
+  pages =        {2745-2779},
+  year =         2002,
+  doi =          {10.1088/0953-8984/14/11/302},
+  url =          {https://doi.org/10.1088/0953-8984/14/11/302},
+  DATE_ADDED =   {Sun Apr 12 00:36:22 2020},
+  keywords =     {siesta, dft},
+}</code> </pre>
+
+<p>
+  ...where I only edit an optional <code>keywords</code> property
+  contents. Those serve as extra tags when searching for entries
+  through org-ref within emacs, but I also use them as a clustering
+  description in a rc-file of the <code>papergraph</code>.
+</p>
+
+<p>
+  I mean yes, I do have a config file for the app - a chunk of lisp
+  loaded upon execution, of course! Let the default sample speak
+  for itself:
+</p>
+
+<pre>
+  <code class="lisp">(in-package :papergraph)
+
+;; When set to `t` the layout is hierarchical `dot`. Default is `fdp` spring layout.
+(setf layered-view nil)
+
+;; Example cluster specification from tags in bibtex `keywords=` entries.
+;; For each entry, the first one met takes effect.
+(setf clusters '(("md" . (:color ".3 .3 1.0" :label "Molecular Dynamics"))
+                 ("cs" . (:color ".5 .3 1.0" :label "Computer Science"))))
+
+;; Draw only entries that belong to any of the clusters specified above:
+(setf clusters-only nil)
+
+;; If the previous option is `nil`, draw "unclustered" entries with this color:
+(setf unclustered-color ".7 .3 1.0")
+
+;; Edge color for unclustered entries:
+(setf edge-color "magenta")
+
+;; Number of parallel threads used to query metadata from CrossRef:
+(setf num-api-threads 8)
+
+;; List of paths to input bibtex entry-files:
+(setf ref-files '("/app/refs.bib"))  ; /app is the working dir inside the container
+
+;; Output directory:
+(setf out-dir #P"/app")  ; /app is the working dir inside the container
+
+;; Intermediate Graphviz .dot-file name (.svg file will have the same):
+(setf out-file "papergraph.dot")
+
+;; automatically show graph in specified browser when set:
+;; (setf system-img-browser "eom")  ; off by default inside the container
+</code> </pre>
+
+<p>
+  Each entry will belong to the first of the <code>clusters</code> met
+  in it's <code>keywords</code>, or will become "unclustered" if none
+  is met. Yep, that simple. Changing the <code>clusters</code> and
+  their order is supposed to produce some insights... or at least a
+  better-looking graph.
+</p>
+
+<p>
+  Forgot to mention that the final image is built by <code>Graphviz</code>.
+  But that is obvious, isn't it?
+</p>
+ </div>
+<div class="relative-nav">
+
+
+</div>
+ </div> </div>  <div class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"> <img alt="Creative Commons License" style="border-width:0" src="https://www.ivorysiegetower.com/css/cc-by-sa.png" /> </a> by Vladimir Dikan. </br> Powered by <a href="https://github.com/coleslaw-org/coleslaw">Coλeslaw</a>. Design elements' artwork created with <a href="https://ephtracy.github.io">MagicaVoxel</a>. </div> </body> </html>

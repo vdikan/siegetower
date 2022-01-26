@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Ivory Siege Tower</title> <link>https://www.ivorysiegetower.com</link> <atom:link href="https://www.ivorysiegetower.com/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Wed, 26 Jan 2022 20:37:42 +0100</pubDate> <item> <title>Site Transition</title> <link>https://www.ivorysiegetower.com/posts/site-transition.html</link> <pubDate>2021-09-28</pubDate> <author>Vladimir Dikan</author> <guid isPermaLink="true">https://www.ivorysiegetower.com/posts/site-transition.html</guid> <category><![CDATA[ en ]]></category><category><![CDATA[ emacs ]]></category><category><![CDATA[ future ]]></category> <description><![CDATA[ <p>I've been switching recently to <code>org-roam</code> for the notes/ wiki/ agenda
+catalogs in <code>emacs</code>, and realized that half of this page content is
+tangled from .org-files scattered all over the machines (on a synchronized
+partition, of course).</p>
+
+<p>It would be then nice and only logical to move the whole site
+generator to <code>emacs org-mode</code>.
+Parsers already there, templating engines too. Most of the effort will
+be spent on index building, which sounds like a fun exercise.</p>
+
+<p>So from now on and <em>indefinitely</em> this page is under transition.
+Things gonna move around and (dis)appear randomly.</p>
+ ]]></description> </item> </channel> </rss>

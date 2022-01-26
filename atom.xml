@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Ivory Siege Tower</title> <link href="https://www.ivorysiegetower.com"/> <link type="application/atom+xml" rel="self" href="https://www.ivorysiegetower.com/atom.xml"/> <updated>Wed, 26 Jan 2022 20:37:42 +0100</updated> <author> <name>Vladimir Dikan</name> </author> <entry> <link type="text/html" rel="alternate" href="https://www.ivorysiegetower.com/posts/site-transition.html"/> <title>Site Transition</title> <published>2021-09-28</published> <updated>2021-09-28</updated> <author> <name>Vladimir Dikan</name> <uri>https://www.ivorysiegetower.com</uri> </author> <content type="html">&lt;p&gt;I&#039;ve been switching recently to &lt;code&gt;org-roam&lt;/code&gt; for the notes/ wiki/ agenda
+catalogs in &lt;code&gt;emacs&lt;/code&gt;, and realized that half of this page content is
+tangled from .org-files scattered all over the machines (on a synchronized
+partition, of course).&lt;/p&gt;
+
+&lt;p&gt;It would be then nice and only logical to move the whole site
+generator to &lt;code&gt;emacs org-mode&lt;/code&gt;.
+Parsers already there, templating engines too. Most of the effort will
+be spent on index building, which sounds like a fun exercise.&lt;/p&gt;
+
+&lt;p&gt;So from now on and &lt;em&gt;indefinitely&lt;/em&gt; this page is under transition.
+Things gonna move around and (dis)appear randomly.&lt;/p&gt;
+</content> </entry> </feed>
